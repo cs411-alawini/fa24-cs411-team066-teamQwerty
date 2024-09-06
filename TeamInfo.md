@@ -19,9 +19,9 @@
 
 |   Info      |        Description     |
 | ----------- | ---------------------- |
-|  Title      |       ProjectTitle     |
-| System URL  |      link_to_system    |
-| Video Link  |      link_to_video     |
+|  Title      |       N/A     |
+| System URL  |      N/A    |
+| Video Link  |      N/A    |
 
 ## Project Summary
 
