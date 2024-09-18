@@ -19,10 +19,11 @@
 
 |   Info      |        Description     |
 | ----------- | ---------------------- |
-|  Title      |       N/A     |
+|  Title      |      Fitness Tracker    |
 | System URL  |      N/A    |
 | Video Link  |      N/A    |
 
 ## Project Summary
 
-This is a summary of the project!
+We propose to develop a personalized fitness tracker app that provides users with tailored exercise recommendations based on their height, weight, and personal preferences. The app aims to simplify the process of selecting suitable exercises by considering individual physical attributes and fitness goals. Users will input their personal data and preferences, and the app will generate customized exercise plans to help them achieve their health and fitness objectives.
+Our goal is to create an intuitive and user-friendly application that not only recommends exercises but also educates users about the benefits of different activities. By offering personalized guidance, we hope to motivate users to engage in regular physical activity and lead healthier lifestyles.
