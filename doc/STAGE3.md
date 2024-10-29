@@ -100,7 +100,7 @@ ORDER BY total_calories_burnt DESC;
 
 Result Screenshot:
 
-![00](doc/screenShot/00.png)
+![00](screenShot/00.png)
 
 We have 10 results here because we only have 10 rows for workout_log.
 
