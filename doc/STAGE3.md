@@ -100,7 +100,7 @@ ORDER BY total_calories_burnt DESC;
 
 Result Screenshot:
 
-![1730237363928](images/STAGE3/1730237363928.png)
+![1730237363928](doc/screenShot/Screenshot 2024-10-29 at 16.24.20.png)
 
 We have 10 results here because we only have 10 rows for workout_log.
 
