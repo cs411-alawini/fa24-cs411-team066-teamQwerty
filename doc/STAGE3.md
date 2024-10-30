@@ -6,11 +6,11 @@ Stage 3 is about Database Implementation and Indexing, we used local MySQL to cr
 
 Before everthing for Stage 3, here is our revised version ER Diagram.
 
-![ER](/screenShot/revisedER.png)
+![ER](screenShot/revisedER.png)
 
 ## Database Connection
 
-![connection](/screenShot/databaseConnection.png)
+![connection](screenShot/databaseConnection.png)
 
 ## Database Setup
 
@@ -94,7 +94,7 @@ We used [DataGrip](https://www.jetbrains.com/datagrip/). Firstly we connect Data
 
 #### user
 
-![usercount](/screenShot/usertablecount.png)
+![usercount](screenShot/usertablecount.png)
 
 #### exercise
 
