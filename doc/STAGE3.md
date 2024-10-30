@@ -139,23 +139,23 @@ ORDER BY total_calories_burnt DESC;
 
 Result Screenshot:
 
-![00](screenShot/00.png)
+![q1](screenShot/query1result.png)
 
 #### Indexing
 
 Baseline:
 
-'Q1beforeIdx.png'
+![q1baseline](screenShot/Q1beforeIdx.png)
 
 The three indexing strategies we choose are indexing on user(age), user(user_name), and user(user_name, age).
 
-'age.png'
+![q1age](screenShot/Q1afterIdxAge.png)
 
 Explanation:
 
 The index on user(age) was selected because it provided a measurable and consistent reduction in query cost by optimizing the query's most impactful clause—the WHERE filter on age. This design avoids unnecessary indexing, focusing specifically on the attribute that offers the greatest performance benefit for this query. The user(age) index is the most efficient and targeted choice, ensuring optimized query execution while avoiding redundant or overly complex indexing strategies. This approach balances performance with simplicity, making it a sustainable solution for queries with similar filtering needs.
 
-'userName.png'
+![q1username](screenShot/Q1afterIdxUsrName.png)
 
 Explanation:
 
@@ -163,7 +163,7 @@ The index on user(user_name) did not reduce the query cost because it does not t
 The user_name column is only used in the GROUP BY and ORDER BY clauses. These operations typically benefit more from indexing when there are numerous unique values, allowing the index to create distinct groups or ordered sets efficiently. However, without a high level of distinct values or if the query’s main cost is due to row filtering (e.g., the WHERE clause), indexing user_name does not provide a significant improvement.
 In this query, the WHERE clause filtering on age plays a central role in reducing the number of rows processed before aggregation and ordering. Since user_name is not involved in filtering, indexing it does not reduce the number of rows considered, resulting in no noticeable effect on query performance.
 
-'userNameandAge.png'
+![q1usernameAge](screenShot/Q1afterIdxUsrNameAndAge.png)
 
 Explanation:
 
@@ -190,7 +190,7 @@ ORDER BY avg_calories_per_exercise DESC;
 
 Result screenshot:
 
-![01](screenShot/01.png)
+![q2](screenShot/query2result.png)
 
 Our query result has fewer than 15 rows because it’s designed to show the average calories burned and participant count for each type of exercise. Since we're filtering for exercises where e.calories is greater than or equal to 450, this restriction leaves us with only 2 results.
 
@@ -198,11 +198,11 @@ Our query result has fewer than 15 rows because it’s designed to show the aver
 
 Baseline:
 
-'Q2beforeIdx.png'
+![q2baseline](screenShot/Q2beforeIdx.png)
 
 The three indexing strategies we choose are indexing on exercise(type, calories), exercise(type), and exercise(calories)
 
-'calories.png'
+![q2calories](screenShot/Q2afterIdxCalories.png)
 
 Explanation:
 
@@ -210,7 +210,7 @@ The first index design selected was to index the exercise(calories). This decisi
 
 This improvement suggests that e.calories is an effective candidate for indexing, especially due to the selective filtering condition in the WHERE clause. Since this condition likely reduces the dataset size early in the query execution, the overall performance benefits were clear.
 
-'type.png'
+![q2type](screenShot/Q2afterIdxType.png)
 
 Explanation:
 
@@ -218,7 +218,7 @@ We observed no change in our query performance when we applied indexing on exerc
 
 In this case, it seems the database optimizer is already handling the grouping and ordering on type efficiently without needing the index. This could especially be true if our dataset isn’t large enough to gain noticeable improvements from indexing on type. As a result, adding the index didn’t alter the query execution plan, leading to no observable gains in performance.
 
-'type&calories.png'
+![q2typeCalories](screenShot/Q2afterIdxTypeCalories.png)
 
 Explanation:
 
@@ -247,21 +247,21 @@ ORDER BY calorie_difference DESC;
 
 Result Screenshot:
 
-![02](screenShot/02.png)
+![q3](screenShot/query3result.png)
 
 #### Indexing
 
 Baseline:
 
-'Q3beforeIdx.png'
+![q3baseline](screenShot/Q3beforeIdx.png)
 
 The three indexing strategies we choose are indexing on food(calories), exercise(calories), and user(user_name).
 
-'Q3afterFoodCalories.png'
+![q3foodCalories](screenShot/Q3afterFoodCalories.png)
 
-'Q3afterExerciseCalories.png'
+![q3exerciseCalories](screenShot/Q3afterExerciseCalories.png)
 
-'Q3afterUserName.png'
+![q3username](screenShot/Q3afterUsrName.png)
 
 Explanation:
 
@@ -302,7 +302,7 @@ ORDER BY exercise_type, session_count DESC;
 
 Result Screenshot:
 
-![03](screenShot/03.png)
+![q4](screenShot/query4result.png)
 
 The output shows less than 15 rows because the combinations are limited by the nature of the data: exercise_type only has three types (Plyometrics, Strength, and Stretching) combined with four time_period options (Morning, Afternoon, Evening, and Night), theoretically allowing for a maximum of 12 combinations (3 x 4 = 12).
 
@@ -310,15 +310,15 @@ The output shows less than 15 rows because the combinations are limited by the n
 
 Baseline:
 
-'Q4beforeIdx.png'
+![q4baseline](screenShot/Q4beforeIdx.png)
 
 The three indexing strategies we choose are indexing on workout_log(date, calories_burnt), exercise(type), and workout_log(date).
 
-'type.png'
+![q4date](screenShot/Q4afterDate.png)
 
-'date.png'
+![q4exerciseType](screenShot/Q4afterEType.png)
 
-'date&caloriesBurnt.png'
+![q4dateAndCaloriesBurnt](screenShot/Q4afterDateandCaloriesBurnt.png)
 
 Explanation:
 
