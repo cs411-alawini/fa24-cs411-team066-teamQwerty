@@ -6,7 +6,7 @@ Stage 3 is about Database Implementation and Indexing, we used local MySQL to cr
 
 Before everthing for Stage 3, here is our revised version ER Diagram.
 
-![ER](screenShot/revisedER.png)
+![ER](screenShot/revisedER.jpg)
 
 ## Database Connection
 
@@ -98,27 +98,27 @@ We used [DataGrip](https://www.jetbrains.com/datagrip/). Firstly we connect Data
 
 #### exercise
 
-'exercise table count'
+![ecount](screenShot/exercisecount.png)
 
 #### workout_log
 
-'workout_log count'
+![wlcount](screenShot/workoutLogCount.png)
 
 #### food
 
-'food count'
+![foodcount](screenShot/foodCount.png)
 
 #### fitness_goal
 
-'fitness_goal count'
+![fgcount](screenShot/fitnessgoalCount.png)
 
-#### affliations
+#### affiliations
 
-'affiliations count'
+![acount](screenShot/affiliationsCount.png)
 
 #### takein
 
-'takein count'
+![takeincount](screenShot/takeinCount.png)
 
 ## SQL Queries & Indexing
 
