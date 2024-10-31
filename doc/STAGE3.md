@@ -8,6 +8,8 @@ Before everthing for Stage 3, here is our revised version ER Diagram.
 
 ![ER](screenShot/revisedER.jpg)
 
+Scorll down to the very end to read the revision we made for lost points in Stage 2.
+
 ## Database Connection
 
 ![connection](screenShot/databaseConnection.png)
@@ -325,3 +327,56 @@ Explanation:
 After executing EXPLAIN ANALYZE, the test results for all three indexing strategies showed execution costs similar to the baseline test. Specifically, when adding the index on exercise.type, the query optimizer selected an execution plan similar to the baseline. Similarly, adding an index on workout\_log.date did not significantly alter the query execution cost. Even the third strategy, utilizing the compound index (date, calories\_burnt), maintained stable execution plans and costs. This indicates that the query optimizer selected a relatively consistent execution path when processing this particular query.
 
 These seemingly unexpected results actually reveal important insights about query optimizer mechanics and data access patterns. First, the HOUR function in the query requires the optimizer to perform calculations on each date field value, an operation that inherently needs to examine all relevant records in the table as time period distributions potentially span all possible hour values. This is determined by the nature of the data itself rather than any limitation. Second, the multi-table JOIN operations in the query involve complex data relationships. When evaluating different execution plans, the optimizer must consider how to most effectively access and relate these tables. In this case, the optimizer likely determines that table scans and hash joins represent the most efficient strategy, as it needs to consolidate data from multiple dimensions to generate the final result. Moreover, aggregation operations like COUNT(DISTINCT user\_id) and AVG(calories\_burnt) require processing numerous data points to generate accurate statistical results. The nature of these operations necessitates access to complete datasets rather than relying on partial data access through indexes. Finally, considering the GROUP BY clause contains a CASE expression, this dynamic grouping condition requires the optimizer to consider data organization across a broader scope. These factors collectively explain why different indexing strategies produced similar execution plans and costs. This reflects the query optimizer's tendency to select what it considers the most reliable and stable execution path when facing complex queries, rather than indicating any issue with the indexing strategies themselves.
+
+## Stage 2 Add-on
+
+#### Description of our assumptions about the relationships, including why they are one/many-to-one/many.
+
+1. User and Fitness_Goal (Set Relationship)
+Assumption: A user can set only one fitness goals and each fitness goal can be shared by multiple users.
+Cardinality: Many-to-One (User to Fitness_Goal)
+Explanation:
+Many Users to One Fitness_Goal: Users should only set one fitness per time and focus on it. However, it is common that multiple users would like to set the same goals.
+Fitness_Goal Table: The fitness_goal table includes a user_id foreign key referencing the user table, indicating that each fitness goal is linked to one user.
+User Table's goal_id: The presence of goal_id in the user table suggests the current or primary goal of the user. However, since there is no foreign key constraint on goal_id, it may be used for quick access to the active goal without enforcing referential integrity at the database level.
+
+2. User and Workout_Log (Record Relationship)
+Assumption: A user can record multiple workout logs, and each workout log is associated with a single user.
+Cardinality: One-to-Many (User to Workout_Log)
+Explanation:
+One User to Many Workout_Logs: Users typically perform workouts regularly and record each session separately. This results in multiple workout logs per user.
+Workout_Log Table: The workout_log table contains a user_id foreign key, establishing that each workout log belongs to one user.
+
+3. Workout_Log and Exercise (Affiliations Relationship)
+Assumption: A workout log can contain multiple exercises, and an exercise can appear in multiple workout logs.
+Cardinality: Many-to-Many (Workout_Log to Exercise)
+Explanation:
+Many Exercises per Workout_Log: During a workout session, a user may perform multiple exercises.
+Many Workout_Logs per Exercise: The same exercise can be performed in different workout sessions by the same or different users.
+Affiliations Table: The affiliations table serves as a junction table connecting workout_log and exercise through foreign keys, effectively modeling the many-to-many relationship.
+
+4. Workout_Log and Food (Takein Relationship)
+Assumption: A workout log can have multiple food items associated with it, and a food item can be associated with multiple workout logs.
+Cardinality: Many-to-Many (Workout_Log to Food)
+Explanation:
+Many Foods per Workout_Log: Users may consume multiple foods around the time of a workout, which they record in the same log.
+Many Workout_Logs per Food: The same food item (e.g., a protein shake) can be consumed in different workout sessions.
+Takein Table: The takein table acts as a junction table between workout_log and food, establishing the many-to-many relationship.
+
+#### Why the Workout_Log Entity Is Necessary
+
+The Workout_Log entity is essential because it represents individual workout sessions, capturing details like the date and total calories burned. Placing its attributes directly on the relationship between User and Exercise would be inadequate for several reasons:
+
+Capturing Workout Sessions: Users often perform multiple exercises in a single workout session. The Workout_Log groups these exercises together, accurately reflecting real-world workout events.
+
+Data Integrity and Normalization: Keeping Workout_Log as a separate entity adheres to normalization principles, avoiding data redundancy. Attributes like date and calories_burnt pertain to the workout session as a whole, not to individual User-Exercise pairs.
+
+Managing Many-to-Many Relationships: There is a many-to-many relationship between Workout_Log and Exercise (a workout can include multiple exercises, and an exercise can be part of multiple workouts). The affiliations table models this relationship effectively.
+
+Temporal Context: Attributes such as the workout date are specific to each session. Without Workout_Log, it would be challenging to track when exercises were performed.
+
+Scalability and Flexibility: A separate Workout_Log allows for the addition of session-specific data (e.g., duration, location) without complicating the User-Exercise relationship.
+
+#### About User-update Goal
+
+We have time attribute in our workout_log entity, we allow same user_id have different workout_log. This means we can track user's activity in workout_log entity.
