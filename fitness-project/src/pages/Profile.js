@@ -1,5 +1,6 @@
 // src/pages/Profile.js
 import React from 'react';
+import './Panel.css';
 
 function Profile() {
   // Replace with actual user data in a real app
@@ -11,7 +12,7 @@ function Profile() {
   };
 
   return (
-    <div style={{ padding: '2rem' }}>
+    <div className='panel'>
       <h2>User Profile</h2>
       <p><strong>Name:</strong> {user.name}</p>
       <p><strong>Age:</strong> {user.age}</p>

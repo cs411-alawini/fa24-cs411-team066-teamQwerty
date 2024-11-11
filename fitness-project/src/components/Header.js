@@ -12,7 +12,7 @@ function Header() {
         <Link to="/dashboard" className="header-link">Dashboard</Link>
         <Link to="/profile" className="header-link">Profile</Link>
       </nav>
-      <Link to="/login" className="login-link">Login</Link> {/* 单独的 Login 链接 */}
+      <Link to="/login" className="login-link">Login</Link> {/* Login 链接在右侧 */}
     </header>
   );
 }
