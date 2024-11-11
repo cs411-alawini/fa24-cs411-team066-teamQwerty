@@ -1,0 +1,1001 @@
+id,name,calories
+1,Acerola,32
+2,Apple,52
+3,Apricot,48
+4,Dried fruit,241
+5,Avocado,160
+6,Banana,89
+7,Blackberry,43
+8,Blueberry,57
+9,Boysenberries,50
+10,Breadfruit,103
+11,Carambola,31
+12,Cherimoya,75
+13,Cherry,50
+14,Crabapple (Malus),76
+15,Cranberry,46
+16,Currant,56
+17,Custard apple,101
+18,Dates,282
+19,Elderberry,73
+20,Figs,74
+21,Fruit salad,50
+22,Gooseberry,44
+23,Goji berries,349
+24,Grapefruit,42
+25,Grape,67
+26,Peruvian groundcherry,53
+27,Guava,68
+28,Jackfruit,95
+29,Java plum,60
+30,Jujube,79
+31,Kiwifruit,61
+32,Kumquat,71
+33,Lemon,29
+34,Lime,30
+35,Lychee,66
+36,Loganberries,55
+37,Longan,60
+38,Loquat,47
+39,Mango,60
+40,Purple mangosteen,73
+41,Cantaloupe,34
+42,Melon,28
+43,Honeydew,36
+44,Mulberry,43
+45,Nectarine,44
+46,Orange,47
+47,Mandarin orange,53
+48,Papaya,43
+49,Passion fruit,97
+50,Peach,39
+51,Pear,57
+52,Persimmon,127
+53,Pineapple,50
+54,Pitanga (Surinam cherry),33
+55,Plantain,116
+56,Plum,46
+57,Pomegranate,83
+58,Prickly pear,41
+59,Prunes,240
+60,Pomelo,38
+61,Quince,57
+62,Raisin,299
+63,Rambutan,82
+64,Raspberry,52
+65,Roselle,49
+66,Rose apple,25
+67,Sapodilla,83
+68,Mamey Sapote,124
+69,Soursop,66
+70,Strawberry,32
+71,Tamarind,239
+72,Watermelon,30
+73,Maraschino cherry,165
+74,Feijoa,61
+75,Asian pear,42
+76,Sour cherry,42
+77,Durian,147
+78,Crateva religiosa,69
+79,Clementine,47
+80,Nance,73
+81,Naranjilla,25
+82,Horned melon,44
+83,Coconut,354
+84,Cloudberry,51
+85,Huckleberries,37
+86,Banana melon,21
+87,Salmonberries,47
+88,Chokecherries,156
+89,Rose hip,162
+90,Artichoke,47
+91,Asparagus,47
+92,"Bitter gourd (Momordica charantia, bitter melon, balsam pear)",30
+93,Bamboo shoot,27
+94,Green bean,35
+95,Beetroot,43
+96,Broad bean,62
+97,Broccoli,34
+98,Brussels sprout,43
+99,Burdock root,72
+100,Cabbage,25
+101,Red cabbage,31
+102,Savoy cabbage,27
+103,Chinese cabbage,13
+104,Carrot,41
+105,Cassava,160
+106,Cauliflower,25
+107,Celeriac,42
+108,Celtuce,18
+109,Chayote,19
+110,Chicory,17
+111,Corn,96
+112,Yardlong beans,47
+113,Cucumber,15
+114,Eggplant,25
+115,Edamame,121
+116,Endive,17
+117,Garlic,149
+118,Ginger,80
+119,Jerusalem artichoke,73
+120,Kanpyo,258
+121,Kohlrabi,27
+122,Lotus root,74
+123,Red leaf lettuce,16
+124,Okra,33
+125,Onion,40
+126,Sweet onion,32
+127,Onion rings,276
+128,Parsnip,75
+129,Pea,84
+130,Bell pepper,20
+131,Russet potato,97
+132,Red potato,89
+133,Pumpkin flowers,15
+134,Pumpkin,20
+135,Radish,16
+136,Daikon,18
+137,Rutabagas,37
+138,Salsify,68
+139,Sauerkraut,19
+140,Seaweed,43
+141,Nori,35
+142,Zucchini,17
+143,Sweet potato,90
+144,Taro,112
+145,Tomato,18
+146,Turnip,28
+147,Turnip greens,20
+148,Vegetable,65
+149,Water chestnuts,97
+150,Winter melon,13
+151,Wax gourd,14
+152,Yam,116
+153,Jícama (yam bean),38
+154,Summer squash,16
+155,Winter squash,37
+156,Agar,306
+157,Spirulina,26
+158,Wakame,45
+159,Chili Pepper,40
+160,Potato,93
+161,Shallot,72
+162,Arrowroot,65
+163,Chili pepper,40
+164,Pickled cucumber,11
+165,Pimiento,23
+166,Radicchio,23
+167,Tomatillo,32
+168,Sun-dried tomato,213
+169,Fennel,31
+170,Hearts of palm,28
+171,Nopales,41
+172,Chinese broccoli,22
+173,Napa cabbage,12
+174,Poblano,281
+175,Jalapeño,29
+176,Pasilla peppers,345
+177,Mexican tea,32
+178,Yautia,98
+179,Fiddlehead ferns,34
+180,Cod liver oil,902
+181,Anchovy,131
+182,Carp,162
+183,Caviar,264
+184,Cod,105
+185,Croaker,221
+186,Eel,236
+187,Fish sticks,277
+188,Flatfish,86
+189,Gefilte fish,84
+190,Grouper fish,118
+191,Haddock,90
+192,Herring,203
+193,Mackerel,262
+194,Mullet fish,150
+195,Perch,117
+196,Alaska pollock,111
+197,Pompano,211
+198,Rockfish,109
+199,Smoked salmon,117
+200,Sockeye salmon,156
+201,Sardine,208
+202,Shark,228
+203,Sheepshead,126
+204,Smelt,124
+205,Snapper,128
+206,Sturgeon,135
+207,Surimi,99
+208,Swordfish,172
+209,Tilefish,147
+210,Tuna salad,187
+211,Whiting,116
+212,Crab meat,97
+213,Crab stick,95
+214,Crab,83
+215,Crayfish,82
+216,Lobster,89
+217,Shrimp,119
+218,Abalone,189
+219,Clam,148
+220,Cuttlefish,79
+221,Mussels,172
+222,Oysters,102
+223,Whelk,275
+224,Bass,124
+225,Bluefish,159
+226,Burbot,115
+227,Butterfish,187
+228,Mahimahi,109
+229,Drum fish,153
+230,Halibut,239
+231,Ling fish,111
+232,Lingcod,109
+233,Milkfish,190
+234,Monkfish,97
+235,Pacific saury,119
+236,Roe,204
+237,Sablefish,250
+238,Chinook salmon,231
+239,Scup,135
+240,Seatrout,133
+241,Shad,252
+242,Sucker fish,119
+243,Sunfish,114
+244,Skipjack tuna,132
+245,Tuna,130
+246,Turbot,122
+247,Whitefish,172
+248,Wolffish,123
+249,Yellowtail,187
+250,Squid,158
+251,Octopus,164
+252,Orange roughy,105
+253,Catfish,144
+254,Salmon,206
+255,Trout,168
+256,Tilapia,128
+257,Cockles,79
+258,Devilfish,97
+259,Pike,156
+260,Sea cucumber,56
+261,Steelhead trout,159
+262,Scallop,111
+263,Blue cheese,353
+264,Brie,334
+265,Camembert,300
+266,Cheese,404
+267,Cottage cheese,98
+268,Cream cheese,350
+269,Edam,357
+270,Feta,264
+271,Fontina,389
+272,Brunost,466
+273,Gouda cheese,356
+274,Gruyere cheese,413
+275,Limburger,327
+276,Monterey Jack,373
+277,Muenster cheese,368
+278,Neufchâtel cheese,253
+279,Port Salut,352
+280,Provolone,351
+281,Ricotta,174
+282,Romano cheese,387
+283,Roquefort,369
+284,Swiss cheese,393
+285,Tilsit cheese,340
+286,Whipped cream,257
+287,Eggnog,88
+288,Milk,42
+289,Buttermilk,40
+290,Condensed milk,321
+291,Chocolate milk,83
+292,Hot chocolate,77
+293,Goat milk,69
+294,Milkshake,112
+295,Whey,27
+296,Egg white,52
+297,Yolk,322
+298,Egg,155
+299,Omelette,154
+300,Duck egg,185
+301,Goose egg,185
+302,Quail egg,158
+303,Turkey egg,171
+304,Butter,717
+305,Goat cheese,364
+306,Mexican Cheese queso chihuahua,374
+307,Sour cream,181
+308,Parmigiano-Reggiano,265
+309,Powdered milk,496
+310,Dulce de Leche,315
+311,Soft serve,222
+312,Ice cream sandwich,237
+313,American cheese,371
+314,Yogurt,59
+315,Cotija cheese,366
+316,Kefir,41
+317,Greek yogurt,97
+318,Ice cream sundae cone,254
+319,Coconut milk,230
+320,Mozzarella,280
+321,Shiitake,34
+322,Chanterelle,38
+323,True morels,31
+324,Portobello,29
+325,Edible mushroom,22
+326,Enoki mushrooms,37
+327,Truffle,284
+328,Maitake mushrooms,31
+329,Porridge,50
+330,Oatmeal,68
+331,Cereal,378
+332,Chia seeds,486
+333,Sesame,573
+334,Sunflower seed,584
+335,Pumpkin seed,446
+336,Flax seeds,534
+337,Adzuki bean,128
+338,Baked beans,155
+339,Black turtle bean,130
+340,Cranberry beans,136
+341,French beans,129
+342,Great northern beans,118
+343,Kidney beans,127
+344,Navy beans,140
+345,Pinto beans,143
+346,Yellow beans,144
+347,White beans,139
+348,Fava beans,110
+349,Chickpeas,164
+350,Cowpea (Black-eyed pea),116
+351,Lablab,117
+352,Lentil,116
+353,Lima bean,115
+354,Lupin Bean,119
+355,Mothbeans,117
+356,Mung beans,105
+357,Cellophane noodles,351
+358,Black gram,105
+359,Pigeon pea,121
+360,Refried beans,90
+361,Soybean,172
+362,Nattō,211
+363,Tempeh,192
+364,Soybean meal,337
+365,Okara,76
+366,Winged beans,147
+367,Falafel,333
+368,Chickpea flour (besan),387
+369,Hummus,166
+370,Soy yogurt,66
+371,Tofu,144
+372,Wheat Bread,313
+373,Amaranth grain,102
+374,Groat,343
+375,Buckwheat,92
+376,Cornmeal,370
+377,Couscous,112
+378,Millet,119
+379,Brown rice,123
+380,Oat,389
+381,Rice,130
+382,Arborio rice,130
+383,Glutinous rice,97
+384,Rye,338
+385,Flour,364
+386,Pasta,131
+387,Noodles,138
+388,Soba,99
+389,Khorasan wheat,337
+390,Spaghetti,158
+391,Semolina,374
+392,Spätzle,138
+393,Papadum,371
+394,Bean,105
+395,Tofu yogurt,94
+396,Wheat gluten,370
+397,Chicken meat,239
+398,Chicken gizzard,154
+399,Chicken heart,153
+400,Chicken liver,119
+401,Chicken breast,187
+402,Chicken neck,297
+403,Chicken thigh,218
+404,Chicken wing,324
+405,Duck meat,337
+406,Domestic goose,238
+407,Quail meat,192
+408,Turkey meat,189
+409,Turkey neck,125
+410,Turkey breast,157
+411,Turkey leg,144
+412,Turkey wing,197
+413,Foie gras,462
+414,Ground turkey,203
+415,Ground chicken,189
+416,Chicken feet,215
+417,Fajita,135
+418,Barbecue chicken,226
+419,Turkey ham,118
+420,Ostrich,145
+421,Blood sausage,379
+422,Bockwurst,301
+423,Bologna sausage,247
+424,Braunschweiger,327
+425,Chorizo,455
+426,Headcheese,157
+427,Knackwurst,307
+428,Leberkäse,304
+429,Roast beef,115
+430,Luncheon meat,189
+431,Mortadella,311
+432,Chicken liver pate,201
+433,Pâté,319
+434,Pepperoni,504
+435,Salami,336
+436,Cervelat,362
+437,Vienna sausage,230
+438,Italian sausage,344
+439,Turkey bacon,226
+440,Liverwurst,305
+441,Polish sausage,259
+442,Summer sausage,426
+443,Turkey sausage,235
+444,Bratwurst,297
+445,Kielbasa,226
+446,Scrapple,213
+447,Meatball,286
+448,Pork belly,518
+449,Pork leg,245
+450,Pork loin,198
+451,Pork,242
+452,Pork chop,231
+453,Pork shoulder,236
+454,Pork spare ribs,277
+455,Pork jowl,655
+456,Liver,165
+457,Ham,145
+458,Pork bacon,548
+459,Pork hock,171
+460,Canadian bacon,146
+461,Short ribs,471
+462,Beef shank,201
+463,T bone steak,217
+464,Beef Liver,191
+465,Corned beef,251
+466,Pastrami,147
+467,Pot roast,297
+468,Beef ribs,372
+469,Beef sirloin,177
+470,Porterhouse steak,276
+471,Ground beef,241
+472,Brisket,289
+473,Beefsteak,250
+474,Beef tenderloin,324
+475,Flank steak,192
+476,Lamb,294
+477,Lamb leg,230
+478,Lamb loin,309
+479,Lamb ribs,359
+480,Lamb shoulder,279
+481,Veal,172
+482,Game,150
+483,Bear meat,259
+484,Bison meat,143
+485,Caribou meat,167
+486,Goat,143
+487,Horse meat,175
+488,Rabbit Meat,173
+489,Elk meat,162
+490,Deer meat,149
+491,Chuck steak,277
+492,Rib eye steak,291
+493,Steak,271
+494,Beef,169
+495,Mutton,234
+496,Frog legs,73
+497,Allspice,263
+498,Star anise,337
+499,Bay leaf,313
+500,Caraway spice,333
+501,Cardamom,311
+502,Chili powder spice,282
+503,Cinnamon,247
+504,Ground cloves,274
+505,Coriander seeds,298
+506,Cumin,375
+507,Curry powder,325
+508,Dill seeds,305
+509,Dried dill weed,253
+510,Fennel seeds,345
+511,Fenugreek,323
+512,Garlic powder,331
+513,Ground ginger,335
+514,Marjoram,271
+515,Nutmeg,525
+516,Onion powder,341
+517,Oregano,265
+518,Paprika,282
+519,Dried parsely,292
+520,Black pepper,251
+521,Cayenne pepper,318
+522,White pepper,296
+523,Poppy seed,525
+524,Poultry seasoning,307
+525,Pumpkin pie spice,342
+526,Dried rosemary,331
+527,Saffron,310
+528,Tarragon,295
+529,Dried thyme,276
+530,Turmeric,312
+531,Mustard,60
+532,Table salt,0
+533,Apple cider vinegar,21
+534,Vanilla extract,288
+535,Vinegar,18
+536,Caper,23
+537,Horseradish,48
+538,Spearmint,44
+539,Balsamic vinegar,88
+540,Taco seasoning,188
+541,Mayonnaise,680
+542,Cocoa solids,228
+543,Alfalfa seeds,23
+544,Radish seeds,43
+545,Lotus seeds,332
+546,Safflower,517
+547,Acorns,387
+548,Almond,579
+549,Almond paste,458
+550,Beechnuts,576
+551,Brazil nut,659
+552,Cashew,553
+553,Chestnut,131
+554,Hazelnut,628
+555,Ginkgo nuts,182
+556,Hickory nut,657
+557,Macadamia,718
+558,Mixed nuts,607
+559,Pecan,691
+560,Pili nuts,719
+561,Pine nuts,673
+562,Pistachio,560
+563,Walnut,654
+564,Tahini,595
+565,Watermelon seeds,557
+566,Almond butter,614
+567,Castanea crenata,154
+568,Cashew butter,609
+569,Peanut,567
+570,Basil,23
+571,Dill,43
+572,Thyme,101
+573,Rosemary,131
+574,Peppermint,70
+575,Garden rhubarb,21
+576,Amaranth leaves,23
+577,Rapini,22
+578,Butterbur,14
+579,Cardoon,17
+580,Celery,16
+581,Chard,20
+582,Chives,30
+583,Chrysanthemum,24
+584,Marrow-stem Kale,32
+585,Collard Greens,33
+586,Coriander,23
+587,Garden cress,32
+588,Dandelion greens,45
+589,Escarole,19
+590,Drumstick leaves,64
+591,Kale,28
+592,Lambsquarters,43
+593,Leek,61
+594,Lettuce,15
+595,Mustard Greens,26
+596,Scallion,32
+597,Welsh onion,34
+598,Parsley,36
+599,Pumpkin leaves,19
+600,Purslane,20
+601,Spinach,23
+602,Sweet potato leaves,42
+603,Taro leaves,42
+604,Vine spinach (basella),19
+605,Watercress,11
+606,Borage,21
+607,Drumstick tree,37
+608,Arugula,25
+609,Lemongrass,99
+610,Grape leaves,93
+611,Fireweed,103
+612,Barley,123
+613,Bulgur,83
+614,Corn grain,365
+615,Hominy,72
+616,Bran,40
+617,Triticale,336
+618,Wild rice,101
+619,Spinach pasta,289
+620,Chow mein,475
+621,Somen noodles,131
+622,Barley flour,345
+623,Rice noodles,108
+624,Quinoa,120
+625,Wheat,132
+626,Spelt,127
+627,Teff,101
+628,Egg noodles,138
+629,Millet flour,382
+630,Fortune cookie,378
+631,Fruit leather,359
+632,Pretzel,381
+633,Tootsie roll,387
+634,Almond joy,479
+635,Bit-o-honey,375
+636,Butterfinger,459
+637,Butterscotch,391
+638,Carob,540
+639,Caramel,382
+640,Caramello,462
+641,White chocolate,539
+642,York peppermint pattie,384
+643,Twizzlers,347
+644,Crème caramel,145
+645,Ice cream,207
+646,Sherbet,144
+647,Fondant icing,373
+648,Fudge,411
+649,Goobers,512
+650,Gumdrop,396
+651,Jelly bean,375
+652,Kit Kat,518
+653,Baby ruth,459
+654,Marshmallow,318
+655,Halva,469
+656,Oh henry,462
+657,Chunky bar,475
+658,Banana pudding,105
+659,Chocolate pudding,105
+660,Milky way,456
+661,Skor bar,541
+662,M&Ms Peanut,515
+663,Mounds candy bar,486
+664,Mr. Goodbar,538
+665,100 grand bar,468
+666,Crunch bar,500
+667,Candy bar,522
+668,Raisinets,422
+669,Reeses cups,515
+670,Reese's pieces,497
+671,Rolo,474
+672,After eight,432
+673,Starburst,408
+674,3 musketeers,436
+675,Twix,502
+676,Whatchamacallit,494
+677,Chewing gum,360
+678,Cocoa bean,220
+679,Custard,122
+680,Gelatin dessert,381
+681,Mousse,225
+682,Apple crisp,161
+683,Flan,348
+684,Pudding,120
+685,Rice pudding,111
+686,Tapioca,105
+687,Praline,485
+688,Icing,418
+689,Reesesticks,521
+690,Reese's fast break,474
+691,Dove milk chocolate,546
+692,Chocolate ice cream,216
+693,Italian ice,53
+694,Ice pop,79
+695,Mars,475
+696,Honey,304
+697,Fruit preserves,278
+698,Marmalade,246
+699,Molasses,290
+700,Pectin,325
+701,Brown sugar,380
+702,Sugar,387
+703,Aspartame,365
+704,Maple sugar,354
+705,Corn syrup,286
+706,Maple syrup,260
+707,Sorghum syrup,290
+708,Snickers,488
+709,Skittles,402
+710,Taffy (candy),397
+711,Toffee,560
+712,Apricot jam,242
+713,Sucralose,336
+714,Creamsicle,49
+715,Chocolate,546
+716,Sugar substitute,347
+717,Agave nectar,310
+718,Stevia,0
+719,Payday,490
+720,Macaroon,460
+721,Grenadine,268
+722,Frozen yogurt,127
+723,Nougat,398
+724,Heart of palm,115
+725,Tabletop Sweeteners,279
+726,Lard,902
+727,Russian dressing,355
+728,Thousand island,379
+729,French dressing,222
+730,Italian dressing,102
+731,Soybean oil,884
+732,Rice bran oil,884
+733,Wheat germ oil,884
+734,Peanut oil,884
+735,Coconut oil,892
+736,Olive oil,884
+737,Palm oil,884
+738,Sesame oil,884
+739,Cocoa butter,884
+740,Cottonseed oil,884
+741,Safflower oil,884
+742,Grape seed oil,884
+743,Walnut oil,884
+744,Babassu oil,884
+745,Blue cheese dressing,484
+746,Sunflower oil,884
+747,Duck fat,882
+748,Avocado oil,884
+749,Canola oil,884
+750,Mustard oil,884
+751,Salmon oil,902
+752,Fish oil,902
+753,Margarine,717
+754,Spread,158
+755,Honey mustard,207
+756,Benecol,357
+757,Poppy seed dressing,399
+758,Ceasar dressing,131
+759,Flaxseed oil,878
+760,Barbecue sauce,172
+761,Béchamel sauce,105
+762,Hot sauce,11
+763,Hoisin sauce,220
+764,Salsa,36
+765,Fish sauce,35
+766,Marinara sauce,51
+767,Olive,115
+768,Tomato paste,82
+769,Ketchup,101
+770,Wasabi,109
+771,Miso,198
+772,Soy milk,54
+773,Soy sauce,53
+774,Peanut butter,598
+775,Sweet and sour,150
+776,Cocktail sauce,124
+777,Green Goddess Dressing,427
+778,Tomato sauce,24
+779,Vegetable oil,884
+780,Apple juice,46
+781,Orange juice,45
+782,Pineapple juice,53
+783,Carrot juice,40
+784,Tomato juice,17
+785,Beer,43
+786,Daiquiri,186
+787,Piña colada,174
+788,Tequila sunrise,110
+789,Monster energy drink,5
+790,Whiskey sour,383
+791,Creme de menthe,371
+792,SlimFast shake,58
+793,Fuze juice,38
+794,Gin,263
+795,Rum,231
+796,Vodka,231
+797,Whisky,250
+798,Wine,83
+799,Smoothie,37
+800,Red Wine,85
+801,Pinot noir,82
+802,Syrah wine,83
+803,Zinfandel wine,88
+804,Petite Sirah wine,85
+805,White wine,82
+806,Sangiovese wine,86
+807,Carignan wine,74
+808,Pinot Gris,83
+809,Muller Thurgau,76
+810,Carbonated water,0
+811,Gewürztraminer,81
+812,Gewurztraminer,108
+813,Semillon,82
+814,Riesling,80
+815,Sauvignon blanc,81
+816,Ginger ale,34
+817,Iced tea,36
+818,Muscat wine,82
+819,Grape soda,43
+820,Sprite,40
+821,French wine,86
+822,Red Bull Energy Drink,43
+823,Tonic water,34
+824,Chardonnay,84
+825,Chocolate syrup,279
+826,Oolong tea,1
+827,Green tea,30
+828,Minute maid lemonade,46
+829,Lemon tea,2
+830,Coffee,1
+831,Espresso,9
+832,Instant coffee,2
+833,Aloe vera juice,15
+834,Mocha,460
+835,Malt beer,68
+836,Cranberry juice,54
+837,Light beer,46
+838,Rose wine,83
+839,Lemonade,40
+840,Malt,85
+841,Black tea,1
+842,Tea,1
+843,Perrier,0
+844,Coca-Cola,37
+845,Drinking water,0
+846,Water,0
+847,Coffee liqueur,336
+848,Liqueur,327
+849,Gatorade,26
+850,Powerade,32
+851,Absinthe,295
+852,Roman chamomile,1
+853,Distilled beverage,250
+854,Bottled water,0
+855,Merlot,83
+856,Rockstar energy drink,58
+857,Horchata,54
+858,Rice milk,47
+859,Herbal tea,0
+860,V8 juice,21
+861,Juice,54
+862,Sake,134
+863,Grape juice,62
+864,Asparagus soup,69
+865,Black bean soup,91
+866,Soup beans,95
+867,Celery soup,72
+868,Broccoli cheese soup,81
+869,Chicken cream soup,90
+870,Chicken gumbo,45
+871,Chicken rice soup,53
+872,Chicken vegetable soup,33
+873,Manhattan Clam Chowder,56
+874,New England Clam Chowder,72
+875,Lentil soup,56
+876,Onion soup,46
+877,Oyster stew,48
+878,Potato soup,74
+879,Creamy Shrimp Soup,72
+880,Turkey soup,57
+881,Chunky Beef Soup,66
+882,Broth,267
+883,Beef consomme,16
+884,Teriyaki sauce,89
+885,Au jus,16
+886,Chicken gravy,48
+887,Mushroom gravy,50
+888,Onion gravy,322
+889,Turkey gravy,51
+890,Sofrito sauce,237
+891,Spaghetti sauce,48
+892,Plum sauce,184
+893,Pizza sauce,54
+894,Tomato bisque,96
+895,Tabasco,12
+896,Chicken soup,36
+897,Fish soup,16
+898,Oyster sauce,51
+899,Shark fin soup,46
+900,Bean and ham soup,81
+901,Cream of Broccoli Soup,56
+902,Cream of celery soup,66
+903,Vegetable soup,65
+904,Beef noodle soup,34
+905,Minestrone,34
+906,Cream of mushroom soup,39
+907,Pea soup,61
+908,Chicken noodle soup,23
+909,Chicken tortilla soup,53
+910,Bisque,50
+911,Tomato soup,32
+912,Ramen noodle soup,440
+913,Chipotle salsa,25
+914,Enchilada sauce,40
+915,Picante sauce,25
+916,Taco sauce,50
+917,Indian masala,57
+918,Sriracha,93
+919,Cheese sauce,438
+920,Chowder,99
+921,Alfredo sauce,535
+922,Chili sauce,21
+923,Worcestershire sauce,78
+924,Dashi,438
+925,Succotash,99
+926,Egg Drop Soup,27
+927,Hot and sour soup,39
+928,Wonton soup,32
+929,Tomatillo Salsa Verde,47
+930,Tartar sauce,211
+931,Potato flour,357
+932,Corn pudding,131
+933,Biscuit,353
+934,Banana bread,326
+935,Cornbread,330
+936,Egg bread,287
+937,Dough,272
+938,French bread,319
+939,Irish soda bread,290
+940,Italian bread,271
+941,Multigrain bread,288
+942,Oat bread,236
+943,Oatmeal bread,269
+944,Pita bread,275
+945,Protein bread,245
+946,Pumpernickel bread,250
+947,Raisin bread,274
+948,Rye bread,259
+949,White Bread,266
+950,Bread crumbs,395
+951,Bread sticks,412
+952,Bread stuffing,386
+953,Angel food cake,258
+954,Carrot cake,415
+955,Chocolate cake,371
+956,White cake,356
+957,Coffeecake,339
+958,Fruitcake,324
+959,Gingerbread,356
+960,Marble cake,416
+961,Pineapple cake,319
+962,Pound cake,353
+963,Shortcake,346
+964,Yellow cake,379
+965,Cheesecake,321
+966,Chocolate brownie,466
+967,Butter cookie,467
+968,Wafer,433
+969,Fig bars,348
+970,Gingersnaps,416
+971,Graham cracker,430
+972,Ladyfingers,363
+973,Cookie dough,424
+974,Shortbread,514
+975,Puff pastry,558
+976,Cheese crackers,489
+977,Matzo,395
+978,Melba toast,390
+979,Cracker,510
+980,Cheese sandwich,497
+981,Croissant,406
+982,Crouton,407
+983,Danish pastry,374
+984,Doughnuts,434
+985,English muffins,227
+986,French toast,229
+987,Hush puppies,337
+988,Muffin,375
+989,Pancake,227
+990,Blueberry pie,245
+991,Cherry pie,270
+992,Cream pie,353
+993,Lemon meringue pie,285
+994,Pecan pie,412
+995,Pumpkin pie,243
+996,Pie crust,518
+997,Pastry,551
+998,Filo,299
+999,Popovers,371
+1000,Dinner rolls,310

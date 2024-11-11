@@ -1,0 +1,2919 @@
+id,exercise_name,calories,type
+0,Partner plank band row,374,Strength
+1,Banded crunch isometric hold,425,Strength
+2,FYR Banded Plank Jack,173,Strength
+3,Banded crunch,190,Strength
+4,Crunch,111,Strength
+5,Decline band press sit-up,444,Strength
+6,FYR2 Banded Frog Pump,458,Strength
+7,Band low-to-high twist,163,Strength
+8,Barbell roll-out,469,Strength
+9,Barbell Ab Rollout - On Knees,57,Strength
+10,Decline bar press sit-up,91,Strength
+11,Bench barbell roll-out,384,Strength
+12,Barbell Side Bend,345,Strength
+13,Seated bar twist,433,Strength
+14,Single-arm landmine pull and press,286,Strength
+15,Barbell Ab Roll Out - Gethin Variation,357,Strength
+16,30 Barbell Floor Wiper,55,Strength
+17,30 Barbell Roll-Out,317,Strength
+18,Decline plate sit-up,227,Strength
+19,KV Barbell Hip Thrust,148,Strength
+20,Advanced Kettlebell Windmill,493,Strength
+21,Kettlebell Windmill,130,Strength
+22,Kettlebell Pass Between The Legs,358,Strength
+23,Kettlebell 3-point leg extension,219,Strength
+24,Double Kettlebell Swing,408,Strength
+25,Burpee over kettlebell,102,Strength
+26,Kettlebell toe-touch,318,Strength
+27,Kettlebell swing,334,Strength
+28,Two-way swing,367,Strength
+29,Kettlebell crab reach,66,Strength
+30,Taylor Single-Arm Kettlebell Swing,206,Strength
+31,Holman Kettlebell Up to Elbow Down,478,Strength
+32,FYR2 Double-Kettlebell Ski,425,Strength
+33,FYR2 Kettlebell Hike,59,Strength
+34,FYR2 Kettlebell Cross-Body Catch,418,Strength
+35,FYR2 Kettlebell Duck Walk,173,Strength
+36,FYR2 Kettlebell Get-Up Reach,76,Strength
+37,FYR2 Kettlebell Juggle,112,Strength
+38,FYR2 Squat-Clean-Alternating-Press Complex,209,Strength
+39,Dumbbell V-Sit Cross Jab,75,Strength
+40,Dumbbell spell caster,383,Strength
+41,Dumbbell side bend,476,Strength
+42,Dumbbell crunch,300,Strength
+43,Dumbbell Fix Dumbbell Sprawl,292,Strength
+44,Dumbbell Fix Alternating Renegade Row,332,Strength
+45,Dumbbell Fix Dumbbell Mountain Climber,281,Strength
+46,Dumbbell Fix Dumbbell Russian Twist,232,Strength
+47,Dumbbell Fix Dumbbell Pull-Over,155,Strength
+48,Dumbbell Fix Dumbbell Sit-Up,177,Strength
+49,Dumbbell Fix Dumbbell Front Squat,496,Strength
+50,Dumbbell Fix Full Man Maker,403,Strength
+51,Dumbbell T-hold,164,Strength
+52,Dumbbell hollow-body floor press,75,Strength
+53,Dumbbell crusher,326,Strength
+54,Dumbbell Crunch - Gethin Variation,54,Strength
+55,Single-arm dumbbell crunch,369,Strength
+56,HM Alternating Dumbbell Plank Row,485,Strength
+57,Dumbbell straight-legged hip raise,322,Strength
+58,Seated leg tuck with dumbbell,70,Strength
+59,Dumbbell V-sit cross jab-,268,Strength
+60,30 Hanging Leg Raise With Dumbbell,127,Strength
+61,Dumbbell Get-Up Sit-Up,116,Strength
+62,Holman Right Side Plank with Left Triceps Press,462,Strength
+63,Holman Left Side Plank with Right Triceps Press,447,Strength
+64,Holman Boat with Feet Push-Out and Overhead Press,145,Strength
+65,Holman Hovering Plank Row,152,Strength
+66,Holman Weighted Seated Killer Abs to Russian Twist,155,Strength
+67,Holman Straight Plank Dumbbell Reach-Under,483,Strength
+68,Holman Straight-Arm Side Plank Overhead Press to Chest Press,179,Strength
+69,Holman Weighted Burpee to Pike,486,Strength
+70,Holman Straight-Legged Boat Chest Press,215,Strength
+71,Holman Weighted Burpee to Side Delt Raise,430,Strength
+72,Holman Heavy Double Pike,460,Strength
+73,Holman Heavy Double Split Pike,460,Strength
+74,MetaBurn Alternating Dumbbell Sit-Through,199,Strength
+75,MetaBurn Alternating Plank Row With Dumbbell Pull-Through,479,Strength
+76,MetaBurn Alternating Plank Row With Push-Up,151,Strength
+77,MetaBurn Dumbbell Russian Twist,471,Strength
+78,MetaBurn Dumbbell Toe-Touch,380,Strength
+79,MetaBurn Plank To Alternating Row,128,Strength
+80,Standing dumbbell knee crunch-,241,Strength
+81,MetaBurn Plank With Dumbbell Rotation,331,Strength
+82,FYR2 Dumbbell Crab Reach,65,Strength
+83,FYR2 Dumbbell Man-Maker,469,Strength
+84,FYR2 Dumbbell Sit-Up Reach,174,Strength
+85,FYR2 Loaded Beast Sprawl,65,Strength
+86,FYR2 Loaded to Unloaded Beast,114,Strength
+87,Lying Leg Pullover,215,Strength
+88,Landmine twist,460,Strength
+89,Suspended ab fall-out,316,Strength
+90,Decline reverse crunch,309,Strength
+91,Plate Twist,315,Strength
+92,Weighted Crunches,138,Strength
+93,Ab Roller,137,Strength
+94,Otis-Up,270,Strength
+95,Captain's chair knee raise,446,Strength
+96,Sledgehammer swing,314,Plyometrics
+97,Decline bar press sit-up,456,Strength
+98,Pallof press,134,Strength
+99,Weighted Sit-Ups - With Bands,396,Strength
+100,Suitcase crunch,495,Strength
+101,FYR Rope Jumping,423,Strength
+102,Barbell press sit-up,66,Strength
+103,Single-arm bent-over rear delt fly,470,Strength
+104,Captain's chair leg raise,469,Strength
+105,Shoulder-Elevated One-Leg Hip Thrusts,456,Strength
+106,Ab Twist - Gethin Variation,158,Strength
+107,Weighted Crunch - Gethin Variation,328,Strength
+108,Ab Wheel Roll-Out - Gethin Variation,164,Strength
+109,Bench crunch,213,Strength
+110,Decline plate sit-up twist,489,Strength
+111,Reverse ab roll-out,282,Strength
+112,30 Seated Twist With PVC Pipe,414,Strength
+113,Suspended crunch-,324,Strength
+114,Suspended oblique crunch,323,Strength
+115,Weighted sit-up,410,Strength
+116,30 Decline Press Sit-Up,176,Strength
+117,Holman Towel Reverse Plank Alternating Heel Pull-in,283,Strength
+118,Holman Boat with Weighted Cross Punch,135,Strength
+119,Holman Weighted Hook Punch,158,Strength
+120,Holman Weighted Traveling Punch,421,Strength
+121,Holman Weighted Uppercut Punch,247,Strength
+122,Holman Slow Weighted Double Pike,79,Strength
+123,Holman Plate Straight Plank Reach,480,Strength
+124,Holman Plate Elbow Plank Jack to Straight Plank Jack,418,Strength
+125,Holman Plate Hill Climber,145,Strength
+126,Holman Plate Reverse Plank Hill Climber,445,Strength
+127,Holman Plate Straight Plank Pike to Jack,405,Strength
+128,Holman Plate In-and-Out Push-Up,53,Strength
+129,Holman Plate Burpee,434,Strength
+130,Holman Plate Elbow Plank Reach,377,Strength
+131,Holman Elbow Plank to Renegade Row,441,Strength
+132,Holman Straight Plank Weighted Hand Hill Climber,310,Strength
+133,Holman Weighted Left Side Diagonal Pike,479,Strength
+134,Holman Weighted Right Side Diagonal Pike,412,Strength
+135,Holman Weighted W-Boat to Overhead Press,84,Strength
+136,Holman Weighted Kneeling Lift,373,Strength
+137,Holman Hips-Up Weighted Pull-Over,163,Strength
+138,Holman Weighted Cross Punch,356,Strength
+139,Holman Straight-Leg Boat Hover Chest Press,223,Strength
+140,Holman Weighted Pike,309,Strength
+141,Holman Feet-Elevated Wax-On Wax-Off,424,Strength
+142,Holman Elbow Plank to Towel Pike,220,Strength
+143,Holman Seated Killer Abs Overhead Press,88,Strength
+144,Holman Straight Plank Alternating Weighted Open,213,Strength
+145,Holman Weighted Killer Abs with Overhead Press,214,Strength
+146,Holman Weighted Split-Leg Pike,358,Strength
+147,Holman Towel Reverse Plank Heel Pull-in,382,Strength
+148,Stick Twist,416,Strength
+149,Roc Everest,256,Cardio
+150,Standing cable low-to-high twist,454,Strength
+151,Single-arm high-cable side bend,402,Strength
+152,Kneeling cable oblique crunch,95,Strength
+153,Kneeling cable crunch,434,Strength
+154,Rope Crunch,435,Strength
+155,Standing cable crunch,66,Strength
+156,Bosu Ball Cable Crunch With Side Bends,447,Strength
+157,Standing Cable Wood Chop,141,Strength
+158,Cable reverse crunch,254,Strength
+159,Cable Russian Twists,269,Strength
+160,Pallof press with rotation,388,Strength
+161,Cable Seated Crunch,224,Strength
+162,Cable Judo Flip,287,Strength
+163,Exercise Ball Cable Crunch - Gethin Variation,491,Strength
+164,Standing cable high-to-low twist,374,Strength
+165,Bent-Over Reverse Cable Fly,407,Strength
+166,Standing Cable Crunch - Gethin Variation,185,Strength
+167,AM Cable Crunch,96,Strength
+168,Tyler Holt Weighted Knee-To-Chest Crunch,450,Strength
+169,Standing cable twist,172,Strength
+170,30 Cable Rope Crunch,79,Strength
+171,30 Cable Rope Oblique Crunch,182,Strength
+172,Cable lying twist on ball,198,Strength
+173,30 Cable Pallof Press,58,Strength
+174,30 Cable Reverse Crunch On Ball,489,Strength
+175,30 Cable Reverse Crunch,112,Strength
+176,Tyler Holt Cable Torso Twist,54,Strength
+177,Single-Arm Cable Outward-Facing Biceps Curl,273,Strength
+178,Biceps Rope Curl,434,Strength
+179,Kneeling Cable Crunches,230,Strength
+180,Ab Crunch Machine,227,Strength
+181,Smith machine straight-legged hip raise,259,Strength
+182,Machine crunch,344,Strength
+183,AM Ab Machine,214,Strength
+184,Smith machine V-up,486,Strength
+185,Elbow plank,223,Strength
+186,Bottoms Up,255,Strength
+187,Spider crawl,231,Strength
+188,Cocoons,159,Strength
+189,Cross-Body Crunch,313,Strength
+190,Elbow-to-knee crunch,223,Strength
+191,Decline Crunch,285,Strength
+192,Hanging toes-to-bar,141,Strength
+193,Hanging Oblique Knee Raise,263,Strength
+194,Gorilla Chin/Crunch,69,Strength
+195,Hanging leg raise,478,Strength
+196,Mountain climber,486,Plyometrics
+197,Ab bicycle,496,Strength
+198,3/4 sit-up,147,Strength
+199,Reverse crunch,325,Strength
+200,Crunches,227,Strength
+201,Dead bug reach,103,Strength
+202,Crunch - Hands Overhead,321,Strength
+203,V-up,101,Strength
+204,Stomach Vacuum,150,Stretching
+205,Russian twist,160,Strength
+206,Flat Bench Lying Leg Raise,325,Strength
+207,Knees tucked crunch,251,Strength
+208,Butt-Ups,92,Strength
+209,Feet-elevated oblique crunch,443,Strength
+210,Bent-knee reverse crunch,395,Strength
+211,Alternating heel-touch,277,Strength
+212,Suspended Reverse Crunch,299,Strength
+213,Lying bench reverse crunch,494,Strength
+214,Sit-up,328,Strength
+215,Side Bridge,376,Strength
+216,Lying oblique crunch,204,Strength
+217,Janda Sit-Up,358,Strength
+218,Leg Pull-In,95,Strength
+219,Side Jackknife,229,Strength
+220,Scissor Kick,167,Stretching
+221,Toe Touchers,441,Stretching
+222,Lower Back Curl,399,Stretching
+223,Exercise ball torso rotation,379,Stretching
+224,Seated Overhead Stretch,99,Stretching
+225,Overhead Stretch,274,Stretching
+226,Seated Scissor Kick,383,Strength
+227,Partner resistance standing twist,78,Strength
+228,Cross Crunch,59,Strength
+229,Full Moon,484,Strength
+230,Hanging knee raise with manual resistance,410,Strength
+231,Straight-Legged Hip Raise,106,Strength
+232,Wall mountain climber,75,Plyometrics
+233,Skin The Cat To Push-Up,405,Strength
+234,Partner lying leg raise with lateral throw down,245,Strength
+235,Hanging leg raise with throw down,437,Strength
+236,Partner sit-up with high-five,469,Strength
+237,Exercise ball knee roll-in,297,Strength
+238,Partner lying leg raise with throw down,333,Strength
+239,Crab toe-touch,379,Strength
+240,Side kick-through,357,Strength
+241,Partner target sit-up,383,Strength
+242,Suspended Crunch,456,Strength
+243,Jump Lunge,418,Strength
+244,Side plank hip dip,392,Strength
+245,Elbow plank jack,432,Strength
+246,Exercise ball V-up,103,Strength
+247,Standing torso twist stretch,66,Strength
+248,Slalom jumps,445,Plyometrics
+249,Bear crawl,299,Strength
+250,Crab single-arm reach,428,Stretching
+251,Side lunge cross-body heel-touch,66,Strength
+252,Alligator Crawl,157,Strength
+253,Lying cross-over lower back stretch,155,Strength
+254,Half bird dog,366,Stretching
+255,Shoulder tap,291,Strength
+256,Double crunch,122,Strength
+257,Flutter kick,343,Strength
+258,Sprawl,140,Strength
+259,Spider plank jack,217,Strength
+260,Pillar-To-Plank,108,Strength
+261,Alternating High Knee Raise,302,Strength
+262,Sumo Squat Pulse,417,Strength
+263,Line-Drill Foot Work,351,Strength
+264,Plank Fire Hydrants,448,Strength
+265,Banded jumping jack,295,Strength
+266,Shin hug,335,Strength
+267,FYR Bear Crawl Fire Feet,151,Strength
+268,Bear crawl up-down,215,Strength
+269,FYR Crab Kick,53,Strength
+270,Bear crawl hold,373,Strength
+271,Traveling bear crawl,386,Strength
+272,Single-leg V-up,299,Strength
+273,FYR Bear Crawl Shoulder Tap,332,Strength
+274,Alternating single-leg sprawl,482,Strength
+275,Wide mountain climber,239,Strength
+276,Plank leg raise,165,Strength
+277,Glute bridge step-out,80,Strength
+278,Knee up-down,296,Strength
+279,FYR Sprawl,313,Strength
+280,Reach crunch,328,Strength
+281,FYR Push-Up Plank Hold,425,Strength
+282,FYR Hollow-Body Rock,265,Strength
+283,V-up plus knee-to-chest combo,455,Strength
+284,Side plank lateral raise,63,Strength
+285,Superhero burpee,336,Strength
+286,Hollow-body abduction,137,Strength
+287,FYR Hollow Hold,119,Strength
+288,Tip-toe crunch,147,Strength
+289,Knee-to-nose pulse,274,Strength
+290,Plank walk-out,485,Strength
+291,FYR V-Up,344,Strength
+292,Long sit-up,72,Strength
+293,FYR Breakdancer,338,Strength
+294,Seated leg lift,395,Strength
+295,Gorilla burpee,69,Strength
+296,Knee-in to V-out,165,Strength
+297,Bear crawl push-up,267,Strength
+298,FYR Front Step,346,Strength
+299,Plank reach,119,Strength
+300,Eiffel Tower leg raise,277,Strength
+301,Straight-arm plank,249,Strength
+302,Plank up-down,104,Strength
+303,Frog kick,79,Strength
+304,FYR Knees to Chest,462,Strength
+305,Front kick-through,177,Strength
+306,FYR Sit-Up,139,Strength
+307,FYR Leg Lift,365,Strength
+308,TBS Toes-to-bar,151,Strength
+309,FYR Mountain Climber,284,Strength
+310,Roman Chair Side Ups,380,Strength
+311,Push-Up Roll Out - Gethin Variation,131,Strength
+312,Cross-Body Crunch - Gethin Variation,292,Strength
+313,Decline leg lift with twist,286,Strength
+314,Hanging Leg Raise - Variation Gethin,290,Strength
+315,Butterfly crunch,83,Strength
+316,Cross-body mountain climber,216,Strength
+317,Flat Bench Lying Leg Raise - Gethin Variation,431,Strength
+318,Lying leg lift,111,Strength
+319,Hanging alternating single-leg raise,59,Strength
+320,Plank Walk,320,Strength
+321,Sit-Up - Gethin Variation,414,Strength
+322,Plank Push-Up,113,Strength
+323,Decline crunch-,422,Strength
+324,Alternating lying leg raise,154,Strength
+325,Decline leg lift,447,Strength
+326,Crunch - Gethin Variation,172,Strength
+327,Plank - Gethin Variation,114,Strength
+328,Barbell floor wiper,402,Strength
+329,Prison Push-Up,372,Strength
+330,McGill Modified Curl-Up,201,Strength
+331,Cross-body toe-touch,158,Strength
+332,Toy soldier,203,Strength
+333,Natural Glute Ham Raise with Stability Ball,265,Strength
+334,Lateral ape,247,Strength
+335,Hollow-body knee tuck,465,Strength
+336,HM Air Jumping Rope,338,Strength
+337,HM Alternating Lunge Reach,457,Strength
+338,HM Alternating Side Plank Reach,166,Strength
+339,HM Superman Plank,163,Strength
+340,HM Table Pose,383,Strength
+341,HM Toe Touch,72,Strength
+342,HM Right Side Bird-Dog,411,Stretching
+343,HM Right Side Crunch,171,Strength
+344,HM Bicycle,373,Strength
+345,HM Bird-Dog Plank,138,Strength
+346,HM Boat Pose,91,Strength
+347,HM Bottoms Up,347,Strength
+348,HM Bridge,51,Strength
+349,HM Running Man Crunch,266,Cardio
+350,HM Seated Twist,327,Strength
+351,HM Side-Bend Pose,148,Strength
+352,HM Side-Plank Arm Wrap,101,Strength
+353,HM Side-Plank with Hip Touch,341,Strength
+354,HM Side-Plank with Kick,442,Strength
+355,HM Side V-Up,219,Strength
+356,HM Crab Crunch,279,Strength
+357,HM Cross-Over Crunch,408,Strength
+358,HM Crunch Pulse,302,Strength
+359,HM Dead Bug,276,Strength
+360,HM Single-Leg Inchworm,400,Strength
+361,HM Floor Jack,447,Strength
+362,HM Floor Wiper,413,Strength
+363,HM Floor Kick,371,Strength
+364,HM Sit-Up,402,Strength
+365,HM Slow Mountain Climber,424,Strength
+366,HM Slow Sit-Up,53,Strength
+367,HM Half-Up,133,Strength
+368,HM Hollow-Body Pulse,240,Strength
+369,HM Hollow Hold,170,Strength
+370,HM Inchworm,155,Strength
+371,HM Right Side Hollow Hold with Pulse,440,Strength
+372,HM Reverse Crunch with Frisbee,169,Strength
+373,HM Left Side Bird-Dog,457,Strength
+374,HM Left Side Crunch,228,Strength
+375,HM Left Side Hollow Hold With Pulse,493,Strength
+376,HM Reverse Crunch,84,Strength
+377,HM Low Lunge With External Twist And Arm Reach,451,Strength
+378,HM Mountain Climber,75,Strength
+379,HM Prison Sit-Up,132,Strength
+380,HM Plank Alternating Hip-Dip,394,Strength
+381,HM Tuck-Up Get-Up,52,Strength
+382,HM Flutter Kick,359,Strength
+383,HM Plank,163,Strength
+384,McGill Pull-Up,228,Strength
+385,AM Leg Lift,77,Strength
+386,AM Decline Abs,385,Strength
+387,Hanging crunch,389,Strength
+388,Tyler Holt Hanging Toes-To-Bar,185,Strength
+389,Side plank,172,Strength
+390,Bird dog-,290,Strength
+391,Single-leg curl up,213,Strength
+392,Single-kettlebell windmill,316,Strength
+393,UNS Foam Roll Thigh,64,Strength
+394,UNS Inverted row,337,Strength
+395,UNS T-spine rotation with reach,345,Strength
+396,UNS Quadruped thoracic rotation,496,Strength
+397,UNS Pec stretch,216,Strength
+398,UNS Lat stretch,249,Strength
+399,UNS Foam Roll,87,Strength
+400,UNS Foam Roll Lats,468,Strength
+401,UNS Rocking Adductor Stretch,137,Strength
+402,UNS Bird Dog,106,Strength
+403,UNS Jumping Jack,144,Strength
+404,Ab wheel roll-out,234,Strength
+405,Bench mountain climber,475,Strength
+406,Feet-elevated bench side plank,97,Strength
+407,Cross-body sit-up,256,Strength
+408,Decline kayak,244,Strength
+409,30 Decline Reverse Crunch,55,Strength
+410,Decline sit-up twist,104,Strength
+411,30 Flat Bench Leg Raise,326,Strength
+412,30 Flutter Kick,408,Strength
+413,Chin-up crunch,102,Strength
+414,30 Gorilla Chin Oblique Crunch,273,Strength
+415,Half Turkish get-up,465,Strength
+416,30 Hanging Oblique Crunch,143,Strength
+417,30 Hollow-Body Hold,303,Strength
+418,Parallel bars knee raise,346,Strength
+419,30 Landmine Twist,466,Strength
+420,Parallel bars leg raise,491,Strength
+421,Otis-up-,388,Strength
+422,30 Shoulder Tap,197,Strength
+423,30 Spider Crawl,135,Strength
+424,Spider crunch,338,Strength
+425,Toe-touch,148,Strength
+426,30 Hanging Toes-To-Bar,158,Strength
+427,30 V-Up,206,Strength
+428,Cocoon crunch,331,Strength
+429,Bench oblique crunch,427,Strength
+430,Full moon-,147,Strength
+431,Push-up to side plank,434,Strength
+432,Tyler Holt V-Up,240,Strength
+433,Tyler Holt Plank,402,Strength
+434,Tyler Holt Hip-Dip,112,Strength
+435,Suicides,200,Strength
+436,Holman Towel Straight Plank Jack,482,Strength
+437,Holman Towel Hill Climber,414,Strength
+438,Holman Towel Elbow Plank Jack,434,Strength
+439,Holman Towel Elbow Plank Pike,387,Strength
+440,Holman Towel Straight Plank Hand Reach,463,Strength
+441,Holman Towel Wax-On Wax-Off,268,Strength
+442,Holman Towel Wide Hill Climber,453,Strength
+443,Holman Towel Dirty Dog,310,Strength
+444,Holman Straight Plank Shoulder Tap,287,Strength
+445,Holman Killer Abs,223,Strength
+446,Holman Straight Plank Split Jack,125,Strength
+447,Holman Elbow Plank Swim,426,Strength
+448,Holman Elbow Plank Saw,149,Strength
+449,Holman Feet-Elevated Straight Plank Toe-Tap Series,465,Strength
+450,Holman Elbow Plank Pike Pull,369,Strength
+451,Holman Hand-Elevated Walk-Over Push-Up,398,Strength
+452,Holman Hands-Elevated Hill Climber,182,Strength
+453,Holman Seated Pike,347,Strength
+454,Holman Feet-Elevated Up-Down Plank,462,Strength
+455,Holman Feet-Elevated Hand Tap,86,Strength
+456,Holman Reverse Straight Plank with Alternating Heel Pull-In,473,Strength
+457,Holman Elbow Plank,335,Strength
+458,Holman Straight Plank Squat Thrust,301,Strength
+459,Holman Alternating Single-Leg Pike,194,Strength
+460,Holman Knee Pull-In Crunch,411,Strength
+461,Holman Straight Plank with Hand Tap,443,Strength
+462,Holman Straight Plank with Dirty Dog,351,Strength
+463,Holman Elbow Plank Roll,188,Strength
+464,Holman Froggy Push-Up,468,Strength
+465,Holman Straight Plank Hand Tap to Shoulder Tap,166,Strength
+466,Holman In-Out Straight Plank,428,Strength
+467,Holman Bicycle,305,Strength
+468,Holman Alternating Diagonal Knee Pull-in,235,Strength
+469,Holman Elbow Plank with Step-Out,223,Strength
+470,Holman Alternating Slow L-Raise,108,Strength
+471,Holman Feet-Elevated Plank with Shoulder Tap,214,Strength
+472,Holman Feet-Elevated Inchworm Pike to Straight Plank Push-Up,383,Strength
+473,Holman Feet-Elevated Up-Down Elbow Plank,148,Strength
+474,Holman Feet-Elevated Plank Pike Pull,348,Strength
+475,Holman Feet-Elevated Alternating Single-Leg Hip Raise,146,Strength
+476,Holman Feet-Elevated Plank Pike Pull to Push-Up,261,Strength
+477,Holman Standing Heel Click,286,Strength
+478,Holman Straight Plank Right-Left Jack to Split Jack,353,Strength
+479,Holman Elbow Plank Jack to Ninja Knees,67,Strength
+480,Holman Right Side Elbow Plank with Left Leg Swing,230,Strength
+481,Holman Left Side Elbow Plank with Right Leg Swing,438,Strength
+482,Holman Straight Plank with Alternating Diagonal Sit-Back,355,Strength
+483,Holman Boat Press with Leg Extension,342,Strength
+484,Holman Shoulder Tap to Dirty Dog,199,Strength
+485,Holman Standing Russian Twist,479,Strength
+486,Holman Hovering Plank with Shoulder Tap,227,Strength
+487,Holman Elbow Plank to Stacked Plank Hip Drop,150,Strength
+488,Holman Elbow Plank to Walk-Up Pike,56,Strength
+489,Holman Hill Climber,204,Strength
+490,Holman Straight Plank Pike to Renegade Row,93,Strength
+491,Holman Alternating Hip Drop to Push-Up,181,Strength
+492,Holman Crab Kick,246,Strength
+493,Holman Wounded Bear Crawl,428,Strength
+494,Holman Alternating Crab Reach,158,Strength
+495,Holman Hovering Panther Core Stabilizer,157,Strength
+496,Holman Burpee to Forward Lunge,399,Strength
+497,Holman Seated Knee Pull-In Series,464,Strength
+498,Holman Elbow Plank Pike,493,Strength
+499,Holman Elbow Plank Jack to Straight Plank Split Jack,397,Strength
+500,Holman Boat Pull-Over,320,Strength
+501,Holman Squat Pulse to Plyometric Jump,175,Strength
+502,Holman Hands Down Heel Click,476,Strength
+503,Holman Straight Plank to Kick-Up,179,Strength
+504,Holman Hands-Elevated Split Jack,200,Strength
+505,Holman Feet-Elevated Plank Reach,86,Strength
+506,Holman Hand-Elevated Side Plank Semicircle,126,Strength
+507,Holman Hands-Elevated Straight Plank Pike,475,Strength
+508,Holman Alternating Rolling Elbow Plank,358,Strength
+509,Holman Elbow Plank Jack,78,Strength
+510,Holman Squat Thrust to Alternating Knee-In,93,Strength
+511,Holman Supine Double Pike,280,Strength
+512,Holman Elbow Plank Alternating Pike,65,Strength
+513,Holman Seated Killer Abs,478,Strength
+514,Holman Side Plank Hip Drop,203,Strength
+515,Holman Wide Hill Climber,286,Strength
+516,Holman Straight-Legged Bicycle,362,Strength
+517,Holman Stair Toe Tap,443,Strength
+518,Holman Elbow Plank Ninja,110,Strength
+519,Holman Traveling Stair Climb Push-Up,185,Strength
+520,Holman Hands-Elevated Burpee,371,Strength
+521,Holman Straight Plank Donkey Kick,469,Strength
+522,Holman Feet-Elevated Straight Plank Pike Pull,441,Strength
+523,Holman Towel Burpee,412,Strength
+524,Holman Elbow Plank to Alternating Side Plank Crunch,346,Strength
+525,Holman Straight-Legged Hip Raise,394,Strength
+526,Holman Feet-Elevated Hill Climber,331,Strength
+527,Holman Ninja Knee Hill Climber,295,Strength
+528,Holman Feet-Elevated Shoulder Tap,336,Strength
+529,Holman Feet-Elevated Hip Raise,366,Strength
+530,Holman Left Hand Right Foot Crab Reach,336,Strength
+531,Holman Alternating Crab Flip to Froggy Push-Up to Kicks,421,Strength
+532,Holman Right Hand Left Foot Sleeping Crab,369,Strength
+533,Holman Left Hand Right Foot Sleeping Crab,494,Strength
+534,Holman Straight Plank with Alternating Leg Kick-Under,270,Strength
+535,Holman Right Hip Drop Push-Up,355,Strength
+536,Holman Right Side Diagonal Burpee,237,Strength
+537,Holman Left Hip Drop Push-Up,203,Strength
+538,Holman Right Leg 7-Up Crunch,109,Strength
+539,Holman Left Leg 7-Up Crunch,486,Strength
+540,Holman Straight Plank Jack,173,Strength
+541,Holman Feet-Elevated Couch Hill Climber,330,Strength
+542,Holman Feet-Elevated Right Side Plank,421,Strength
+543,Holman Alternating Up-Down Plank to Push-Up,450,Strength
+544,Holman Straight Plank Pike,175,Strength
+545,Holman Ninja Knee Straight Plank,421,Strength
+546,Holman Reverse Crunch to Hip Raise,203,Strength
+547,Holman Straight Plank Quick Reach,457,Strength
+548,Holman Alternating Diagonal Straight Plank,134,Strength
+549,Holman Feet-Elevated Left Side Plank,439,Strength
+550,Holman Right Hand Left Foot Crab Reach,460,Strength
+551,Holman Low-Impact Crab Kick,485,Strength
+552,Holman Alternating Crab Flip to Froggy Push-Up,317,Strength
+553,Holman High-Impact Crab Kick,268,Strength
+554,Holman Single-Leg Right Pike,90,Strength
+555,Holman Single-Leg Left Pike,93,Strength
+556,Holman Shoulder Tap to Hand Tap,348,Strength
+557,Holman Towel Reverse Plank Jack,304,Strength
+558,Holman Side-to-Side Twist,420,Strength
+559,Holman Crab Kick with Hop,398,Strength
+560,Holman Crab Reach to Crab Kick,370,Strength
+561,Holman Wide Squat Side-to-Side Obliques,109,Strength
+562,Holman Side Plank Crunch,418,Strength
+563,Total Fitness Ab Tuck,129,Strength
+564,Active hang from bar,81,Strength
+565,Cat-cow,474,Strength
+566,Crab walk,425,Strength
+567,Lunge with overhead reach,445,Strength
+568,Hang from bar,232,Strength
+569,Total Fitness Hollow Hold,227,Strength
+570,Total Fitness Side Plank,349,Strength
+571,Side plank pulse,295,Strength
+572,Total Fitness Spider Crawl (Unweighted),389,Strength
+573,Total Fitness V-Up,439,Strength
+574,MetaBurn Alternating Knee-to-Elbow Mountain Climber,83,Strength
+575,Alternating sit-through with crunch-,197,Strength
+576,MetaBurn Alternating Toe-Touch,367,Strength
+577,MetaBurn Janda Sit-Up,205,Strength
+578,MetaBurn Oblique Roll Crunch,372,Strength
+579,MetaBurn Plank Jack,200,Strength
+580,MetaBurn Plank To Alternating Side Plank,396,Strength
+581,MetaBurn Plank Up-Down,305,Strength
+582,MetaBurn Plank Wiper,95,Strength
+583,MetaBurn Plank With Alternating Toe-Touch,412,Strength
+584,MetaBurn Plyo Push-Up,78,Strength
+585,MetaBurn Psycho Crunch,53,Strength
+586,MetaBurn Scapular Retraction Plank,189,Strength
+587,MetaBurn Scapular Retraction Plank Hold,307,Strength
+588,MetaBurn Scorpion,390,Strength
+589,MetaBurn Side Crawler,306,Strength
+590,MetaBurn Side Plank Oblique Crunch,97,Strength
+591,MetaBurn Sit-Through,370,Strength
+592,MetaBurn Sit-Up To V-Up,374,Strength
+593,MetaBurn Sit-Up With Rotation,363,Strength
+594,MetaBurn Split-Leg Crunch,317,Strength
+595,MetaBurn Tabletop Hip Thrust,375,Strength
+596,MetaBurn Tabletop With Russian Kick,297,Strength
+597,MetaBurn Toe Driver Abs,214,Strength
+598,MetaBurn-V-Up,263,Strength
+599,X-body V-up,218,Strength
+600,MetaBurn Swivel Crunch,109,Strength
+601,Robertson Core-Engaged Dead Bug,268,Strength
+602,FYR2 Double-Under,409,Strength
+603,FYR2 Fire Feet with Burpee Tuck Jump Drill,490,Strength
+604,FYR2 Flutter Kick,463,Strength
+605,FYR2 Half-Moon,219,Strength
+606,FYR2 Leopard Crawl,451,Strength
+607,FYR2 Plank Alternating Front Step,282,Strength
+608,FYR2 Shoulder Tap,481,Strength
+609,Hand shift plank,360,Strength
+610,Cross-body plank march,496,Strength
+611,Bent-knee Copenhagen hip adduction,217,Strength
+612,Copenhagen plank,104,Strength
+613,ACFT Hanging leg tuck,97,Strength
+614,Alternating hanging knee raise,363,Strength
+615,Plank To Sphinx,188,Strength
+616,Twisting Mountain Climbers,406,Strength
+617,Jack Knives,301,Strength
+618,Hanging Leg Raises,132,Strength
+619,Dumbbell suitcase crunch,264,Strength
+620,Medicine ball rotational throw,286,Strength
+621,Hollow-hold ball toss,313,Strength
+622,Partner front Russian twist and pass,277,Strength
+623,Sit-up with single-arm overhand throw,82,Plyometrics
+624,Medicine ball partner twist,297,Plyometrics
+625,Partner side Russian twist and pass,245,Strength
+626,Medicine ball half moon,361,Strength
+627,Exercise ball roll-out,195,Strength
+628,Medicine ball pass,153,Strength
+629,Partner medicine ball sit-up,86,Strength
+630,Medicine ball Russian twist,184,Strength
+631,30 Medicine Ball Slam,332,Strength
+632,Medicine ball twist,489,Strength
+633,FYR2 Medicine Ball Complex,453,Strength
+634,FYR2 Medicine Ball Fire-Feet Drill,319,Strength
+635,FYR2 Medicine Ball Knees-to-Chest,351,Strength
+636,FYR2 Medicine Ball Mountain Climber,121,Strength
+637,Decline oblique crunch,455,Strength
+638,Decline sit-up,161,Strength
+639,Hanging Windshield Wiper,378,Strength
+640,Exercise Ball Pull-In,165,Strength
+641,Exercise ball crunch,447,Strength
+642,Feet-elevated crunch,279,Strength
+643,Weighted Ball Side Bend,449,Strength
+644,Swiss Ball Ab Roll-Out,287,Strength
+645,Exercise Ball Cable Crunch - Gethin Variation,242,Strength
+646,Exercise ball squat and twist,149,Strength
+647,Swiss Ball V-Up With Foot Pass,197,Strength
+648,Exercise ball pike,211,Strength
+649,Exercise ball bird dog,207,Strength
+650,Exercise ball superman,350,Strength
+651,BOSU cross-body crunch,52,Strength
+652,Exercise Ball Knee Tuck - Gethin Varation,414,Strength
+653,Alternating Exercise Ball Knee Tucks - Gethin Variation,255,Strength
+654,AM Ball Crunch,221,Strength
+655,30 Bosu Cable Reverse Crunch,200,Strength
+656,BOSU knee tuck,432,Strength
+657,30 Side Plank On Ball,330,Strength
+658,Hanging exercise ball leg raise,346,Strength
+659,Taylor Exercise Ball Stir-The-Pot,305,Strength
+660,FYR2 Air Ball,264,Strength
+661,Feet-elevated plank on ball,113,Strength
+662,Band Hip Adductions,147,Strength
+663,Lateral Band Walk,180,Strength
+664,FYR2 Standing Banded Leg Abduction,61,Strength
+665,Iliotibial band SMR,425,Stretching
+666,Adductor SMR,466,Stretching
+667,Lying Bent Leg Groin,345,Stretching
+668,Lateral box jump,232,Plyometrics
+669,Thigh adductor,127,Strength
+670,Thigh abductor,492,Strength
+671,Standing Hip Circles,439,Stretching
+672,Groiners,395,Stretching
+673,Fire Hydrant,305,Strength
+674,Windmills,82,Stretching
+675,Side Leg Raises,352,Stretching
+676,Lateral hop,168,Plyometrics
+677,Monster Walk,406,Strength
+678,Side Lying Groin Stretch,125,Stretching
+679,IT Band and Glute Stretch,67,Stretching
+680,Single-leg lying cross-over stretch,258,Stretching
+681,Carioca quick step,143,Plyometrics
+682,Standing hip circle,222,Stretching
+683,Lateral cone hop,488,Plyometrics
+684,Side-To-Side Adductor Stretch,221,Strength
+685,Dynamic pigeon stretch,159,Strength
+686,Cross-over jack,214,Strength
+687,Traveling thigh killa,260,Strength
+688,FYR Thigh Killa,95,Strength
+689,HM Straddle Stretch,248,Stretching
+690,HM Right Leg Swing,168,Stretching
+691,HM Right Side-Kick,238,Stretching
+692,HM Frog Stretch,388,Strength
+693,HM Kick-Out,178,Strength
+694,HM Left Leg Swing,277,Strength
+695,UNS Foam Roll Adductor,264,Strength
+696,MetaBurn Groiner,154,Strength
+697,Side-lying leg adduction scissor,195,Strength
+698,Groin and Back Stretch,488,Stretching
+699,Adductor/Groin,400,Stretching
+700,Incline dumbbell biceps curl,118,Strength
+701,Banded biceps curl in squat position,398,Strength
+702,Banded Hammer Press - Gethin Variation,277,Strength
+703,Band standing concentration curl,213,Strength
+704,Brachialis SMR,236,Stretching
+705,Wide-grip barbell curl,389,Strength
+706,EZ-bar spider curl,267,Strength
+707,Barbell Curl,473,Strength
+708,Close-grip EZ-bar curl,348,Strength
+709,Preacher Curl,286,Strength
+710,Barbell Curls Lying Against An Incline,76,Strength
+711,Seated Close-Grip Concentration Barbell Curl,337,Strength
+712,Close-grip barbell curl,191,Strength
+713,Drag curl,372,Strength
+714,Reverse-grip barbell curl,206,Strength
+715,Lying High Bench Barbell Curl,220,Strength
+716,Seated wide-grip curl to close-grip curl,293,Strength
+717,Seated Straigh-Bar Curl Superset,183,Strength
+718,Dave Draper Forehead Curl,378,Strength
+719,Reverse-grip EZ-bar curl,253,Strength
+720,EZ-Bar Spider Curl - Gethin Variation,115,Strength
+721,Barbell curl-,349,Strength
+722,Paul Carter Barbell Curl,103,Strength
+723,Standing band biceps curl,423,Strength
+724,Close-Grip EZ-Bar Curl - Gethin Variation,333,Strength
+725,Seated Barbell Curl,371,Strength
+726,AM Standing Barbell Curl,376,Strength
+727,EZ-bar preacher curl,204,Strength
+728,30 Arms Standing Barbell Curl,161,Strength
+729,30 Arms Incline Biceps Curl,360,Strength
+730,"Bicep Curls ""21s""",60,Strength
+731,Incline Hammer Curls,196,Strength
+732,Hammer Curls,93,Strength
+733,Biceps curl to shoulder press,285,Strength
+734,Concentration curl,96,Strength
+735,Flexor Incline Dumbbell Curls,405,Strength
+736,Dumbbell Bicep Curl,132,Strength
+737,Cross-body hammer curl,173,Strength
+738,Dumbbell Alternate Bicep Curl,438,Strength
+739,Single-arm dumbbell preacher curl,132,Strength
+740,Alternate Incline Dumbbell Curl,497,Strength
+741,Standing concentration curl,279,Strength
+742,Alternating incline dumbbell biceps curl,339,Strength
+743,Alternate Hammer Curl,435,Strength
+744,Seated dumbbell biceps curl,244,Strength
+745,Preacher Hammer Dumbbell Curl,256,Strength
+746,Dumbbell preacher curl,148,Strength
+747,Lying Supine Dumbbell Curl,150,Strength
+748,Standing Dumbbell Reverse Curl,74,Strength
+749,Palms-out incline biceps curl,466,Strength
+750,Straight-arm plank with biceps curl,116,Strength
+751,Face-down incline dumbbell biceps curl,225,Strength
+752,Seated Dumbbell Inner Biceps Curl,143,Strength
+753,Standing Inner-Biceps Curl,164,Strength
+754,Seated hammer curl,171,Strength
+755,Paul Carter Incline Dumbbell Biceps Curl,227,Strength
+756,Paul Carter Concentration Curl,219,Strength
+757,FYR Dumbbell Curl,478,Strength
+758,Dumbbell biceps curl to upright row,138,Strength
+759,FYR Dumbbell Hammer Curl,306,Strength
+760,Dumbbell overhead hold with single-arm curl,317,Strength
+761,FYR Kneeling Biceps,349,Strength
+762,Lunge hold dumbbell curl,349,Strength
+763,FYR Dumbbell Biceps Curl,96,Strength
+764,Alternating dumbbell snatch,467,Strength
+765,TBS Incline Dumbbell Curl,371,Strength
+766,TBS Hammer Curl,114,Strength
+767,Reverse-grip dumbbell curl,452,Strength
+768,Incline Dumbbell Curl - Gethin Variation,260,Strength
+769,Hammer curl,370,Strength
+770,Seated Dumbbell Curl - Gethin Variation,91,Strength
+771,Dumbbell Hammer Curl - Gethin Variation,427,Strength
+772,Single-arm seated dumbbell curl,195,Strength
+773,Lying Cable Curl - Gethin Variation,279,Strength
+774,Dumbbell biceps curl,83,Strength
+775,Seated Biceps Hammer Curl,406,Strength
+776,HM Alternating Reverse Lunge With Biceps Curl,288,Strength
+777,AM Hammer Curls,61,Strength
+778,AM Seated Hammer Curls,93,Strength
+779,Seated alternating biceps curl,330,Strength
+780,Alternating hammer curl,66,Strength
+781,Alternating biceps curl,287,Strength
+782,Holman Slow Biceps Curl,222,Strength
+783,Holman Biceps Curl to Chest Punch,137,Strength
+784,Holman Right Arm Heavy Biceps Curl,206,Strength
+785,Holman Left Arm Heavy Biceps Curl,143,Strength
+786,Holman Alternating Front Lunge Biceps Curl,211,Strength
+787,Holman Weighted Double-Time Biceps Curl,482,Strength
+788,Holman Heavy Right Arm Biceps Curl,138,Strength
+789,Holman Heavy Left Arm Biceps Curl,438,Strength
+790,MetaBurn Dumbbell Drag Curl,167,Strength
+791,MetaBurn Hammer Curl to Overhead Press,269,Strength
+792,MetaBurn Biceps Curl To Lateral Raise,469,Strength
+793,FYR2 Alternating Dumbbell Curl,315,Strength
+794,FYR2 Pulse Biceps Curl,60,Strength
+795,FYR2 Seesaw Dumbbell Biceps Curl,167,Strength
+796,FYR2 Single-Dumbbell Biceps Curl,434,Strength
+797,FYR2 Dumbbell Curl-Row Complex,324,Strength
+798,30 Arms Standing Dumbbell Hammer Curl 21s,466,Strength
+799,30 Arms Standing Biceps Curl,199,Strength
+800,30 Arms Standing Alternating Hammer Curl,97,Strength
+801,30 Arms Standing Alternating Biceps Curl,461,Strength
+802,30 Arms Single-Arm Hammer Preacher Curl,262,Strength
+803,30 Arms Single-Arm Dumbbell Preacher Curl,382,Strength
+804,30 Arms Seated Dumbbell Concentration Curl,55,Strength
+805,30 Arms Seated Biceps Curl,200,Strength
+806,30 Arms Seated Alternating Biceps Curl,263,Strength
+807,30 Arms Incline Hammer Curl,270,Strength
+808,30 Arms Incline Dumbbell Triceps Extension,361,Strength
+809,30 Arms Hammer Curl,337,Strength
+810,Reverse Plate Curls,286,Strength
+811,Standing Biceps Stretch,483,Stretching
+812,Suspended Curl,286,Strength
+813,Plate hammer curl,306,Strength
+814,Barbell spider curl,468,Strength
+815,Barbell forehead curl,300,Strength
+816,Overhead cable curl,89,Strength
+817,Standing One-Arm Cable Curl,230,Strength
+818,Reverse Cable Curl,399,Strength
+819,Standing Biceps Cable Curl,465,Strength
+820,Cable rope hammer curl,286,Strength
+821,Lying cable biceps curl,383,Strength
+822,Cable rope preacher hammer curl,341,Strength
+823,Lying Close-Grip Bar Curl On High Pulley,166,Strength
+824,Cable EZ-Bar Preacher Curl - Gethin Variation,273,Strength
+825,Squatting cable EZ-bar biceps curl,192,Strength
+826,Cable straight-bar biceps curl,420,Strength
+827,Standing reverse-grip cable curl,193,Strength
+828,Lying high-cable biceps curl,448,Strength
+829,High-Pulley Cable Curl - Gethin Variation,423,Strength
+830,Standing High Cable Curl - Gethin Variation,321,Strength
+831,High Cable Curls,408,Strength
+832,Seated cable biceps curl,327,Strength
+833,Lying Close-Grip Bar Curl On High Pulley - Gethin Variation,463,Strength
+834,Standing Cable Curl - Gethin Variation,67,Strength
+835,Double Arm Cable Biceps Curl,442,Strength
+836,AM Cable Biceps Curl,144,Strength
+837,Single-arm cable biceps curl,374,Strength
+838,UP Cable Curl With Straight Bar,141,Strength
+839,30 Arms Cable Rope Hammer Curl,105,Strength
+840,30 Arms Squatting Cable Straight-Bar Curl,303,Strength
+841,30 Arms High Cable Curl,272,Strength
+842,30 Arms Cable Straight-Bar Curl,271,Strength
+843,30 Arms Cable Concentration Curl,385,Strength
+844,30 Arms BFR High Cable Curl,146,Strength
+845,BFR cable rope hammer curl,150,Strength
+846,Machine Bicep Curl,302,Strength
+847,Machine Preacher Curls,467,Strength
+848,Single-arm machine preacher curl,480,Strength
+849,Machine preacher curl,92,Strength
+850,Smith machine drag curl,457,Strength
+851,30 Arms BFR Machine Preacher Curl,99,Strength
+852,Seated Biceps,445,Stretching
+853,TBS Chin-Up,322,Strength
+854,Pull-up - Gethin Variation,77,Strength
+855,UN Pull-Up Supinated,139,Strength
+856,UN Pull-Up Pronated,482,Strength
+857,UN Pull-Up Neutral,216,Strength
+858,EZ-Bar Curl,129,Strength
+859,Reverse Barbell Preacher Curls,87,Strength
+860,Close-Grip EZ-Bar Curl with Band,306,Strength
+861,Standing EZ-Bar Curl - Gethin Variation,449,Strength
+862,TBS EZ-Bar Curl,186,Strength
+863,Standing EZ-bar curl,177,Strength
+864,30 Arms Standing Overhand EZ-Bar Curl,76,Strength
+865,30 Arms EZ-Bar Spider Curl,186,Strength
+866,30 Arms EZ-Bar Preacher Curl,303,Strength
+867,30 Arms Standing EZ-Bar Curl,263,Strength
+868,Calf Raises - With Bands,427,Strength
+869,Peroneals Stretch,151,Stretching
+870,Posterior Tibialis Stretch,114,Stretching
+871,Calf SMR,191,Stretching
+872,Rocking Standing Calf Raise,282,Strength
+873,Standing barbell calf raise,497,Strength
+874,Barbell Seated Calf Raise,354,Strength
+875,Smith machine standing calf raise,306,Strength
+876,Calf Raise On A Dumbbell,152,Strength
+877,Standing Dumbbell Calf Raise,68,Strength
+878,Single-leg standing dumbbell calf raise,151,Strength
+879,Dumbbell walking calf raise,217,Strength
+880,Balance Board,68,Strength
+881,Weighted donkey calf raise,280,Strength
+882,Anterior Tibialis-SMR,112,Stretching
+883,Foot-SMR,78,Stretching
+884,Agility Ladder,199,Cardio
+885,Single-leg machine seated calf raise,243,Strength
+886,Smith Machine Calf Raise,209,Strength
+887,Standing Calf Raises,172,Strength
+888,Seated Calf Raise,469,Strength
+889,Calf Press On The Leg Press Machine,215,Strength
+890,Calf Press,317,Strength
+891,Smith Machine Reverse Calf Raises,315,Strength
+892,Seated Single-Leg Calf Press - Gethin Variation,80,Strength
+893,Seated Calf Raise - Gethin Variation,332,Strength
+894,Donkey Calf Raise - Gethin Variation,340,Strength
+895,Standing Calf Raise Facing Hack Squat Machine - Gethin Variation,352,Strength
+896,Calf Press On A Hack Squat Machine - Gethin Variation,163,Strength
+897,Smith Machine Standing Calf Raises - Gethin Variation,127,Strength
+898,Hack squat calf raise,359,Strength
+899,Seated Calf Press - Gethin Variation,188,Strength
+900,Leg press calf raise,200,Strength
+901,Machine seated calf raise,354,Strength
+902,30 Legs Seated Calf Raise,457,Strength
+903,30 Legs Standing Calf Raise,161,Strength
+904,Peroneals-SMR,105,Stretching
+905,Knee Circles,255,Stretching
+906,Standing Gastrocnemius Calf Stretch,303,Stretching
+907,Wall calf stretch,265,Stretching
+908,Seated Calf Stretch,465,Stretching
+909,Standing Calf Raise,208,Strength
+910,Standing calf raise-,242,Strength
+911,HM Left Calf-Spike Sumo Pulse,404,Strength
+912,Ankle Circles,298,Stretching
+913,Calf Stretch Elbows Against Wall,287,Stretching
+914,Standing Soleus And Achilles Stretch,104,Stretching
+915,Cross Over - With Bands,323,Strength
+916,Bench Press - With Bands,304,Strength
+917,Bench Press With Short Bands,326,Powerlifting
+918,Feet-Elevated TRX Push-Up,318,Strength
+919,Band-suspended kettlebell bench press,492,Strength
+920,HM Banded Cross-Over Pull,246,Strength
+921,Rusin Band Pull-Apart,123,Strength
+922,UNS Banded Push-Up,240,Strength
+923,Taylor Band-Assisted One-Arm Push-Up,309,Strength
+924,Incline band bench press,201,Strength
+925,Band push-up,452,Strength
+926,Band chest fly,51,Strength
+927,Close-grip bench press,65,Strength
+928,Barbell Bench Press - Medium Grip,220,Strength
+929,Decline barbell bench press,55,Strength
+930,Wide-grip bench press,135,Strength
+931,Wide-Grip Decline Barbell Bench Press,394,Strength
+932,Barbell Incline Bench Press Medium-Grip,384,Strength
+933,Neck Press,102,Strength
+934,Front Raise And Pullover,153,Strength
+935,Board bench press,194,Powerlifting
+936,Barbell Bench Press-Wide Grip,187,Strength
+937,Wide-Grip Decline Barbell Pullover,327,Strength
+938,Barbell Guillotine Bench Press,156,Strength
+939,Band-suspended kettlebell bench press,64,Strength
+940,Paul Carter Incline Bench Press,178,Strength
+941,Incline bench press,239,Strength
+942,Bench press,60,Strength
+943,TBS Close-Grip Bench Press,254,Strength
+944,AM Flat Bench Barbell Press,148,Strength
+945,UP Bench Press,458,Strength
+946,UP Close-Grip Bench Press,409,Strength
+947,King Maker Barbell Bench Press,351,Strength
+948,King Maker Incline Barbell Bench Press,475,Strength
+949,30 Chest Incline Barbell Bench Press,112,Strength
+950,30 Chest Barbell Bench Press,260,Strength
+951,30 Chest 30-Degree Incline Dumbbell Press,226,Strength
+952,Spoto press,52,Strength
+953,Kettlebell plyo push-up,308,Strength
+954,Extended Range One-Arm Kettlebell Floor Press,342,Strength
+955,Kettlebell alternating floor press,410,Strength
+956,One-Arm Kettlebell Floor Press,288,Strength
+957,Leg-Over Floor Press,393,Strength
+958,Band-suspended kettlebell bench press,351,Strength
+959,FYR2 Push-Up to Kettlebell Hike Combo,250,Strength
+960,Pushups,316,Strength
+961,Incline Push-Up,468,Strength
+962,Hands-elevated push-up,153,Strength
+963,Decline Push-Up,467,Strength
+964,Single-Arm Push-Up,370,Strength
+965,Close push-up to wide push-up,243,Strength
+966,Wide-grip hands-elevated push-up,491,Strength
+967,Push-Ups With Feet On An Exercise Ball,463,Strength
+968,Feet-elevated push-up,217,Strength
+969,Isometric Wipers,475,Strength
+970,Clock push-up,457,Strength
+971,Incline Push-Up Depth Jump,241,Plyometrics
+972,Push-Up Wide,492,Strength
+973,Sphinx push-up,123,Strength
+974,Close-Hands Push-Up,347,Strength
+975,Tiger-bend push-up,104,Strength
+976,Plyo push-up,485,Plyometrics
+977,Close-grip hands-elevated push-up,307,Strength
+978,Suspended push-up,323,Strength
+979,Push Up to Side Plank,296,Strength
+980,Isometric Chest Squeezes,184,Plyometrics
+981,Side-to-side push-up,220,Strength
+982,Typewriter push-up,126,Strength
+983,Diamond push-up,211,Strength
+984,Judo push-up,301,Strength
+985,Superman Push-Up,215,Plyometrics
+986,Wide push-up,57,Strength
+987,One-Arm Push-Up,472,Strength
+988,Clapping Push-Up,420,Plyometrics
+989,Staggered push-up,122,Strength
+990,Reverse-grip hands-elevated push-up,277,Strength
+991,Triple Clap Push-Up,169,Plyometrics
+992,Side kick-through push-up,222,Strength
+993,Swimming,224,Cardio
+994,FYR Push-Up,425,Strength
+995,Frog push-up,174,Strength
+996,Wide push-up plank hold,345,Strength
+997,Close push-up,253,Strength
+998,Push-Up - Gethin Variation,392,Strength
+999,HM Incline Push-Up On Chair,318,Strength
+1000,HM Push-Up,303,Strength
+1001,HM Push-Plank,54,Strength
+1002,AM Chest Dips,470,Strength
+1003,Push-up,316,Strength
+1004,UP Push-up,71,Strength
+1005,UN Push-Up,203,Strength
+1006,UNS Foam Roll Pecs,275,Strength
+1007,UN Hands Elevated Push-Up,287,Strength
+1008,Holman Seal Drag to Push-Up,454,Strength
+1009,Holman Hand-Elevated Push-Up with Hand Row,192,Strength
+1010,Holman Push-Up,209,Strength
+1011,Holman Slow Hips-Up Chest Press,242,Strength
+1012,Holman Jump-Out Push-Up with Hand Hop Back,335,Strength
+1013,Holman Froggy Push-Up to Donkey Kick,344,Strength
+1014,Holman Push-Up to Sit Back,452,Strength
+1015,Holman Sit Back Push-Up,204,Strength
+1016,Holman Alternating Staggered Push-Up,301,Strength
+1017,Holman Foot-Up Diving Push-Up,311,Strength
+1018,Holman Narrow Push-Up,450,Strength
+1019,Holman Dynamo Push-Up,140,Strength
+1020,Holman Jump to Push-Up,325,Strength
+1021,Holman Foot-Elevated Push-Up,416,Strength
+1022,Holman Feet-Elevated Push-Up,344,Strength
+1023,Total Fitness Plyo Push-Up,172,Strength
+1024,Scapular push-up,440,Strength
+1025,King Maker Push-up,390,Strength
+1026,Warrior push-up,431,Strength
+1027,Taylor Roll-Over Push-Up,171,Strength
+1028,Taylor One-Arm Push-Up Slow Negative,76,Strength
+1029,30 Chest Push-Up To Isometric Hold,362,Strength
+1030,30 Chest Push-Up,79,Strength
+1031,30 Chest Bench Push-Up,401,Strength
+1032,MetaBurn 3-Phase Push-Up,341,Strength
+1033,MetaBurn Fast Feet To Push-Up,311,Strength
+1034,MetaBurn Judo Push-Up To Pike Push-Up,161,Strength
+1035,MetaBurn Pike Push-Up,190,Strength
+1036,MetaBurn Push-Up To Frogger,199,Strength
+1037,MetaBurn Push-Up With Hand Side-Step,447,Strength
+1038,MetaBurn Push-Up With Hand-Up Rotation,410,Strength
+1039,MetaBurn Sphinx Push-Up,177,Strength
+1040,MetaBurn Spiderman Push-Up,234,Strength
+1041,Roberston Push-up to Down Dog,439,Strength
+1042,FYR2 Push-Up-Breakdancer-Shoulder-Tap Complex,296,Strength
+1043,ACFT Hand-release push-up,292,Strength
+1044,1.5-rep push-up,370,Strength
+1045,ACFT Triple-clap push-up,363,Strength
+1046,ACFT Superman push-up,356,Strength
+1047,Cross-over push-up,277,Strength
+1048,Leverage Incline Chest Press,104,Strength
+1049,Butterfly,362,Strength
+1050,Leverage Chest Press,195,Strength
+1051,Decline Smith Press,185,Strength
+1052,Smith machine bench press,205,Strength
+1053,Leverage Decline Chest Press,168,Strength
+1054,Machine chest press,108,Strength
+1055,Smith Machine Incline Bench Press,447,Strength
+1056,Smith Machine Close-Grip Bench Press,457,Strength
+1057,Smith Machine Decline Press,407,Strength
+1058,Smith machine bench press throw,273,Strength
+1059,Machine chest fly,51,Strength
+1060,Machine bench press,194,Strength
+1061,Machine Seated Chest Press - Gethin Variation,183,Strength
+1062,Smith machine weighted push-up,237,Strength
+1063,Smith machine incline bench press-,210,Strength
+1064,Smith machine decline bench press,430,Strength
+1065,AM Pec Dec,182,Strength
+1066,30 Chest Machine Flat Chest Press,354,Strength
+1067,Smith machine push-up,380,Strength
+1068,30 Chest Smith Machine Incline Chest Press,455,Strength
+1069,30 Chest Smith Machine Chest Press,418,Strength
+1070,30 Chest Machine Incline Chest Press,174,Strength
+1071,30 Chest Machine Fly,91,Strength
+1072,30 Chest 30-Degree Incline Smith Machine Press,455,Strength
+1073,Low-cable cross-over,277,Strength
+1074,Incline cable chest fly,435,Strength
+1075,Cable Crossover,344,Strength
+1076,Incline cable chest press,160,Strength
+1077,Cable Chest Press,300,Strength
+1078,Single-arm cable cross-over,281,Strength
+1079,Cable cross-over,205,Strength
+1080,Standing Cable Chest Press,296,Strength
+1081,Lying cable chest fly,458,Strength
+1082,Paul Carter Cable Cross-Over,366,Strength
+1083,One-Arm Cable Crossover - Gethin Variation,190,Strength
+1084,Incline Cable Fly - Gethin Variation,293,Strength
+1085,Cable Cross-Over - Gethin Variation,471,Strength
+1086,Seated cable chest fly,482,Strength
+1087,Single-arm incline cable cross-over-,333,Strength
+1088,High-to-low cable chest fly,342,Strength
+1089,UP Cable Cross-Over,84,Strength
+1090,UP Cable Fly,310,Strength
+1091,30 Chest Low-To-High Cable Fly,284,Strength
+1092,30 Chest Incline Cable Fly,256,Strength
+1093,30 Chest Incline Cable Chest Press,415,Strength
+1094,30 Chest High-To-Low Cable Press,386,Strength
+1095,30 Chest High-To-Low Cable Fly,198,Strength
+1096,30 Chest Shoulder-Height Cable Fly,421,Strength
+1097,Cable Pec Fly,166,Strength
+1098,Chest Push (multiple response),59,Plyometrics
+1099,Medicine Ball Chest Pass,452,Plyometrics
+1100,Medicine ball sprawl to chest press,488,Strength
+1101,Medicine ball push-up,185,Strength
+1102,Chest Push (single response),294,Plyometrics
+1103,Chest Push with Run Release,228,Plyometrics
+1104,Chest Push from 3 point stance,382,Plyometrics
+1105,Dumbbell Bench Press,133,Strength
+1106,Dumbbell Flyes,118,Strength
+1107,Incline dumbbell bench press,478,Strength
+1108,Decline Dumbbell Flyes,416,Strength
+1109,Reverse-grip incline dumbbell bench press,177,Strength
+1110,Incline Dumbbell Flyes,164,Strength
+1111,Neutral-grip dumbbell bench press,274,Strength
+1112,Decline dumbbell bench press,393,Strength
+1113,Single-arm kettlebell row,391,Strength
+1114,Hammer Grip Incline DB Bench Press,404,Strength
+1115,Straight-arm dumbbell pull-over,356,Strength
+1116,Incline Dumbbell Bench With Palms Facing In,328,Strength
+1117,Incline Dumbbell Flyes - With A Twist,452,Strength
+1118,Bent-arm dumbbell pull-over,481,Strength
+1119,Close-grip dumbbell bench press,137,Strength
+1120,Single-dumbbell push-up,102,Strength
+1121,One-Arm Flat Bench Dumbbell Flye,248,Strength
+1122,Dumbbell Fix Dumbbell Floor Chest Fly,232,Strength
+1123,Dumbbell Fix Traveling Push-Up,93,Strength
+1124,Incline dumbbell chest fly,115,Strength
+1125,Paul Carter Dumbbell Shrug,442,Strength
+1126,Dumbbell push-up row,80,Strength
+1127,TBS Dumbbell Incline Press,269,Strength
+1128,Incline Dumbbell Fly - Gethin Variation,92,Strength
+1129,Dumbbell bench press-,341,Strength
+1130,Decline dumbbell fly and press,396,Strength
+1131,Incline dumbbell fly and press,78,Strength
+1132,Single-arm decline dumbbell bench press,441,Strength
+1133,Single-arm incline dumbbell bench press,71,Strength
+1134,Incline Dumbbell Press - Gethin Variation,354,Strength
+1135,Dumbbell Chest Press - Gethin Variation,52,Strength
+1136,Dumbbell Floor Press - Gethin Variation,318,Strength
+1137,Decline Dumbbell Press - Gethin Variation,91,Strength
+1138,Dumbbell chest fly,210,Strength
+1139,Machine rear delt fly,71,Strength
+1140,AM Dumbbell Bench Press,339,Strength
+1141,UP Incline Dumbbell Press,303,Strength
+1142,UP Incline Dumbbell Fly,131,Strength
+1143,Holman Push-Up to Belly Touch,124,Strength
+1144,Single-arm dumbbell floor press,109,Strength
+1145,Total Fitness Weighted Push-Up,334,Strength
+1146,King Maker Standing Dumbbell Shoulder Press,143,Strength
+1147,30 Chest Incline Dumbbell Fly,396,Strength
+1148,30 Chest Incline Dumbbell Bench Press,238,Strength
+1149,30 Chest Dumbbells-Together Press,492,Strength
+1150,30 Chest Dumbbells-Together Incline Bench Press,205,Strength
+1151,30 Chest Dumbbell Fly,284,Strength
+1152,30 Chest Dumbbell Bench Press,493,Strength
+1153,30 Chest 30-Degree Incline Dumbbell Fly,146,Strength
+1154,FYR2 Single-Dumbbell Push-Up,225,Strength
+1155,Bodyweight Flyes,475,Strength
+1156,Close-grip EZ-bar bench press,209,Strength
+1157,Chest dip,103,Strength
+1158,Drop Push,154,Plyometrics
+1159,Forward Drag with Press,131,Strongman
+1160,Chain Press,55,Powerlifting
+1161,Behind Head Chest Stretch,196,Stretching
+1162,Pass-through stretch with band,235,Stretching
+1163,Weighted Push-Up,266,Strength
+1164,Heavy Bag Thrust,387,Plyometrics
+1165,Decline Explosive Push-Up,238,Plyometrics
+1166,Suspended Chest Fly,471,Strength
+1167,Svend press,228,Strength
+1168,Bar Push-Up Smith Machine,334,Plyometrics
+1169,Plate-weighted push-up,145,Strength
+1170,Double-bar roll-out chest fly,62,Strength
+1171,Holman Plate Dynamo Push-Up,147,Strength
+1172,Holman Towel Drag Two Steps to Push-Up,299,Strength
+1173,Taylor Val Slide Push-Up/Fly Combo,337,Strength
+1174,Exercise ball chest stretch,127,Stretching
+1175,Bosu Ball Push-Up,112,Strength
+1176,Feet-elevated push-up on ball,286,Strength
+1177,Standing alternating band speed row,181,Strength
+1178,Band roundhouse elbow,171,Strength
+1179,Palms-down wrist curl over bench,445,Strength
+1180,Palms-up wrist curl over bench,120,Strength
+1181,Standing behind-the-back wrist curl,80,Strength
+1182,Seated finger curl,126,Strength
+1183,Seated palms-up wrist curl,413,Strength
+1184,Bottoms-Up Clean From The Hang Position,97,Strength
+1185,Seated One-Arm Dumbbell Palms-Up Wrist Curl,251,Strength
+1186,Palms-Up Dumbbell Wrist Curl Over A Bench,348,Strength
+1187,Seated palms-down wrist curl,439,Strength
+1188,Palms-Down Dumbbell Wrist Curl Over A Bench,318,Strength
+1189,Seated One-Arm Dumbbell Palms-Down Wrist Curl,341,Strength
+1190,Seated Dumbbell Palms-Up Wrist Curl,133,Strength
+1191,Partner farmer's walk,436,Strength
+1192,Dumbbell suitcase carry,348,Strength
+1193,Suitcase Dumbbell Carry,427,Strength
+1194,Side plank with dumbbell external rotation,110,Strength
+1195,Rickshaw Carry,491,Strongman
+1196,Dumbbell farmer's walk,183,Strongman
+1197,Wrist Roller,317,Strength
+1198,Standing Olympic Plate Hand Squeeze,415,Strength
+1199,Plate Pinch,382,Strength
+1200,Landmine Press and Catch,320,Strength
+1201,Plate halo,255,Strength
+1202,Bryant Wrist Curl,497,Strength
+1203,Seated Two-Arm Palms-Up Low-Pulley Wrist Curl,305,Strength
+1204,Cable Wrist Curl,254,Strength
+1205,Single-arm cable push-down,103,Strength
+1206,Wrist Circles,437,Stretching
+1207,Kneeling Forearm Stretch,176,Stretching
+1208,Hip Extension with Bands,492,Strength
+1209,Hip Lift with Band,171,Powerlifting
+1210,HM Monster Walk,308,Strength
+1211,UNS Banded Glute Bridge,305,Strength
+1212,FYR2 Banded Glute Bridge,79,Strength
+1213,Piriformis SMR,317,Stretching
+1214,Barbell glute bridge,199,Powerlifting
+1215,Barbell Hip Thrust,141,Powerlifting
+1216,Kneeling Squat,132,Powerlifting
+1217,Kneeling Jump Squat,413,Olympic Weightlifting
+1218,UN Rear Foot Elevated Split Squat,60,Strength
+1219,Kettlebell thruster,57,Strength
+1220,Taylor Kettlebell Swing,398,Strength
+1221,UN Goblet Squat,411,Strength
+1222,Single-arm triceps kick-back,181,Strength
+1223,Holman Lateral High Knees to Quad Touch Jump,357,Strength
+1224,FYR2 Dumbbell Hip Thrust,436,Strength
+1225,FYR2 Glute Bridge Dumbbell Floor Press,235,Strength
+1226,Suspended Hip Thrust,374,Strength
+1227,Single-leg cable hip extension,140,Strength
+1228,Pull Through,377,Strength
+1229,Cable rope pull-through deadlift,123,Strength
+1230,UNS Cable Pull-Through,393,Strength
+1231,30 Legs Glute-Ham Raise,472,Strength
+1232,Glute bridge,332,Strength
+1233,Single-leg glute bridge,171,Strength
+1234,Step-up with knee raise,182,Strength
+1235,Glute Kickback,449,Strength
+1236,Standing hip extension,488,Strength
+1237,Lying glute stretch,428,Stretching
+1238,Knee Across The Body,125,Stretching
+1239,Seated Glute,247,Stretching
+1240,Lying Glute,63,Stretching
+1241,One Knee To Chest,113,Stretching
+1242,Seated Glute Stretch,418,Stretching
+1243,Neck Bridge Supine,392,Strength
+1244,Walking High Knee,59,Strength
+1245,Walking Butt Kicks,333,Strength
+1246,Walking Glute Stretch,87,Strength
+1247,Lunge kick,118,Strength
+1248,Curtsy lunge,212,Strength
+1249,Alternating standing glute stretch,459,Stretching
+1250,Side-lying leg lift,223,Strength
+1251,FYR Progressive High Knee,99,Strength
+1252,Glute-Ham Raise - Gethin Variation,396,Strength
+1253,Lunge glute stretch,167,Stretching
+1254,Natural Glute Ham Raise - Gethin Variation,429,Strength
+1255,Groiner,69,Strength
+1256,HM Alternating Donkey Kick,257,Strength
+1257,HM Alternating Slow Step-Down With Chair,352,Strength
+1258,HM Right Side Iron Cross,152,Strength
+1259,HM Single-Leg Bridge,290,Strength
+1260,HM Hi-Low,351,Strength
+1261,HM Kick-Back,342,Strength
+1262,HM Left Side Iron Cross,178,Strength
+1263,HM Left Side-Kick,276,Strength
+1264,HM Leg Lifts,90,Strength
+1265,Walking lunge,437,Strength
+1266,High Plyometric Box Jump,464,Strength
+1267,Barbell hip thrust-,431,Strength
+1268,UN Glute Bridge,445,Strength
+1269,Holman Donkey Kick,377,Strength
+1270,Holman Hip Raise with Alternating Kick,445,Strength
+1271,Holman Left Leg Donkey Kick,251,Strength
+1272,Holman Diagonal Right Leg Step-Out to Right Knee-Up,410,Strength
+1273,Holman Right Leg Donkey Kick,396,Strength
+1274,Holman Butt Tap to Jump,163,Strength
+1275,Holman Butt Tap to Jump-Forward-Jump-Back,382,Strength
+1276,Holman Traveling High Knees to Squat Thrust,101,Strength
+1277,Holman Butt Kicker to High Knees,272,Strength
+1278,Holman Daisy Cutter,271,Strength
+1279,Holman Frogger,323,Strength
+1280,Holman Hip Raise with Chest Press,193,Strength
+1281,Total Fitness Bear Crawl,122,Strength
+1282,Pigeon stretch,435,Strength
+1283,Levitating side kick-through,329,Strength
+1284,30 Legs Hip Thrust,456,Strength
+1285,Dumbbell single-leg hip thrust,357,Strength
+1286,Medicine ball duck walk,478,Strength
+1287,Exercise ball hip thrust,196,Strength
+1288,Downward Facing Balance,262,Strength
+1289,Band Good Morning (Pull Through),159,Powerlifting
+1290,Standing Hamstring and Calf Stretch,443,Stretching
+1291,Hamstring-SMR,177,Stretching
+1292,Barbell Deadlift,89,Strength
+1293,Clean Deadlift,196,Olympic Weightlifting
+1294,Sumo deadlift,335,Powerlifting
+1295,Romanian Deadlift from Deficit,137,Olympic Weightlifting
+1296,Power Snatch,352,Olympic Weightlifting
+1297,Power Clean from Blocks,60,Olympic Weightlifting
+1298,Snatch Deadlift,311,Olympic Weightlifting
+1299,Power clean,274,Strength
+1300,Hang Snatch,102,Olympic Weightlifting
+1301,Wide Stance Stiff Legs,433,Olympic Weightlifting
+1302,Clean,473,Olympic Weightlifting
+1303,Good Morning,413,Powerlifting
+1304,Barbell stiff-legged deadlift,353,Strength
+1305,Romanian Deadlift,333,Strength
+1306,Sumo Deadlift with Chains,435,Powerlifting
+1307,Sumo Deadlift with Bands,154,Powerlifting
+1308,Good Morning off Pins,259,Powerlifting
+1309,Stiff-Legged Deadlift,178,Strength
+1310,Snatch Pull,307,Strength
+1311,Hanging Bar Good Morning,486,Powerlifting
+1312,Reverse Band Sumo Deadlift,128,Powerlifting
+1313,Muscle Snatch,315,Olympic Weightlifting
+1314,Split Snatch,451,Olympic Weightlifting
+1315,Hang Snatch - Below Knees,305,Olympic Weightlifting
+1316,30 Legs Sumo Deadlift,266,Strength
+1317,Kettlebell pass-through lunge,239,Strength
+1318,Kettlebell One-Legged Deadlift,251,Strength
+1319,Single-arm kettlebell clean,263,Strength
+1320,Single-leg kettlebell deadlift,186,Strength
+1321,Romanian Deadlift with Kettlebell,195,Strength
+1322,Single-arm kettlebell swing,308,Strength
+1323,Kettlebell Dead Clean,344,Strength
+1324,Alternating Hang Clean,335,Strength
+1325,One-Arm Open Palm Kettlebell Clean,364,Strength
+1326,Open Palm Kettlebell Clean,407,Strength
+1327,Kettlebell Hang Clean,226,Strength
+1328,Double Kettlebell Alternating Hang Clean,302,Strength
+1329,Romanian Deadlift With Dumbbells,282,Strength
+1330,Stiff-Legged Dumbbell Deadlift,124,Strength
+1331,Vertical Swing,177,Plyometrics
+1332,Dumbbell Fix Dumbbell Swing,385,Strength
+1333,Dumbbell Lying Hamstring Curl,131,Strength
+1334,30 Legs Dumbbell Stiff-Legged Deadlift,283,Strength
+1335,Box jump,181,Plyometrics
+1336,Box Jump (Multiple Response),265,Plyometrics
+1337,Sled push-,220,Cardio
+1338,Lying Hamstring,484,Stretching
+1339,Chair Leg Extended Stretch,138,Stretching
+1340,Suspended Leg Curl,133,Strength
+1341,Box Skip,497,Plyometrics
+1342,Power Stairs,77,Strongman
+1343,Seated Hamstring and Calf Stretch,346,Stretching
+1344,Hamstring slide,405,Strength
+1345,Seated Band Hamstring Curl,442,Strength
+1346,Lying cable leg curl,241,Strength
+1347,Standing cable leg curl,80,Strength
+1348,Lying Leg Curls,94,Strength
+1349,Glute Ham Raise,470,Powerlifting
+1350,Reverse Hyperextension,81,Strength
+1351,Seated Leg Curl,423,Strength
+1352,Standing Leg Curl,389,Strength
+1353,Smith machine stiff-legged deadlift,119,Strength
+1354,Lying Leg Curl - Gethin Variation,308,Strength
+1355,Paul Carter Leg Extension,235,Strength
+1356,Lying leg curl,203,Strength
+1357,Seated Hamstring Curl - Gethin Variation,444,Strength
+1358,Single-leg lying leg curl,466,Strength
+1359,Leg curl,216,Strength
+1360,Leg Extension - Gethin Variation,384,Strength
+1361,Single-leg leg extension-,361,Strength
+1362,Lying Hamstring Curls - Gethin Variation,356,Strength
+1363,AM Seated Hamstring Curl,144,Strength
+1364,UP Hamstring Curl,167,Strength
+1365,30 Legs Leg Extension,394,Strength
+1366,30 Legs Seated Leg Curl,131,Strength
+1367,Natural Glute Ham Raise,398,Strength
+1368,Standing leg swing,489,Stretching
+1369,Linear Acceleration Wall Drill,449,Plyometrics
+1370,Knee Tuck Jump,277,Plyometrics
+1371,Leg-Up Hamstring Stretch,209,Stretching
+1372,Inchworm,365,Stretching
+1373,Moving Claw Series,193,Plyometrics
+1374,Lying groin stretch with band,279,Stretching
+1375,90/90 Hamstring,316,Stretching
+1376,World's greatest stretch,386,Stretching
+1377,The Straddle,75,Stretching
+1378,Prone Manual Hamstring,94,Strength
+1379,Knee To Chest,128,Stretching
+1380,Hurdle Hops,394,Plyometrics
+1381,Hip Stretch With Twist,156,Stretching
+1382,Linear 3-Part Start Technique,178,Plyometrics
+1383,Alternating Leg Swing,369,Stretching
+1384,Single-leg balance and reach,68,Stretching
+1385,High Kick,391,Stretching
+1386,Boss Everline 10-Yard Sprints,52,Strength
+1387,Standing hamstring stretch,193,Stretching
+1388,Reverse lunge,201,Stretching
+1389,HM Alternating Cross Lunge,459,Strength
+1390,HM Alternating Front Kick,302,Strength
+1391,HM World's Greatest Stretch,255,Stretching
+1392,HM Alternating Sprawl Kick-Through,220,Strength
+1393,HM Alternating Step-Back,466,Strength
+1394,HM Alternating Step-Up With Chair,344,Strength
+1395,HM Right Knee-Up,348,Strength
+1396,HM Low Lunge With External Twist,171,Strength
+1397,HM Ninja Crawl,442,Strength
+1398,HM Pigeon Stretch,142,Strength
+1399,Single-Leg Deadlift Walk,351,Strength
+1400,Total Fitness Hamstring Slide,201,Strength
+1401,30 Legs Walking Lunge,160,Strength
+1402,Glute ham raise-,388,Strength
+1403,Lying hamstring stretch with band,145,Stretching
+1404,Upper Back-Leg Grab,378,Stretching
+1405,Seated Hamstring,84,Stretching
+1406,Alternating lunge jump,113,Stretching
+1407,Runner's Stretch,79,Stretching
+1408,Exercise ball leg curl,298,Strength
+1409,Ball Hamstring Hat Trick,239,Strength
+1410,Band-assisted pull-up,251,Strength
+1411,Assisted Chin-Up,236,Strength
+1412,UN Band Assisted Pull-up Pronated,108,Strength
+1413,UN Band Assisted Pull-up Neutral,335,Strength
+1414,UN Band Assisted Pull-up Supinated,174,Strength
+1415,FYR2 Monster Band Face-Pull Hold,397,Strength
+1416,Single-arm band low row,483,Strength
+1417,Latissimus dorsi SMR,388,Stretching
+1418,Bent-arm barbell pull-over,436,Strength
+1419,Barbell pull-over to press,445,Strength
+1420,Single-arm barbell bent-over row,213,Strength
+1421,Reverse Barbell Row,355,Strength
+1422,Side kick-through to kettlebell high pull,374,Strength
+1423,FYR2 Alternating Kettlebell Snatch,129,Strength
+1424,FYR2 Alternating Kettlebell Swing,100,Strength
+1425,FYR2 American Kettlebell Swing,240,Strength
+1426,FYR2 Double-Kettlebell Standing Clean,179,Strength
+1427,FYR2 Kettlebell Swing High Pull,349,Strength
+1428,FYR2 Kettlebell Swing-Clean-Press Combo,488,Strength
+1429,FYR2 Kettlebell Swing-Clean-Press-Row Combo,442,Strength
+1430,FYR2 Single-Arm Kettlebell Clean,399,Strength
+1431,FYR2 Single-Arm Kettlebell Swing,493,Strength
+1432,PJR pull-over-,279,Strength
+1433,Dumbbell seal row,209,Strength
+1434,Incline Dumbbell Row - Gethin Variation,399,Strength
+1435,FYR Bent-Over Dumbbell Row,268,Strength
+1436,Straight-Arm Dumbbell Pull-Over - Gethin Variation,412,Strength
+1437,Bent-Over Dumbbell Row - Gethin Variation,416,Strength
+1438,Bent-over dumbbell rear delt fly,82,Strength
+1439,Band Resisted Dumbbell Row,292,Strength
+1440,Holman Right Arm Weighted Half Jack,453,Strength
+1441,Holman Left Arm Weighted Half Jack,235,Strength
+1442,Holman Renegade Row,276,Strength
+1443,Holman Renegade Row with Opposite Foot Step-Out,414,Strength
+1444,Holman Renegade Row to Weighted Burpee,426,Strength
+1445,Holman Weighted Double-Arm Cross Punch,350,Strength
+1446,Holman Standing Flat Back Row,372,Strength
+1447,Total Fitness Dumbbell Isometric Row Hold,262,Strength
+1448,Dumbbell renegade row,316,Strength
+1449,MetaBurn Bent-Over Row to Rear-Delt Raise,246,Strength
+1450,FYR2 Bent-Over Reverse Fly,206,Strength
+1451,Weighted pull-up,246,Strength
+1452,Rocky Pull-Ups/Pulldowns,483,Strength
+1453,Gironda Sternum Chins,108,Strength
+1454,Floor rope climb,441,Strength
+1455,Overhead Lat,404,Stretching
+1456,Around-the-world pull-up,266,Strength
+1457,L-sit chin-up,64,Strength
+1458,Back Flyes - Gethin Variation,287,Strength
+1459,Incline straight-arm pull-over,243,Strength
+1460,Machine high row,406,Strength
+1461,AM T-Bar Row,148,Strength
+1462,Assisted Single-Arm Pull-Up,81,Strength
+1463,Assisted Single-Arm Chin-Up,191,Strength
+1464,Holman Renegade Punch-Under,244,Strength
+1465,Holman Renegade Row to Split Jump,309,Strength
+1466,Holman Dirty Dog to Renegade Row,493,Strength
+1467,Holman Renegade Row to Side Punch to Forward Punch,340,Strength
+1468,Standing dumbbell knee crunch,63,Strength
+1469,Close-grip pull-down,195,Strength
+1470,Shotgun row,344,Strength
+1471,Close-Grip Front Lat Pulldown,496,Strength
+1472,Straight-arm rope pull-down,330,Strength
+1473,Lat pull-down,371,Strength
+1474,Straight-Arm Pulldown,407,Strength
+1475,Single-arm kneeling lat pull-down,183,Strength
+1476,Elevated Cable Rows,298,Strength
+1477,Full Range-Of-Motion Lat Pulldown,492,Strength
+1478,Kneeling lat pull-down,148,Strength
+1479,Behind-the-neck pull-down,66,Strength
+1480,Straight-arm cable pull-over,51,Strength
+1481,Cable Straight-Arm Pulldown - Gethin Variation,62,Strength
+1482,Rope Lat Pull-down - Gethin Variation,170,Strength
+1483,Straight-Arm Pull-Down - Gethin Variation,437,Strength
+1484,High-cable standing row,330,Strength
+1485,Lat Pull-down - Gethin Variation,130,Strength
+1486,Wide-Grip Lat Pull-Down - Gethin Variation,401,Strength
+1487,Behind-The-Neck Pull-Down - Gethin Variation,422,Strength
+1488,Single-Arm Cable Row - Gethin Variation,443,Strength
+1489,Scapular Rows,240,Strength
+1490,Standing V-Grip Cable Rows,140,Strength
+1491,AM Close-Grip Pull-Down,59,Strength
+1492,AM Wide-Grip Pull-Down,74,Strength
+1493,UP Lat Pull-Down,105,Strength
+1494,Reverse-grip lat pull-down,82,Strength
+1495,Machine seated row,106,Strength
+1496,Machine-assisted pull-up,377,Strength
+1497,Single-arm pull-down,363,Strength
+1498,Chest-Supported Smith Machine Row - Gethin Variation,210,Strength
+1499,Single-arm machine high row,449,Strength
+1500,Machine Pull-Over - Gethin Variation,163,Strength
+1501,Seated Machine Row - Gethin Variation,294,Strength
+1502,Wide-Grip Machine Row,297,Strength
+1503,King Maker Lat Pull-Down,476,Strength
+1504,Robertson Half-Kneeling Landmine Press,90,Strength
+1505,Pullups,69,Strength
+1506,Pull-up,497,Strength
+1507,Muscle Up,411,Strength
+1508,Rope climb,295,Strength
+1509,Wide-Grip Rear Pull-Up,213,Strength
+1510,Side To Side Chins,470,Strength
+1511,Neutral-grip pull-up,58,Strength
+1512,Kipping Muscle Up,98,Strength
+1513,One Arm Against Wall,466,Stretching
+1514,One Handed Hang,186,Stretching
+1515,Standing side bend stretch,131,Stretching
+1516,Burpee to pull-up,373,Plyometrics
+1517,Negative pull-up,179,Strength
+1518,Chin-Up,438,Strength
+1519,HM Superman Lat Pull,423,Strength
+1520,AM Pull-Up,397,Strength
+1521,UP Chin-Up,400,Strength
+1522,Holman Alternating Forward and Side Punch,364,Strength
+1523,Jump to pull-up,89,Strength
+1524,Bent-over scapular slide,60,Strength
+1525,Iron cross stretch,176,Strength
+1526,Total Fitness Standing Lat Stretch,88,Strength
+1527,King Maker Pull-Up,492,Strength
+1528,Medicine ball slam,73,Plyometrics
+1529,Catch and Overhead Throw,390,Plyometrics
+1530,FYR2 Bent-Over Medicine Ball Slam,215,Strength
+1531,Dynamic Back Stretch,232,Stretching
+1532,Chair Lower Back Stretch,309,Stretching
+1533,Side-Lying Floor Stretch,289,Stretching
+1534,Band good morning-,52,Strength
+1535,FYR2 Monster Banded Good Morning,105,Strength
+1536,Band deadlift,372,Strength
+1537,Lower back SMR,397,Stretching
+1538,Barbell deficit deadlift,323,Powerlifting
+1539,Deadlift with Bands,301,Powerlifting
+1540,Deadlift with Chains,414,Powerlifting
+1541,Rack Pull with Bands,263,Powerlifting
+1542,Rack pull,400,Powerlifting
+1543,Seated Good Mornings,445,Powerlifting
+1544,Stiff Leg Barbell Good Morning,64,Strength
+1545,Reverse Band Deadlift,482,Powerlifting
+1546,Paul Carter Romanian Deadlift,324,Strength
+1547,TBS Good Morning,488,Strength
+1548,TBS Romanian Deadlift,60,Strength
+1549,Barbell deadlift-,375,Strength
+1550,Deadlift - Gethin Variation,241,Strength
+1551,Barbell good morning,298,Strength
+1552,UP Conventional Deadlift,203,Strength
+1553,30 Day Back Barbell Rack Pull,432,Strength
+1554,FYR Sumo Deadlift High Pull,475,Strength
+1555,Kettlebell deadlift,290,Strength
+1556,HM Kettlebell Swing,207,Strength
+1557,KV Romanian Deadlift with Kettlebell,289,Strength
+1558,FYR2 Kettlebell Good Morning,179,Strength
+1559,FYR2 Kettlebell Romanian Deadlift,335,Strength
+1560,FYR2 Kettlebell Staggered-Stance Deadlift,270,Strength
+1561,Dumbbell Fix Dumbbell Deadlift,436,Strength
+1562,Dumbbell skier,385,Strength
+1563,TBS Dumbbell Romanian Deadlift,98,Strength
+1564,Stiff-Legged Dumbbell Deadlift - Gethin Variation,261,Strength
+1565,UNS Dumbbell Romanian Deadlift,348,Strength
+1566,Holman Slow Deadlift,105,Strength
+1567,Holman Deadlift to Overhead Press,247,Strength
+1568,Holman Staggered-Stance Deadlift,414,Strength
+1569,Holman Deadlift to Front Raise,305,Strength
+1570,Holman Deadlift to Chest Press,147,Strength
+1571,Holman Deadlift to Squat Thrust,467,Strength
+1572,Holman Deadlift to Biceps Curl,102,Strength
+1573,Dumbbell kickstand deadlift,351,Strength
+1574,Single-leg stiff-legged deadlift to row,174,Strength
+1575,FYR2 Dumbbell Deadlift,380,Strength
+1576,FYR2 Dumbbell Deadlift to Dumbbell Upright Row,440,Strength
+1577,Atlas Stones,135,Strongman
+1578,Axle Deadlift,335,Strongman
+1579,Atlas Stone Trainer,421,Strongman
+1580,Partner Flat-Bench Back Extension,79,Strength
+1581,Keg Load,221,Strongman
+1582,Partner bench back extension,173,Strength
+1583,Rack Pull - Gethin Variation,213,Strength
+1584,Hex Bar Deadlift - Gethin Variation,173,Strength
+1585,Holman Deadlift,268,Strength
+1586,ACFT Low-handle trap bar deadlift,362,Strength
+1587,Neutral-grip lat pull-down,354,Strength
+1588,Seated cable deadlift,100,Strength
+1589,Cable stiff-legged deadlift,473,Strength
+1590,Single-leg cable stiff-legged deadlift,387,Strength
+1591,UNS Banded Dumbbell Romanian Deadlift,58,Strength
+1592,Seated Back Extension,53,Strength
+1593,Back extension,348,Strength
+1594,Hyperextensions With No Hyperextension Bench,55,Strength
+1595,Superman,259,Stretching
+1596,Hug A Ball,304,Stretching
+1597,Child's pose,77,Stretching
+1598,Pelvic Tilt Into Bridge,223,Stretching
+1599,Hug Knees To Chest,84,Stretching
+1600,Pyramid,269,Stretching
+1601,Partner Superman with alternating high-five,159,Strength
+1602,Yoga plex,137,Stretching
+1603,TBS Back Extension,305,Strength
+1604,Lower Back Stretch - Yates Variation,428,Strength
+1605,Hyperextension - Gethin Variation,424,Strength
+1606,Back Extension - Gethin Variation,80,Strength
+1607,HM Banana Stretch,348,Strength
+1608,HM T-Spine Stretch on Wall,302,Stretching
+1609,HM Child's Pose,391,Strength
+1610,HM Cobra,286,Strength
+1611,HM Cobra With Arm Retraction,485,Strength
+1612,HM Dive-Bomber,173,Strength
+1613,HM Downward-Facing Dog Pose,286,Strength
+1614,HM Downward Dog To Left Leg Extension To Warrior Pose,440,Strength
+1615,HM Downward Dog To Right Leg Extension To Warrior Pose,369,Strength
+1616,HM Spine Twist,68,Strength
+1617,HM Good Morning,162,Strength
+1618,HM Rag Doll,326,Strength
+1619,HM Upward-Facing Dog Pose,240,Strength
+1620,Superman-,382,Strength
+1621,Weighted back extension,221,Strength
+1622,MetaBurn Alternating Superman,156,Strength
+1623,MetaBurn Swimmer,264,Strength
+1624,Dancer's Stretch,327,Stretching
+1625,Cat Stretch,389,Stretching
+1626,Crossover Reverse Lunge,299,Stretching
+1627,Standing Pelvic Tilt,69,Stretching
+1628,Exercise ball weighted hyperextension,469,Strength
+1629,Exercise ball rear delt fly,60,Strength
+1630,Lying rear delt Y,137,Strength
+1631,Partner Facing Feet-Elevated Side Plank With Band Row,424,Strength
+1632,Partner side plank band row,213,Strength
+1633,Band-assisted chin-up,413,Strength
+1634,30 Back Band-Assisted Pull-Up,364,Strength
+1635,30 Back Reverse-Grip Band-Assisted Pull-Up,201,Strength
+1636,Band bent-over row,251,Strength
+1637,Heavy band bent-over row,202,Strength
+1638,Reverse-grip bent-over row,469,Strength
+1639,One-Arm Long Bar Row,449,Strength
+1640,Bent Over Barbell Row,148,Strength
+1641,Yates Row Reverse Grip,441,Strength
+1642,Pendlay Row,230,Strength
+1643,Straight Bar Bench Mid Rows,51,Strength
+1644,Barbell seal row,96,Strength
+1645,Yates Row,225,Strength
+1646,Plate Row,155,Strength
+1647,Barbell Deadlift Bent Row Complex,294,Strength
+1648,Single-Arm Landmine Row,114,Strength
+1649,TBS T-Bar Row,458,Strength
+1650,TBS Deficit Deadlift,465,Strength
+1651,Bent-Over Barbell Row - Gethin Variation,437,Strength
+1652,Barbell bent-over row,75,Strength
+1653,UN Barbell Rack Pull,294,Strength
+1654,UN Barbell Scrape The Rack,380,Strength
+1655,Barbell deadlift bent-over row complex,430,Strength
+1656,30 Back Barbell Deadlift,460,Strength
+1657,30 Back Bent-Over Barbell Row,334,Strength
+1658,30 Back T-Bar Row,177,Strength
+1659,30 Back Underhand Bent-Over Barbell Row,291,Strength
+1660,Kettlebell alternating renegade row,103,Strength
+1661,Alternating Kettlebell Row,299,Strength
+1662,Two-Arm Kettlebell Row,308,Strength
+1663,Kettlebell bent-over row to clean,467,Strength
+1664,UP Deficit Kettlebell Stiff-Legged Deadlift,223,Strength
+1665,FYR2 Dagger-Grip Double-Kettlebell Gorilla Row,61,Strength
+1666,FYR2 Double-Kettlebell Swing Clean,395,Strength
+1667,Single-arm kettlebell row-,193,Strength
+1668,FYR2 Ascending-Rep Swing-Squat Complex,476,Strength
+1669,One-Arm Dumbbell Row,108,Strength
+1670,Incline dumbbell row,53,Strength
+1671,Bent Over Two-Dumbbell Row With Palms In,121,Strength
+1672,Man-maker,318,Strength
+1673,Dumbbell bent-over row,492,Strength
+1674,Middle Back Shrug,177,Strength
+1675,Dumbbell pull-over to skullcrusher,323,Strength
+1676,Dumbbell Fix Single-Arm Dumbbell Row,371,Strength
+1677,Dumbbell Fix Bent-Over Dumbbell Row,345,Strength
+1678,Dumbbell Seal Row - Gethin Variation,203,Strength
+1679,Decline dumbbell chest fly,231,Strength
+1680,TBS Bent-Over Dumbbell Row,177,Strength
+1681,HM Alternating Bent-Over Quick Row,405,Strength
+1682,HM Bent-Over Dumbbell Row,494,Strength
+1683,AM Single Arm Row,469,Strength
+1684,Dumbbell stiff-legged deadlift,289,Strength
+1685,Single-arm bench dumbbell row,287,Strength
+1686,UN Bent-Over Dumbbell Row,228,Strength
+1687,UN Dumbbell RDL,373,Strength
+1688,UN Chest Supported Row,218,Strength
+1689,MetaBurn Bent-Over Renegade Row,476,Strength
+1690,30 Back Bent-Over Dumbbell Row,291,Strength
+1691,30 Back Dumbbell Pull-Over,130,Strength
+1692,30 Back Incline Dumbbell Row,94,Strength
+1693,30 Back Single-Arm Dumbbell Row,116,Strength
+1694,30 Back Single-Arm Dumbbell Swing Row,489,Strength
+1695,T-Bar Row with Handle,206,Strength
+1696,T-Bar Row,415,Strength
+1697,Alternating sit-through with crunch,295,Strength
+1698,Seated Cable Rows,276,Strength
+1699,Upside-down pull-up,224,Strength
+1700,Smith machine inverted row,166,Strength
+1701,Lying T-Bar Row,167,Strength
+1702,Suspended row,206,Strength
+1703,Inverted Row with Straps,148,Strength
+1704,One Arm Chin-Up,265,Strength
+1705,Sled Row,311,Strength
+1706,Paul Carter T-Bar Row,156,Strength
+1707,Single-Arm Bent-Over Rear Delt Raise - Gethin Variation,367,Strength
+1708,30 Back Plate Hyperextension,221,Strength
+1709,Seated Cable Rows,123,Strength
+1710,Single-arm cable seated row,416,Strength
+1711,Paul Carter Lat Pull-Down,485,Strength
+1712,TBS Lat Pull-Down,126,Strength
+1713,One-Arm Cable Read Delt Fly - Gethin Variation,478,Strength
+1714,UP Seated Cable Row,129,Strength
+1715,UP Cable Straight-Arm Pull-Down,174,Strength
+1716,UN Cable Pull-Through,94,Strength
+1717,30 Back Close-Grip Seated Cable Row,428,Strength
+1718,30 Back Incline Face-Up Cable Pull-Down,143,Strength
+1719,30 Back Kneeling High Cable Pull-Down,300,Strength
+1720,30 Back Leaning V-Bar Pull-Down,69,Strength
+1721,30 Back Reverse-Grip Pull-Down,421,Strength
+1722,30 Back Standing Low Cable Bar Row,427,Strength
+1723,30 Back Standing Low Cable Rope Row,331,Strength
+1724,30 Back Straight-Arm Bar Pull-Down,143,Strength
+1725,30 Back Straight-Arm Rope Pull-Down,387,Strength
+1726,30 Back Wide-Grip Behind-The-Head Pull-Down,365,Strength
+1727,30 Back Wide-Grip Pull-Down,383,Strength
+1728,30 back Wide-Grip Seated Cable Row,468,Strength
+1729,Rower,112,Cardio
+1730,Seated Cable Rows,306,Strength
+1731,Smith machine bent-over row,134,Strength
+1732,Leverage High Row,464,Strength
+1733,Machine Low Row,245,Strength
+1734,Standing lat pull-down,190,Strength
+1735,30 Back Machine Seated Row,268,Strength
+1736,30 Back Smith Machine Push-Up,396,Strength
+1737,Mixed Grip Chin,254,Strength
+1738,Rhomboids SMR,70,Stretching
+1739,Spinal Stretch,479,Stretching
+1740,Upper Back Stretch,280,Stretching
+1741,Middle Back Stretch,183,Stretching
+1742,TBS Pull-Up,223,Strength
+1743,HM Angel Stretch,338,Strength
+1744,UNS Foam Roll Upper Back,321,Strength
+1745,30 Back Neutral-Grip Pull-Down,451,Strength
+1746,30 Back Pull-Up,496,Strength
+1747,30 Back Reverse-Grip Pull-Up,255,Strength
+1748,ACFT Medicine ball overhead power throw,270,Strength
+1749,Upright Row - With Bands,430,Strength
+1750,Band seated row,353,Strength
+1751,Barbell shrug,366,Strength
+1752,Barbell behind-the-back shrug,491,Strength
+1753,Clean Shrug,297,Olympic Weightlifting
+1754,Snatch Shrug,466,Olympic Weightlifting
+1755,Single-arm inverted row,197,Strength
+1756,Kettlebell sumo deadlift high pull,78,Strength
+1757,Standing dumbbell shrug,160,Strength
+1758,Standing dumbbell upright row,93,Strength
+1759,Dumbbell pull-over,237,Strength
+1760,Standing Dumbbell Shrug - Gethin Variation,365,Strength
+1761,Single-arm dumbbell row,129,Strength
+1762,Lying Face Down Plate Neck Resistance,341,Strength
+1763,Lying Face Up Plate Neck Resistance,199,Strength
+1764,Seated Head Harness Neck Resistance,213,Strength
+1765,Cable straight-bar upright row,239,Strength
+1766,Cable shrug,290,Strength
+1767,Smith machine shrug,85,Strength
+1768,Leverage Shrug,409,Strength
+1769,Calf-Machine Shoulder Shrug,190,Strength
+1770,Smith machine behind-the-back shrug,353,Strength
+1771,Smith machine upright row,93,Strength
+1772,Machine low row-,221,Strength
+1773,Machine Shrug - Gethin Variation,114,Strength
+1774,Smith machine single-arm shrug,146,Strength
+1775,Isometric Neck Exercise - Sides,216,Strength
+1776,Isometric Neck Exercise - Front And Back,119,Strength
+1777,Neck Bridge Prone,185,Strength
+1778,Side Neck Stretch,485,Stretching
+1779,Neck-SMR,269,Stretching
+1780,Scapular Pull-Up,321,Strength
+1781,Single-leg depth squat,229,Strength
+1782,Squats - With Bands,354,Strength
+1783,Hip Flexion with Band,354,Strength
+1784,Forward Band Walk,157,Strength
+1785,Boss Everline Resistance-Band Pull Sprint,270,Strength
+1786,Banded jump squat,300,Strength
+1787,Speed Box Squat,196,Powerlifting
+1788,HM Banded Squat Toe Tap,54,Strength
+1789,UP Band Abducted Squat,304,Strength
+1790,FYR2 Lateral Band Walk,329,Strength
+1791,FYR2 Banded Squat Hold-Pulse-Jump Complex,484,Strength
+1792,Band split squat,301,Strength
+1793,Band front squat,332,Strength
+1794,Squat hold with band pull-apart,401,Strength
+1795,Banded squat toe tap,300,Strength
+1796,Band overhead squat,410,Strength
+1797,Quadriceps SMR,473,Stretching
+1798,Clean from Blocks,261,Olympic Weightlifting
+1799,Barbell Full Squat,154,Strength
+1800,Barbell back squat to box,179,Powerlifting
+1801,Push-press,454,Olympic Weightlifting
+1802,Power snatch-,288,Olympic Weightlifting
+1803,Hang Clean,485,Olympic Weightlifting
+1804,Barbell walking lunge,222,Strength
+1805,Olympic Squat,325,Olympic Weightlifting
+1806,Narrow-stance squat,331,Strength
+1807,Box Squat with Bands,411,Powerlifting
+1808,Weighted Jump Squat,150,Strength
+1809,Squat with Chains,121,Powerlifting
+1810,Barbell Squat,343,Strength
+1811,Barbell front squat,227,Strength
+1812,Barbell forward lunge,257,Strength
+1813,Smith machine box squat,137,Strength
+1814,Barbell step-up,403,Strength
+1815,Barbell Bulgarian split squat,270,Strength
+1816,Hang Clean - Below the Knees,341,Olympic Weightlifting
+1817,Barbell hack squat,472,Strength
+1818,Hack Squat,384,Strength
+1819,Barbell thruster,88,Strength
+1820,Split Jerk,332,Olympic Weightlifting
+1821,Push-jerk,411,Olympic Weightlifting
+1822,Barbell back squat,433,Strength
+1823,Zercher squat,168,Strength
+1824,Jefferson Squats,417,Strength
+1825,Jerk Dip Squat,236,Olympic Weightlifting
+1826,Barbell side split squat,386,Strength
+1827,Frankenstein Squat,393,Olympic Weightlifting
+1828,Barbell speed squat,141,Strength
+1829,Single-arm side deadlift,232,Strength
+1830,Barbell Squat To A Bench,189,Strength
+1831,Clean Pull,281,Olympic Weightlifting
+1832,Front Barbell Squat To A Bench,237,Strength
+1833,Barbell reverse lunge,200,Strength
+1834,Split Clean,462,Olympic Weightlifting
+1835,Close-stance dumbbell front squat,393,Strength
+1836,Front Squat (Clean Grip),88,Strength
+1837,Barbell front squat to back squat,91,Strength
+1838,Squat Jerk,261,Strength
+1839,Barbell Front-To-Back Squat,314,Strength
+1840,Box Squat with Chains,104,Strength
+1841,Snatch from Blocks,106,Olympic Weightlifting
+1842,Power Snatch from Blocks,337,Olympic Weightlifting
+1843,Front Squat (Bodybuilder),362,Strength
+1844,Barbell step-down reverse lunge,356,Strength
+1845,Squat with Bands,483,Powerlifting
+1846,Heaving Snatch Balance,81,Olympic Weightlifting
+1847,Snatch Balance,417,Olympic Weightlifting
+1848,Reverse Band Power Squat,119,Powerlifting
+1849,Paul Carter Back Squat,139,Strength
+1850,Paul Carter Barbell Split Squat,56,Strength
+1851,TBS High-Bar Back Squat,321,Strength
+1852,TBS Barbell Front Squat,312,Strength
+1853,Squat - Gethin Variation,477,Strength
+1854,Front-To-Back Barbell Squat,484,Strength
+1855,Barbell Lunge - Gethin Variation,313,Strength
+1856,Rack Deadlift - Gethin Variation,145,Strength
+1857,Barbell Squat - Gethin Variation,196,Strength
+1858,Barbell Good Morning - Gethin Variation,373,Strength
+1859,AM Barbell Squat,81,Strength
+1860,Plyometric Power Clean,368,Strength
+1861,Banded Split Jerk,175,Strength
+1862,UP Squat,191,Strength
+1863,UN Barbell Back Squat,357,Strength
+1864,UN Barbell Box Squat,484,Strength
+1865,UN Barbell Front Squat,133,Strength
+1866,KV Bulgarian Split Squat,118,Strength
+1867,King Maker Barbell Back Squat,475,Strength
+1868,King Maker Barbell Deadlift,376,Strength
+1869,30 Legs Barbell Back Squat,405,Strength
+1870,30 Legs Barbell Front Squat,131,Strength
+1871,Barbell Back Squats,288,Strength
+1872,Front Squats With Two Kettlebells,443,Strength
+1873,Kettlebell Pistol Squat,399,Strength
+1874,Goblet Squat,431,Strength
+1875,Kettlebell Curtsy Lunge,280,Strength
+1876,Single-arm kettlebell overhead squat,212,Strength
+1877,Kettlebell side squat,301,Strength
+1878,Kettlebell sumo squat,272,Strength
+1879,Kettlebell thruster progression,454,Strength
+1880,Kettlebell power clean,345,Strength
+1881,Kettlebell fire feet,274,Plyometrics
+1882,Single Arm Overhead Kettlebell Squat,438,Strength
+1883,Pulsing goblet squat,98,Strength
+1884,Double-kettlebell alternating lunge to clean,366,Strength
+1885,FYR Goblet Squat,411,Strength
+1886,FYR Kettlebell Sumo Squat,380,Strength
+1887,Double-kettlebell front squat,404,Strength
+1888,FYR Kettlebell Squat Clean,302,Strength
+1889,Single-arm kettlebell front squat,194,Strength
+1890,Kettlebell front rack lunge,480,Strength
+1891,HM Turkish Get-Up,476,Strength
+1892,HM Single-Leg Romanian Deadlift,447,Strength
+1893,Taylor Single-Arm Kettlebell Front Squat,96,Strength
+1894,Taylor Kettlebell Goblet Squat,74,Strength
+1895,Goblet squat-,132,Strength
+1896,Holman Kettlebell Squat Clean,292,Strength
+1897,Holman Kettlebell Swing,302,Strength
+1898,Holman Kettlebell Swing Transfer,480,Strength
+1899,Dumbbell goblet squat-,453,Strength
+1900,Robertson Kettlebell Jump,255,Strength
+1901,FYR2 Alternating Kettlebell Squat Clean,72,Strength
+1902,FYR2 Banded Double-Kettlebell Squat Pulse,144,Strength
+1903,FYR2 Double-Kettlebell Ballin' Lunge,346,Strength
+1904,FYR2 Double-Kettlebell Front Rack Lunge,474,Strength
+1905,FYR2 Double-Kettlebell Front Squat,281,Strength
+1906,FYR2 Explosive Kettlebell Jump Squat,470,Strength
+1907,FYR2 Kettlebell Goblet Squat,317,Strength
+1908,FYR2 Kettlebell Reverse Lunge Switch Grip,438,Strength
+1909,FYR2 Kettlebell Reverse Lunge to Kneeling Press,62,Strength
+1910,FYR2 Kettlebell Sumo Squat Pulse,87,Strength
+1911,FYR2 Reverse Lunge to Single-Leg Kettlebell Deadlift,77,Strength
+1912,FYR2 Kettlebell Goblet-Squat-Deadlift Complex,305,Strength
+1913,FYR2 Kettlebell Squat-Press-Deadlift Complex,151,Strength
+1914,Goblet Squats,417,Strength
+1915,Dumbbell Goblet Squat,316,Strength
+1916,Dumbbell squat,357,Strength
+1917,Dumbbell Lunges,272,Strength
+1918,Dumbbell reverse lunge,101,Strength
+1919,Split Squat with Dumbbells,399,Strength
+1920,Dumbbell sumo squat,464,Strength
+1921,Dumbbell seated box jump,261,Plyometrics
+1922,Dumbbell step-up,142,Strength
+1923,Dumbbell Walking Lunge,361,Strength
+1924,Dumbbell Squat To A Bench,424,Strength
+1925,Dumbbell thruster,394,Strength
+1926,Dumbbell front squat,147,Strength
+1927,Single-Arm Dumbbell Overhead Squat,141,Strength
+1928,Dumbbell lateral hop,412,Plyometrics
+1929,Dumbbell lunge with biceps curl,453,Strength
+1930,Dumbbell Pistol Squat,213,Strength
+1931,Dumbbell Squat Snatch,313,Strength
+1932,Dumbbell Alternating Lunge,195,Strength
+1933,Dumbbell jump squat,305,Plyometrics
+1934,Dumbbell Side Lunge,96,Strength
+1935,Boss Everline Dumbbell Lunge Jump,51,Strength
+1936,Dumbbell Fix Dumbbell Split Squat,84,Strength
+1937,Single-leg dumbbell Romanian deadlift,139,Strength
+1938,Dumbbell Fix Dumbbell Alternating Reverse Lunge,68,Strength
+1939,Dumbbell Fix Turkish Get-Up,235,Strength
+1940,Seesaw lunge,140,Strength
+1941,FYR Dumbbell Front Squat,237,Strength
+1942,Dumbbell split squat,423,Strength
+1943,Dumbbell deadlift,176,Strength
+1944,Single-arm stiff-legged deadlift,208,Strength
+1945,HM Dumbbell Overhead Squat,473,Strength
+1946,HM Dumbbell Squat,489,Strength
+1947,UNS Dumbbell Goblet Squat,281,Strength
+1948,Single-Arm Dumbbell Snatch,126,Strength
+1949,KV Dumbbell Lunges,380,Strength
+1950,Holman Squat to Biceps Curl,348,Strength
+1951,Holman Burpee to Biceps Curl,493,Strength
+1952,Holman Slow Weighted Reverse Lunge,452,Strength
+1953,Holman Slow Weighted Plie Squat,492,Strength
+1954,Holman Weighted Lunge Jump with Biceps Curl,443,Strength
+1955,Holman Left Reverse Lunge Chest Press to Left Knee-Up Chest Press,403,Strength
+1956,Holman Weighted Lunge Jump with Chest Press,458,Strength
+1957,Holman Weighted Half Jack to Biceps Curl,274,Strength
+1958,Holman Weighted Half Jack to Chest Press,177,Strength
+1959,Holman 180 Jump to Renegade Side Raise,281,Strength
+1960,Holman Right Reverse Lunge Biceps Curl to Right Knee-Up Biceps Curl,436,Strength
+1961,Holman Roll-Back to Squat Thrust to Renegade Row,121,Strength
+1962,Holman Roll-Back to Squat Thrust to Renegade Triceps Press,292,Strength
+1963,Holman Weighted Narrow Squat Jump,259,Strength
+1964,Holman Diagonal Deadlift,53,Strength
+1965,Holman Weighted Burpee to Triceps Press,176,Strength
+1966,Holman Squat Thrust Overhead Press,443,Strength
+1967,Holman Weighted Burpee to Chest Press,89,Strength
+1968,Holman Squat to Right-Arm Overhead Press,160,Strength
+1969,Holman Right Lunge Jump with Right Overhead Press,242,Strength
+1970,Holman Left Lunge Jump with Left Overhead Press,158,Strength
+1971,Holman Heavy Hip Drive,305,Strength
+1972,Holman Squat to Left-Arm Overhead Press,191,Strength
+1973,Holman Weighted Lunge Jump to Floor Lunge Jump,189,Strength
+1974,Holman Alternating Weighted Lunge Jump to Chest Press,401,Strength
+1975,Holman Weighted Burpee to Overhead Alternating Reverse Lunge,291,Strength
+1976,Holman Weighted 180 Jump to Chest Press,415,Strength
+1977,Holman Alternating Side Squat Overhead Press,311,Strength
+1978,Holman Right Lunge with Right Biceps Curl,320,Strength
+1979,Holman Left Lunge with Left Biceps Curl,409,Strength
+1980,Holman Squat Thrust to Alternating Front Raise,225,Strength
+1981,Dumbbell racked reverse lunge,84,Strength
+1982,Total Fitness Dumbbell Reverse Lunge,187,Strength
+1983,Single-arm dumbbell snatch-,360,Strength
+1984,Total Fitness Dumbbell Step-Up,323,Strength
+1985,Single-arm dumbbell front squat,63,Strength
+1986,King Maker Weighted Jump Squat,83,Strength
+1987,3D dumbbell lunge,285,Strength
+1988,MetaBurn Dumbbell Burpee,421,Strength
+1989,Dumbbell jump squat with rotation,415,Strength
+1990,MetaBurn Dumbbell Wide Squat to Rack,61,Strength
+1991,MetaBurn Reverse Lunge To High Pull,391,Strength
+1992,MetaBurn Reverse Lunge With Overhead Raise,223,Strength
+1993,MetaBurn Squat to Triceps Extension,275,Strength
+1994,30 Legs Dumbbell Goblet Squat,215,Strength
+1995,30 Legs Dumbbell Squat,396,Strength
+1996,Dumbbell step-down reverse lunge,440,Strength
+1997,Tire flip,93,Strongman
+1998,Single Leg Push-off,72,Plyometrics
+1999,Bear crawl sled drag,468,Strongman
+2000,Bicycling,173,Cardio
+2001,Hex-bar deadlift,330,Strength
+2002,Skating,304,Cardio
+2003,Weighted sissy squat,388,Strength
+2004,Dumbbell step-up,346,Strength
+2005,Yoke Walk,324,Strongman
+2006,Front Cone Hops (or hurdle hops),340,Plyometrics
+2007,Weighted Squat,210,Strength
+2008,Bench skip,62,Plyometrics
+2009,Backward Drag,367,Strongman
+2010,Sled Push,428,Strongman
+2011,Barbell squat with plate slide,154,Strength
+2012,Suspended split squat,319,Strength
+2013,Intermediate Hip Flexor and Quad Stretch,256,Stretching
+2014,Sled Drag - Harness,130,Strongman
+2015,Burpee over barbell,109,Plyometrics
+2016,Dumbbell walking lunge-,179,Strength
+2017,Single-Leg Box Jump,101,Plyometrics
+2018,Conan's Wheel,483,Strongman
+2019,Single-Leg Hop Progression,477,Plyometrics
+2020,Rickshaw Deadlift,173,Strongman
+2021,Single-cone sprint drill,421,Plyometrics
+2022,Single-Leg Stride Jump,488,Plyometrics
+2023,Trap Bar Jump,416,Plyometrics
+2024,Single-Leg Lateral Hop,261,Plyometrics
+2025,Burpee Box-Jumps,363,Plyometrics
+2026,Sandbag Load,293,Strongman
+2027,Single-leg knee-tap squat,393,Strength
+2028,Car Deadlift,267,Strongman
+2029,Barbell Squat To A Box,183,Strength
+2030,Double Under,353,Cardio
+2031,Plate push,76,Cardio
+2032,Hybrid deadlift,379,Strength
+2033,Boss Everline Suspension Side Run,102,Strength
+2034,Boss Everline Lunge Sled Push,233,Strength
+2035,Squat Bottom Position Hold,187,Strength
+2036,TRX Squat Jump,152,Strength
+2037,Landmine squat,438,Strength
+2038,Dumbbell Bulgarian split squat,203,Strength
+2039,Holman Towel Alternating Prisoner Reverse Lunge,457,Strength
+2040,Holman Weighted Burpee to Belly Touch,298,Strength
+2041,Holman Weighted Burpee to Front Punch,136,Strength
+2042,Holman Weighted Low Squat Punch,434,Strength
+2043,Holman Weighted Hook Punch to Squat Thrust,98,Strength
+2044,Holman Towel Alternating Side Lunge Squat,380,Strength
+2045,Holman Weighted Burpee to Renegade Side Punch,418,Strength
+2046,Holman Weighted Reverse Lunge to Knee-Up Overhead Press,370,Strength
+2047,Holman Lunge Jump with Overhead Press,312,Strength
+2048,Holman Weighted Burpee to Belly Touch to Standing T,64,Strength
+2049,Holman Weighted Squat Jump,391,Strength
+2050,Holman Weighted Plie Squat,143,Strength
+2051,Holman Heels-Elevated Sissy Squat,56,Strength
+2052,Holman Squat Jump to Overhead Press,348,Strength
+2053,Holman 180 Jump to Overhead Press,103,Strength
+2054,Holman Weighted Burpee to Row,475,Strength
+2055,Holman Weighted Burpee to 180 Jump,232,Strength
+2056,Holman Weighted 180 Jump,441,Strength
+2057,Holman Weighted Narrow-Mid-Wide Hop,276,Strength
+2058,Holman Alternating Weighted Diagonal Burpee,355,Strength
+2059,Holman Towel Burpee to Push-Up,450,Strength
+2060,Holman Towel Right Side Squat,87,Strength
+2061,ACFT Sprint-drag-carry,439,Strength
+2062,Cable Hip Adduction,152,Strength
+2063,Cable Deadlifts,73,Strength
+2064,KV Cable Squat,295,Strength
+2065,Single-Leg Press,196,Strength
+2066,Stair climber,347,Cardio
+2067,Leg Press,427,Strength
+2068,Elliptical trainer,110,Cardio
+2069,Narrow-stance leg press,402,Strength
+2070,Narrow Stance Hack Squats,80,Strength
+2071,Stairmaster,341,Cardio
+2072,Machine Squat,497,Strength
+2073,Smith machine back squat,114,Strength
+2074,Leg Extensions,234,Strength
+2075,Treadmill running,464,Cardio
+2076,Stationary bike,274,Cardio
+2077,Treadmill jogging,163,Cardio
+2078,Recumbent Bike,75,Cardio
+2079,Smith machine leg press,305,Strength
+2080,Lying Machine Squat,425,Strength
+2081,Seated Leg Press,287,Strength
+2082,Smith machine pistol squat,173,Strength
+2083,Leverage Deadlift,86,Strength
+2084,Leg press-,150,Strength
+2085,TBS Hack Squat,52,Strength
+2086,Leg Extensions - Gethin Variation,274,Strength
+2087,Seated leg press-,435,Strength
+2088,Smith machine front squat,493,Strength
+2089,Machine Deadlift - Gethin Variation,122,Strength
+2090,Single-leg hack squat,434,Strength
+2091,Narrow-stance hack squat,316,Strength
+2092,Alternating Single-Leg Curl - Gethin Variation,432,Strength
+2093,Stiff-Legged Deadlift - Gethin Variation,62,Strength
+2094,Single-Leg Press - Gethin Variation,411,Strength
+2095,Hack squat-,353,Strength
+2096,Smith machine lunge squat,310,Strength
+2097,Hack Squat - Gethin Variation,139,Strength
+2098,Leg Press - Gethin Variation,420,Strength
+2099,AM Leg Press,488,Strength
+2100,Leg extension,234,Strength
+2101,UP Quad Extension,310,Strength
+2102,UP Single-Leg Press,128,Strength
+2103,UP Leg Press,404,Strength
+2104,Pop Squat On Leg Press,309,Strength
+2105,King Maker Leg Press,179,Strength
+2106,Single-leg leg press,483,Strength
+2107,King Maker Hack Squat,428,Strength
+2108,30 Legs Feet-High Leg Press,274,Strength
+2109,30 Legs Leg Press,181,Strength
+2110,30 Legs Leg Press Calf Raise,79,Strength
+2111,30 Legs Lying Leg Curl,339,Strength
+2112,30 Legs Machine Hack Squat,163,Strength
+2113,30 Legs Single-Leg Leg Extension,217,Strength
+2114,30 Legs Single-Leg Leg Press,143,Strength
+2115,30 Legs Single-Leg Lying Leg Curl,435,Strength
+2116,30 Legs Smith Machine Split Squat,352,Strength
+2117,30 Legs Smith Machine Squat,443,Strength
+2118,Jumping rope,180,Cardio
+2119,Forward lunge,100,Strength
+2120,Side-to-side box skip,207,Plyometrics
+2121,Bodyweight squat,59,Strength
+2122,Broad jump,421,Plyometrics
+2123,Burpee,167,Cardio
+2124,Trail Running/Walking,448,Cardio
+2125,Scissors Jump,151,Plyometrics
+2126,Jumping jack-,119,Plyometrics
+2127,Arms-crossed jump squat,170,Strength
+2128,Bodyweight Reverse Lunge,90,Strength
+2129,Alien Squat,244,Plyometrics
+2130,Treadmill walking,423,Cardio
+2131,Rocket Jump,487,Plyometrics
+2132,Depth jump box jump,136,Plyometrics
+2133,Bodyweight Walking Lunge,225,Strength
+2134,Walking High Knees,377,Cardio
+2135,Lateral lunge,114,Strength
+2136,Jump Squat,150,Plyometrics
+2137,Over bench jump,257,Plyometrics
+2138,Split Jump,480,Plyometrics
+2139,90-degree jump squat,464,Plyometrics
+2140,Skip,379,Plyometrics
+2141,Kneeling hip flexor stretch,321,Stretching
+2142,Iron Crosses (stretch),482,Stretching
+2143,All Fours Quad Stretch,337,Stretching
+2144,Lying quad stretch with band,349,Stretching
+2145,One Half Locust,413,Stretching
+2146,Standing Hip Flexors,131,Stretching
+2147,Looking At Ceiling,490,Stretching
+2148,Rear Leg Raises,156,Stretching
+2149,On Your Side Quad Stretch,337,Stretching
+2150,On-Your-Back Quad Stretch,110,Stretching
+2151,Standing Elevated Quad Stretch,199,Stretching
+2152,Thigh killa,301,Strength
+2153,Southpaw sprawl,90,Plyometrics
+2154,Stride Jump Crossover,386,Plyometrics
+2155,Side Standing Long Jump,455,Plyometrics
+2156,Wall squat,271,Strength
+2157,Slide Jump Shot,160,Plyometrics
+2158,Sprawl frog kick,192,Plyometrics
+2159,Lateral Speed Step,441,Cardio
+2160,Side Hop-Sprint,337,Plyometrics
+2161,Pop squat,190,Plyometrics
+2162,Star Jump,75,Plyometrics
+2163,Side Lunge Touching Heel,109,Strength
+2164,Lying Prone Quadriceps,96,Stretching
+2165,Fast Kick With Arm Circles,283,Cardio
+2166,Single-leg box squat,184,Strength
+2167,Defensive Slide,461,Cardio
+2168,Quick Leap,329,Plyometrics
+2169,Vertical Mountain Climber,457,Cardio
+2170,Reverse Burpee,125,Plyometrics
+2171,Football Up-Down,122,Cardio
+2172,Jump lunge heel kick,398,Plyometrics
+2173,Burpee box jump,292,Plyometrics
+2174,Linear Depth Jump,136,Plyometrics
+2175,Slow Jog,67,Cardio
+2176,High knees,324,Cardio
+2177,Jumping Jack,420,Cardio
+2178,Square Hop,407,Plyometrics
+2179,Running lunge,448,Plyometrics
+2180,In-out jump squat,211,Plyometrics
+2181,Gorilla squat,66,Plyometrics
+2182,Burpee tuck jump,452,Plyometrics
+2183,Speed skater,350,Plyometrics
+2184,Jumping knee up-down,80,Plyometrics
+2185,Jump Lunge To Feet Jack,235,Plyometrics
+2186,Reverse Lunge Rotation,97,Strength
+2187,Alternating standing knee-pull stretch,115,Stretching
+2188,Seal jack,350,Strength
+2189,Kneeling quad thoracic stretch,328,Strength
+2190,Single-Leg Squat With Knee Tap,409,Strength
+2191,Shuttle run,473,Cardio
+2192,Squat Isometric Hold,400,Plyometrics
+2193,Wall sit,115,Strength
+2194,Walking lunge with hip extension,434,Strength
+2195,Squat with alternating side leg raise,52,Strength
+2196,Lateral Squats,488,Strength
+2197,Walking lunge with twist,79,Strength
+2198,Boss Everline Backward Lunge Walk,269,Strength
+2199,Reverse Diagonal Skaters,379,Strength
+2200,FYR Air Squat,284,Strength
+2201,FYR Tuck Jump,169,Strength
+2202,Push-up sprawl tuck jump,149,Strength
+2203,FYR Running Lunge,198,Strength
+2204,FYR Jumping Lunge,189,Strength
+2205,FYR Sprawl Frog Kick,308,Strength
+2206,Jump squat-,111,Strength
+2207,FYR Sprinter Burpee,419,Cardio
+2208,Single-leg burpee,297,Strength
+2209,FYR Gorilla Squat,243,Strength
+2210,Banded compass jump squat,329,Strength
+2211,In-out sprawl,303,Strength
+2212,Knee-tuck kick-up,102,Strength
+2213,Bear crawl donkey kick,198,Strength
+2214,Southpaw sprawl with push-up,303,Strength
+2215,Bouncing lunge,282,Strength
+2216,Bodyweight Squat - Gethin Variation,66,Strength
+2217,FYR Alternating Lunge,63,Strength
+2218,Bodyweight Walking Lunge - Gethin Variation,150,Strength
+2219,Seated Quad Contraction,407,Strength
+2220,HM Squat with Alternating Leg Extension,208,Strength
+2221,HM Air Squat,251,Strength
+2222,HM Alternating Jump Lunge,454,Strength
+2223,HM Alternating Lunge-In-Place,311,Strength
+2224,HM Alternating Side Lunge,136,Strength
+2225,HM Sumo Pulse,99,Strength
+2226,HM Sumo Squat,280,Strength
+2227,HM Alternating Side-Kick,312,Strength
+2228,HM Tuck-Up Burpee,338,Strength
+2229,HM Bear Crawl,113,Strength
+2230,HM Bear Stance Fire Hydrant,379,Strength
+2231,HM Walking Frankenstein,340,Strength
+2232,HM Walking Hip Stretch,310,Stretching
+2233,HM Wide Jump Squat,480,Strength
+2234,HM Boxer Shuffle,230,Strength
+2235,HM Running Lunge,136,Cardio
+2236,HM Bulgarian Split Squat On Chair,225,Strength
+2237,HM Burpee,118,Strength
+2238,HM Butterfly,415,Strength
+2239,HM Alternating Lunge Push-Up,385,Strength
+2240,HM Comet,53,Strength
+2241,HM Couch Stretch,88,Strength
+2242,HM Down Up,322,Strength
+2243,HM Duck Walk,136,Strength
+2244,HM Fragon,160,Strength
+2245,HM Frankenstein,222,Strength
+2246,HM Single-Leg Squat on Chair,171,Strength
+2247,HM Single-Leg Touchdown,309,Strength
+2248,HM Speed Skater,454,Strength
+2249,HM Squat Jump,408,Strength
+2250,HM Squat Lunge,230,Strength
+2251,HM Garland Pose,476,Strength
+2252,HM High Knees,417,Strength
+2253,HM In-And-Out Squat,444,Strength
+2254,HM In-And-Out Squat Jump,65,Strength
+2255,HM Jumping Jack,192,Strength
+2256,HM Jumping Knee-Up,100,Strength
+2257,HM Jumping Rope,410,Strength
+2258,HM Right Calf-Spike Sumo Pulse,269,Strength
+2259,HM Reverse Lunge with Kick,81,Strength
+2260,HM Left Knee-Up,340,Strength
+2261,HM Left-Leg Lunge And Kick-Out,228,Strength
+2262,HM Mountain Pose,338,Strength
+2263,HM Butt Kickers,153,Strength
+2264,HM Right-Leg Lunge And Kick-Out,72,Strength
+2265,HM Sumo Get-Up,204,Strength
+2266,AM Jump Squat,154,Strength
+2267,AM Bodyweight Squat,132,Strength
+2268,High knees sprawl drill,423,Strength
+2269,UP Bulgarian Split Squat,215,Strength
+2270,UN Forward Lunge,326,Strength
+2271,UN Front Foot Elevated Split Squat,317,Strength
+2272,UNS Half-Kneeling Hip Flexor Stretch,301,Strength
+2273,UNS Low Depth Jump,434,Strength
+2274,UNS Forward-To-Reverse Lunge,331,Strength
+2275,Holman Towel Squat Thrust,69,Strength
+2276,Holman Towel Alternating Prisoner Squat,58,Strength
+2277,Holman Towel Alternating Lateral Lunge,451,Strength
+2278,Holman Squat Pull-Through Jump,349,Strength
+2279,Holman 180 Jump,316,Strength
+2280,Holman Foot-Elevated Knee-Up to Squat,147,Strength
+2281,Holman Feet-Elevated Squat Thrust,144,Strength
+2282,Holman Hands-Elevated Lunge Jump,91,Strength
+2283,Holman Hands-Elevated Jack to Split Jump,235,Strength
+2284,Holman Hands-Elevated Wide Squat Thrust,54,Strength
+2285,Holman Hands-Elevated Squat Thrust to Split Jack,426,Strength
+2286,Holman Squat Jump,66,Strength
+2287,Holman Squat Pulse,173,Strength
+2288,Holman Jump-Out Push-Up,110,Strength
+2289,Holman Alternating Forward Lunge,100,Strength
+2290,Holman Burpee to Jump,431,Strength
+2291,Holman Pilates Single-Leg Stretch,443,Strength
+2292,Holman Alternating Reverse Prisoner Lunge,292,Strength
+2293,Holman Narrow-Wide Squat Jump to 180 Jump,437,Strength
+2294,Holman 180 Jump to Lunge,147,Strength
+2295,Holman Imaginary Jump Rope,70,Strength
+2296,Holman Fast Feet with Hands Up,112,Strength
+2297,Holman Hands-Elevated Alternating Lunge Jump,71,Strength
+2298,Holman Right Split Lunge,368,Strength
+2299,Holman Left Split Lunge,70,Strength
+2300,Holman Plyometric Jump,485,Strength
+2301,Holman Quad Touch Jump,119,Strength
+2302,Holman Skate,411,Strength
+2303,Holman Lunge Jump,192,Strength
+2304,Holman Flying Squat Thrust,295,Strength
+2305,Holman 90-Degree Jump,404,Strength
+2306,Holman Half Jack to 180 Jump,484,Strength
+2307,Holman Quick Feet to Quad Touch Jump,55,Strength
+2308,Holman Squat Thrust to Push-Up to Super Woman,289,Strength
+2309,Holman Plyometric Jump to 180 Jump,183,Strength
+2310,Holman Standing Heel Click to Hands Down Heel Click,319,Strength
+2311,Holman Burpee to 180 Jump,171,Strength
+2312,Holman Traveling Low Jack to Belly Touch,75,Strength
+2313,Holman Flying Squat Thrust to Shoulder Tap,452,Strength
+2314,Holman Squat Jump to Alternating Side Lunge Jump,324,Strength
+2315,Holman Low Squat with Low Diagonal Dumbbell Punch,113,Strength
+2316,Holman Right Leg Hop to Right Reverse Lunge,327,Strength
+2317,Holman Left Leg Hop to Left Reverse Lunge,311,Strength
+2318,Holman Burpee to Open Stance,422,Strength
+2319,Holman Diagonal Squat Thrust to Renegade Forward Punch,251,Strength
+2320,Holman Bear Crawl,422,Strength
+2321,Holman Bear Crawl to Donkey Kick,424,Strength
+2322,Holman Bear Crawl to Froggy Push-Up,57,Strength
+2323,Holman Bear Crawl to Shoulder Tap,262,Strength
+2324,Holman Burpee to Tuck Jump,290,Strength
+2325,Holman Burpee to Flying Squat Thrust to Tuck Jump,380,Strength
+2326,Holman Forward Lunge to Reverse Lunge,495,Strength
+2327,Holman Renegade Lunge Jump,344,Strength
+2328,Holman Squat Jump to Lunge Jump,341,Strength
+2329,Holman Prisoner Reverse Lunge,495,Strength
+2330,Holman Wide-to-Narrow Squat Jump,90,Strength
+2331,Holman Donkey Run,350,Strength
+2332,Holman Weighted Wide-to-Narrow Squat Jump,329,Strength
+2333,Holman Wide-to-Narrow Donkey Kick,431,Strength
+2334,Holman Mule Kick,295,Strength
+2335,Holman Goal Post to Squat,475,Strength
+2336,Holman Frogger Squat to Heel Click,387,Strength
+2337,Holman Stair Sprint,315,Strength
+2338,Holman Stair Bear Crawl,91,Strength
+2339,Holman Burpee to Flying Squat Thrust,430,Strength
+2340,Holman Flying Squat Thrust to Push-Up,337,Strength
+2341,Holman Foot-Elevated Step-To-Lunge,122,Strength
+2342,Holman Split Lunge,325,Strength
+2343,Holman Stair Climb,452,Strength
+2344,Holman Burpee to Flying Jack,179,Strength
+2345,Holman Right Reverse Lunge,277,Strength
+2346,Holman Left Reverse Lunge,200,Strength
+2347,Holman Squat Tap to Hop,192,Strength
+2348,Holman Squat Tap to Jump-Forward-Jump-Back,269,Strength
+2349,Holman Squat Hip Drive,160,Strength
+2350,Holman Alternating Double Lunge Hop,86,Strength
+2351,Holman Right Reverse Lunge to Front Kick,470,Strength
+2352,Holman Right Leg Forward Lunge Hop,144,Strength
+2353,Holman Right Squat Thrust,164,Strength
+2354,Holman Left Reverse Lunge to Front Kick,140,Strength
+2355,Holman Left Leg Forward Lunge Hop,98,Strength
+2356,Holman Left Side Diagonal Burpee,223,Strength
+2357,Holman Left Squat Thrust,357,Strength
+2358,Holman Wide Squat Thrust,254,Strength
+2359,Holman Alternating Single-Leg Hop to Squat to 180 Jump,173,Strength
+2360,Holman Right Lunge Hop to Chest Press,316,Strength
+2361,Holman Left Lunge Hop to Overhead Press,284,Strength
+2362,Holman 180 Jump Hop Forward Hop Back,105,Strength
+2363,Holman Right Split Squat,118,Strength
+2364,Holman Left Split Squat,241,Strength
+2365,Holman Double Squat Pulse to 180 Jump,345,Strength
+2366,Holman Towel Left Side Squat,412,Strength
+2367,Holman Alternating Lunge Jump,226,Strength
+2368,Holman Lunge Jump to Squat Jump,89,Strength
+2369,Holman Burpee with Belly Touch,272,Strength
+2370,Bootstrapper squat,156,Strength
+2371,Total Fitness Broad Jump,339,Strength
+2372,Total Fitness Lateral Lunge,91,Strength
+2373,Lateral shuffle,211,Strength
+2374,Total Fitness Skip,295,Strength
+2375,Total Fitness Spider Lunge,380,Strength
+2376,Spider lunge stretch,221,Strength
+2377,Spider lunge with T-rotation,390,Strength
+2378,Standing quad stretch,198,Strength
+2379,Vertical jump,368,Strength
+2380,King Maker Burpee,249,Strength
+2381,King Maker Explosive High Jump,376,Strength
+2382,Muscle Beach Skip,128,Strength
+2383,Muscle Beach Broad Jump,460,Strength
+2384,Muscle Beach Sprint,301,Strength
+2385,Muscle Beach Front Kick,108,Strength
+2386,Muscle Beach Side Kick,275,Strength
+2387,Muscle Beach Spin Kick,254,Strength
+2388,Muscle Beach Freestyle Kick,433,Strength
+2389,MetaBurn Alternating Curtsy Lunge To Squat,61,Strength
+2390,MetaBurn Alternating Curtsy Lunge With High Knee,213,Strength
+2391,MetaBurn Alternating Diagonal Sprawl,206,Strength
+2392,MetaBurn Alternating Lateral Sprawl,182,Strength
+2393,MetaBurn Curtsy Lunge,197,Strength
+2394,MetaBurn Frogger,390,Strength
+2395,MetaBurn High Knee Rotation,174,Strength
+2396,MetaBurn Side-To-Side Lunge,303,Strength
+2397,MetaBurn Star Jump,124,Strength
+2398,MetaBurn Tuck Jump With Knee Slap,472,Strength
+2399,MetaBurn Lateral Bounding Hop,494,Strength
+2400,MetaBurn Double Lunge,315,Strength
+2401,Robertson Sprinter Step-Up,327,Strength
+2402,FYR2 Front Kick-Through,201,Strength
+2403,Lunge high-knee clap,158,Strength
+2404,FYR2 Plyo Split Squat,443,Strength
+2405,FYR2 Reverse Burpee,377,Strength
+2406,FYR2 Reverse Burpee to Regular Burpee,116,Strength
+2407,FYR2 Reverse Burpee Tuck Jump,377,Strength
+2408,FYR2 Sprawlee,398,Strength
+2409,FYR2 Squat Hold,452,Strength
+2410,FYR2 Squat Jump,449,Strength
+2411,FYR2 Squat Pulse,393,Strength
+2412,Sprinter burpee,60,Strength
+2413,Shuttle run training,423,Strength
+2414,Medicine ball ninja,288,Plyometrics
+2415,FYR Air Ball Plus Medicine Ball Jumping Sprawl,440,Strength
+2416,Medicine ball cowboy squat,474,Strength
+2417,Medicine ball jumping jill,66,Strength
+2418,Alternate Leg Diagonal Bound,105,Plyometrics
+2419,Sit Squats,258,Stretching
+2420,Frog Hops,304,Stretching
+2421,Dumbbell lateral hop to sprint,474,Plyometrics
+2422,Smith machine lunge sprint,323,Strength
+2423,Sissy squat,394,Strength
+2424,Wall ball toss,148,Plyometrics
+2425,Bosu Ball Squat,265,Strength
+2426,Exercise ball Bulgarian split squat,407,Strength
+2427,Internal Rotation with Band,468,Strength
+2428,Band Pull Apart,241,Strength
+2429,Back Flyes - With Bands,472,Strength
+2430,Lateral Raise - With Bands,137,Strength
+2431,Shoulder Press - With Bands,149,Strength
+2432,External Rotation with Band,290,Strength
+2433,FYR Band Pull-Apart,73,Strength
+2434,HM Lateral Raise,123,Strength
+2435,Rusin Banded Over-And-Back,326,Strength
+2436,Rusin Banded Face Pull,195,Strength
+2437,UP Band Pull-Apart,56,Strength
+2438,Jordan Shallow Band-Resisted Thread the Needle,286,Strength
+2439,30 Shoulders Seated Banded Barbell Shoulder Press,385,Strength
+2440,Band shoulder press,186,Strength
+2441,Band lateral raise,356,Strength
+2442,Band upright row,199,Strength
+2443,Staggered-stance band shoulder press,77,Strength
+2444,Single-arm banded landmine press,441,Strength
+2445,Band front raise rear fly row combo,230,Strength
+2446,Jordan Shallow Foam Roller Thoracic Extension,437,Strength
+2447,Jordan Shallow Thread the Needle (with Foam Roller),233,Strength
+2448,Clean and press,91,Strength
+2449,Clean and jerk,303,Olympic Weightlifting
+2450,Military press,462,Strength
+2451,Seated barbell shoulder press,188,Strength
+2452,Snatch-Grip Behind-The-Neck Overhead Press,469,Strength
+2453,Standing Bradford press,404,Strength
+2454,Barbell Shoulder Press,284,Strength
+2455,Barbell rear delt bent-over row,232,Strength
+2456,Barbell upright row,284,Strength
+2457,Bradford/Rocky Presses,237,Strength
+2458,Lying rear delt fly,51,Strength
+2459,Machine Shoulder (Military) Press,120,Strength
+2460,Standing Barbell Press Behind Neck,317,Strength
+2461,Barbell front raise,416,Strength
+2462,Overhead bar front raise,312,Strength
+2463,Incline barbell shoulder protraction,405,Strength
+2464,Behind-the-head push-press,225,Olympic Weightlifting
+2465,Rack Delivery,215,Olympic Weightlifting
+2466,Smith Incline Shoulder Raise,466,Strength
+2467,Tall Muscle Snatch,111,Olympic Weightlifting
+2468,Axle Clean And Press,473,Strongman
+2469,Jerk Balance,142,Olympic Weightlifting
+2470,Seated EZ-bar shrug,301,Strength
+2471,Paul Carter Barbell Seated Military Press,394,Strength
+2472,TBS Barbell Military Press,416,Strength
+2473,Incline Front Barbell Raise - Gethin Variation,446,Strength
+2474,Barbell Front Raise - Gethin Variation,431,Strength
+2475,Single-arm barbell lateral raise,54,Strength
+2476,AM Upright Row,234,Strength
+2477,AM Barbell Shoulder Press,118,Strength
+2478,Standing barbell shoulder press,327,Strength
+2479,King Maker Barbell Thruster,432,Strength
+2480,Single-arm incline cable cross-over,105,Strength
+2481,Barbell bear complex,493,Strength
+2482,30 Shoulders Barbell Shrug,81,Strength
+2483,30 Shoulders Incline Face-Up Straight-Bar Front Raise,298,Strength
+2484,30 Shoulders Seated Dumbbell Shoulder Press,473,Strength
+2485,30 Shoulders Standing Behind-The-Head Shoulder Press,107,Strength
+2486,30 Shoulders Standing Barbell Press,352,Strength
+2487,FYR2 Wide Overhead Press,421,Strength
+2488,Single-arm kettlebell push-press,476,Strength
+2489,Two-Arm Kettlebell Military Press,387,Strength
+2490,Alternating Kettlebell Press,283,Strength
+2491,Single-arm kettlebell snatch,109,Strength
+2492,Single-arm kettlebell clean and jerk,299,Strength
+2493,Kettlebell pirate ship,374,Strength
+2494,Two-Arm Kettlebell Clean,239,Strength
+2495,Double Kettlebell Push Press,124,Strength
+2496,Kettlebell Seated Press,124,Strength
+2497,Double Kettlebell Jerk,114,Strength
+2498,Kettlebell Arnold Press,356,Strength
+2499,Double-kettlebell windmill,477,Strength
+2500,One-Arm Kettlebell Split Snatch,468,Strength
+2501,One-Arm Kettlebell Para Press,268,Strength
+2502,One-Arm Kettlebell Split Jerk,122,Strength
+2503,One-Arm Kettlebell Military Press To The Side,463,Strength
+2504,One-Arm Kettlebell Jerk,257,Strength
+2505,Double Kettlebell Snatch,219,Strength
+2506,Two-Arm Kettlebell Jerk,127,Strength
+2507,FYR Kettlebell Power Clean,358,Strength
+2508,Kettlebell upright row,120,Strength
+2509,Kettlebell upright row and press,236,Strength
+2510,Single-arm kettlebell thruster,395,Strength
+2511,Double-kettlebell shoulder press,211,Strength
+2512,Double-kettlebell push-press,496,Strength
+2513,HM Kettlebell Windmill,84,Strength
+2514,HM Kettlebell Z-Press,95,Strength
+2515,Taylor Half-Kneeling Kettlebell Halo,139,Strength
+2516,Taylor Towel Kettlebell Farmer's Walk,453,Strength
+2517,FYR2 Double-Kettlebell Alternating Press,107,Strength
+2518,FYR2 Double-Kettlebell Thruster,95,Strength
+2519,FYR2 Half-Kneeling Kettlebell Clean,387,Strength
+2520,FYR2 Kettlebell Clean and Press,462,Strength
+2521,FYR2 Kettlebell High Pull to Overhead Press,171,Strength
+2522,FYR2 Kettlebell Swing Clean and Press,196,Strength
+2523,FYR2 Single-Arm Kettlebell Press,303,Strength
+2524,FYR2 Ascending-Rep High-Pull-Press Complex,56,Strength
+2525,Dumbbell front raise to lateral raise,232,Strength
+2526,Single-arm palm-in dumbbell shoulder press,83,Strength
+2527,Standing palms-in shoulder press,264,Strength
+2528,Seated Dumbbell Press,347,Strength
+2529,Standing dumbbell shoulder press,179,Strength
+2530,Single-arm lateral raise,410,Strength
+2531,Power Partials,447,Strength
+2532,Incline dumbbell reverse fly,378,Strength
+2533,Overhead dumbbell front raise,418,Strength
+2534,Seated dumbbell shoulder press,96,Strength
+2535,Alternating standing shoulder press,119,Strength
+2536,Single-arm incline rear delt raise,295,Strength
+2537,Alternating dumbbell front raise,395,Strength
+2538,Alternating Deltoid Raise,189,Strength
+2539,Single-dumbbell front raise,296,Strength
+2540,Arnold press,346,Strength
+2541,Single-arm standing shoulder press,477,Strength
+2542,Dumbbell front raise,288,Strength
+2543,Bent-over dumbbell rear delt row,221,Strength
+2544,Incline dumbbell front raise,358,Strength
+2545,Side Lateral Raise,97,Strength
+2546,Dumbbell external shoulder rotation,337,Strength
+2547,Single-arm incline lateral raise,342,Strength
+2548,Seated rear delt fly,338,Strength
+2549,Dumbbell Raise,484,Strength
+2550,Seated Side Lateral Raise,146,Strength
+2551,Dumbbell Lying Rear Lateral Raise,408,Strength
+2552,Head-on-bench dumbbell rear delt raise,96,Strength
+2553,Cuban press,391,Strength
+2554,Reverse Flyes With External Rotation,412,Strength
+2555,Single-arm side lying rear fly,116,Strength
+2556,Single-arm dumbbell upright row,457,Strength
+2557,Dumbbell Scaption,51,Strength
+2558,See-Saw Press (Alternating Side Press),479,Strength
+2559,Dumbbell Incline Shoulder Raise,387,Strength
+2560,Single-arm half-kneeling shoulder press,300,Strength
+2561,Dumbbell Clean And Jerk,87,Strength
+2562,Dumbbell shoulder press with body rotation,280,Strength
+2563,Dumbbell Fix Dumbbell Military Press,160,Strength
+2564,Dumbbell Fix Standing Dumbbell Arnold Press,466,Strength
+2565,Dumbbell Fix Dumbbell Single-Arm Snatch,481,Strength
+2566,Paul Carter Rear-Delt Fly,146,Strength
+2567,FYR Dumbbell Shoulder Press,365,Strength
+2568,FYR Single-Arm Dumbbell Press,118,Strength
+2569,FYR Dumbbell Tempo L-Raise,195,Strength
+2570,Dumbbell seesaw shoulder press,316,Strength
+2571,FYR Dumbbell front raise to lateral raise,236,Strength
+2572,FYR Dumbbell Arnold Press,480,Strength
+2573,FYR Dumbbell Military Press to Dumbbell High Pull to V-up,232,Strength
+2574,FYR Dumbbell Thruster,419,Strength
+2575,Dumbbell hang snatch,436,Strength
+2576,Surfer sprawl,133,Strength
+2577,Dumbbell clean and press,488,Strength
+2578,Standing One-Arm Shoulder Press - Gethin Variation,106,Strength
+2579,Incline Front Dumbbell Raise - Gethin Variation,373,Strength
+2580,Dumbbell lateral raise,123,Strength
+2581,Incline Rear-Delt Fly - Gethin Variation,124,Strength
+2582,Incline Bench Rear Dumbbell Fly - Gethin Variation,334,Strength
+2583,Dumbbell front raise and press,441,Strength
+2584,Rotator cuff warm-up,161,Strength
+2585,Seated Lateral Raise - Gethin Variation,61,Strength
+2586,Single-arm dumbbell arc row,77,Strength
+2587,Incline Rear Delt Raises - Gethin Variation,289,Strength
+2588,Incline Dumbbell Y Raise,96,Strength
+2589,HM Bent-Over Rear-Delt Fly,101,Strength
+2590,HM Dumbbell Shoulder Press,142,Strength
+2591,HM Single-Leg Overhead Dumbbell Press,195,Strength
+2592,6 Way Shoulder Raise,293,Strength
+2593,Seated dumbbell lateral raise,441,Strength
+2594,AM Dumbbell Shoulder Press,232,Strength
+2595,AM Dumbbell Side Raise,287,Strength
+2596,AM Front Raise,383,Strength
+2597,UP Dumbbell Lateral Raise,116,Strength
+2598,UP Seated Dumbbell Overhead Press,440,Strength
+2599,AA Incline Bench Dumbbell Reverse Fly,220,Strength
+2600,CM Forward Shoulder Press,176,Strength
+2601,Dumbbell Halo,293,Strength
+2602,Standing Dumbbell Scap Raise,137,Strength
+2603,Holman Overhead Press,258,Strength
+2604,Holman Slow Weighted Half Jack to Overhead Press,281,Strength
+2605,Holman Slow Arnold Press,316,Strength
+2606,Holman Boat Arnold Press with Feet Push-Out,494,Strength
+2607,Holman Dumbbell Hip Drive to Overhead Press,387,Strength
+2608,Holman Squat Thrust to Alternating Renegade Triceps Press,161,Strength
+2609,Holman Cheer Press,479,Strength
+2610,Holman Left Arm Press with Right Arm Hold,220,Strength
+2611,Holman Right Arm Press with Left Arm Hold,329,Strength
+2612,Holman Left Front Raise with Right Hold,319,Strength
+2613,Holman Right Front Raise with Left Hold,129,Strength
+2614,Holman Alternating Front Raise to Side Raise,146,Strength
+2615,Holman Heavy Right Arm Overhead Press,355,Strength
+2616,Holman Heavy Left Arm Overhead Press,281,Strength
+2617,Holman Right Arm Heavy Overhead Press,408,Strength
+2618,Holman Right Diagonal Lunge to Overhead Press,449,Strength
+2619,Holman Left Arm Heavy Overhead Press,138,Strength
+2620,Holman Weighted Palms-In Overhead Press,197,Strength
+2621,Dumbbell racked carry,208,Strength
+2622,Dumbbell clean and push-press,209,Strength
+2623,Total Fitness Dumbbell Farmer's Carry,253,Strength
+2624,Single-arm dumbbell racked carry,369,Strength
+2625,Jordan Shallow Dumbbell Pull-Over,283,Strength
+2626,King Maker Dumbbell Lateral Raise,219,Strength
+2627,Dumbbell shadow boxing,129,Strength
+2628,King Maker Dumbbell Farmer's Carry,198,Strength
+2629,King Maker Dumbbell Shrug,165,Strength
+2630,30 Shoulders Alternating Dumbbell Front Raise,60,Strength
+2631,30 Shoulders Bent-Over Dumbbell Reverse Fly,140,Strength
+2632,30 Shoulders Dumbbell Front Raise,142,Strength
+2633,30 Shoulders Dumbbell Lateral Raise,322,Strength
+2634,30 Shoulders Dumbbell Shrug,146,Strength
+2635,30 Shoulders Incline Face-Down Dumbbell Reverse Fly,381,Strength
+2636,30 Shoulders Seated Dumbbell Front Raise,455,Strength
+2637,30 Shoulders Seated Dumbbell Side Raise,416,Strength
+2638,30 Shoulders Neutral-Grip Arnold Press,303,Strength
+2639,30 Shoulders Standing Dumbbell Upright Row,436,Strength
+2640,MetaBurn 3-Way Shoulder Raise,262,Strength
+2641,MetaBurn Dumbbell Overhead Press,246,Strength
+2642,MetaBurn Single-Leg Arnold Press,350,Strength
+2643,RG Forward-Leaning Dumbbell Upright Row,218,Strength
+2644,RG Alternating Seated Dumbbell Lateral Raise,174,Strength
+2645,RG Seated Dumbbell Shoulder Press,133,Strength
+2646,FYR2 Dumbbell Clean and Jerk,59,Strength
+2647,FYR2 Dumbbell Cross-Body Front Raise,79,Strength
+2648,FYR2 Dumbbell Front Raise,426,Strength
+2649,FYR2 Dumbbell Lateral Raise,146,Strength
+2650,FYR2 Lateral Raise Hold,72,Strength
+2651,FYR2 Seesaw Dumbbell Military Press,122,Strength
+2652,FYR2 Single-Dumbbell Halo,399,Strength
+2653,FYR2 Single-Dumbbell Overhead Press,403,Strength
+2654,Car driver,212,Strength
+2655,Arnold press,168,Strength
+2656,Front Plate Raise,474,Strength
+2657,Battle ropes,60,Strength
+2658,Seated rear delt fly,189,Strength
+2659,Circus Bell,203,Strongman
+2660,Landmine Linear Jammer,73,Strength
+2661,Crucifix,365,Strongman
+2662,Bar shoulder extension stretch,117,Stretching
+2663,Chair Upper Body Stretch,452,Stretching
+2664,Sled Reverse Flye,428,Strength
+2665,Plate shoulder circle big to small,439,Strength
+2666,Sled Overhead Backward Walk,430,Strength
+2667,Log Lift,368,Strongman
+2668,Standing suspended rear delt fly,317,Strength
+2669,Waiter's carry,391,Strength
+2670,Towel dumbbell front raise,81,Strength
+2671,Reach-roll-lift combo,213,Stretching
+2672,Upright Row - Gethin Variation,477,Strength
+2673,Squat Press Shoulder Press - Gethin Variation,363,Strength
+2674,Plate lateral raise,349,Strength
+2675,Standing Military Press - Gethin Variation,126,Strength
+2676,Bent-over plate rear delt raise,455,Strength
+2677,Single-arm landmine press,88,Strength
+2678,Plate front raise,209,Strength
+2679,Holman Slow Overhead Press,490,Strength
+2680,30 Shoulders Plate Front Raise,413,Strength
+2681,Single-arm landmine push-press,322,Strength
+2682,Single-arm cable front raise,427,Strength
+2683,Cable Internal Rotation,399,Strength
+2684,Seated face pull,247,Strength
+2685,Single-arm bent-over cable rear delt fly,259,Strength
+2686,Seated cable shoulder press,212,Strength
+2687,Standing face pull,312,Strength
+2688,Standing cable rear delt row,252,Strength
+2689,Standing Low-Pulley Deltoid Raise,228,Strength
+2690,Standing crossed-cable rear delt fly,278,Strength
+2691,Cable Shoulder Press,201,Strength
+2692,Alternating Cable Shoulder Press,320,Strength
+2693,Cable Seated Lateral Raise,321,Strength
+2694,Single-arm lying cable front raise,353,Strength
+2695,Lying cable front raise,218,Strength
+2696,Cable Rear Delt Fly - Gethin Variation,481,Strength
+2697,One-Arm Cable Side Raise - Gethin Variation,366,Strength
+2698,Rope Face Pull - Gethin Variation,316,Strength
+2699,Lying cable lateral raise,281,Strength
+2700,Cable seated row,270,Strength
+2701,Single-arm cable lateral raise,325,Strength
+2702,UP Cable Face Pull,128,Strength
+2703,AA Cable Leaning Side Raise,292,Strength
+2704,30 Shoulders Bent-Over Low Cable Reverse Fly,323,Strength
+2705,30 Shoulders Cable Rope Face Pull,436,Strength
+2706,30 Shoulders Cable Straight-Bar Front Raise,246,Strength
+2707,30 Shoulders Cable Straight-Bar Upright Row,323,Strength
+2708,30 Shoulders High Cable Reverse Fly,401,Strength
+2709,30 Shoulders Single-Arm Bent-Over Cable Reverse Fly,391,Strength
+2710,30 Shoulders Single-Arm Cable Front Raise,84,Strength
+2711,30 Shoulders Single-Arm Leaning Cable Lateral Raise,309,Strength
+2712,RG 3-Way Single-Arm Rear Delt Cable Fly,421,Strength
+2713,RG Single-Arm Cross-Body Cable Front Raise,57,Strength
+2714,Smith machine shoulder press,53,Strength
+2715,Machine shoulder press,55,Strength
+2716,Reverse Machine Flyes,424,Strength
+2717,Single-arm Smith machine upright row,392,Strength
+2718,Machine Lateral Raise,54,Strength
+2719,Smith machine behind-the-neck press,201,Strength
+2720,Smith Machine Behind-The-Neck Press - Gethin Variation,262,Strength
+2721,30 Shoulders Leg Press Shoulder Press,351,Strength
+2722,30 Shoulders Machine Shoulder Press,124,Strength
+2723,30 Shoulders Pec-Deck Reverse Fly,215,Strength
+2724,30 Shoulders Smith Machine Behind-The-Head Press,437,Strength
+2725,30 Shoulders Smith Machine Shoulder Press,387,Strength
+2726,Handstand push-up,277,Strength
+2727,Upward Stretch,191,Stretching
+2728,Shoulder Circles,296,Stretching
+2729,Cross-body shoulder stretch,190,Stretching
+2730,Arm circle,330,Stretching
+2731,Seated Front Deltoid,229,Stretching
+2732,Shoulder Raise,246,Stretching
+2733,Hand Stand Push-Up,391,Strength
+2734,Wall walk,78,Strength
+2735,Return Push from Stance,204,Plyometrics
+2736,Wall shoulder tap,57,Strength
+2737,Bear crawl shoulder tap,322,Strength
+2738,Shadow boxing,249,Cardio
+2739,Bear crawl fire feet,428,Cardio
+2740,Wall sprawl,225,Plyometrics
+2741,Bent Over Shoulder Y,434,Stretching
+2742,Shoulder L,424,Strength
+2743,Shoulder Dislocation Stretch-Dowel,458,Stretching
+2744,TBS Inverted Row,450,Strength
+2745,PVC Shoulder Stretch,397,Stretching
+2746,Shoulder T,68,Stretching
+2747,HM Arm Circle,476,Strength
+2748,HM Shoulder Stretch,259,Stretching
+2749,HM Shoulder Stretch on Floor,483,Stretching
+2750,HM Shoulder Tap,463,Stretching
+2751,HM Hand-On-Wall Stretch,83,Strength
+2752,HM Jumping Arm Circle,142,Strength
+2753,Kipping Clapping Pull-Up,287,Strength
+2754,Holman Kneeling Overhead Press to Donkey Kick,135,Strength
+2755,Floor angel,169,Strength
+2756,Shoulder extension stretch,189,Strength
+2757,Backward Medicine Ball Throw,332,Plyometrics
+2758,Medicine ball scoop throw,314,Plyometrics
+2759,Standing Two-Arm Overhead Throw,107,Plyometrics
+2760,Incline face-down bar front raise,400,Strength
+2761,Incline anti-gravity shoulder press,280,Strength
+2762,30 Shoulders EZ-Bar Front Raise,192,Strength
+2763,Side Wrist Pull,377,Stretching
+2764,Elbow Circles,429,Stretching
+2765,Kneeling Arm Drill,392,Plyometrics
+2766,Bent-over shoulder rotation,412,Strength
+2767,Band overhead triceps press,446,Strength
+2768,Band overhead triceps extension,436,Strength
+2769,Band straight-arm pull-down,404,Strength
+2770,Band skullcrusher,416,Strength
+2771,Single-arm band kick-back,185,Strength
+2772,Incline EZ-bar skullcrusher,373,Strength
+2773,Decline Close-Grip Bench To Skull Crusher,150,Strength
+2774,Bench Press - Powerlifting,459,Powerlifting
+2775,Behind-the-head skullcrusher,85,Strength
+2776,Standing barbell overhead triceps extension,58,Strength
+2777,Reverse-grip bench press,133,Strength
+2778,Bench Press with Chains,307,Powerlifting
+2779,Floor Press,374,Powerlifting
+2780,One Arm Floor Press,248,Strength
+2781,Pin Presses,230,Powerlifting
+2782,JM Press With Bands,270,Strength
+2783,JM Press,479,Strength
+2784,Floor Press with Chains,156,Powerlifting
+2785,Reverse Band Bench Press,309,Powerlifting
+2786,Decline Barbell Triceps Extension - Gethin Variation,322,Strength
+2787,AM Skullcrusher,448,Strength
+2788,30 Arms Close-Grip Bench Press,62,Strength
+2789,30 Arms Barbell Skullcrusher,185,Strength
+2790,FYR2 Sprawl Over Kettlebell,382,Strength
+2791,Dumbbell floor press,377,Powerlifting
+2792,Seated triceps press,175,Strength
+2793,Tricep Dumbbell Kickback,383,Strength
+2794,Standing Dumbbell Triceps Extension,314,Strength
+2795,Double-arm triceps kick-back,360,Strength
+2796,Single-arm dumbbell triceps extension,462,Strength
+2797,Decline Dumbbell Triceps Extension,112,Strength
+2798,Dumbbell skullcrusher,226,Strength
+2799,One Arm Pronated Dumbbell Triceps Extension,347,Strength
+2800,One Arm Supinated Dumbbell Triceps Extension,93,Strength
+2801,Seated Bent-Over Two-Arm Dumbbell Triceps Extension,121,Strength
+2802,Tate Press,72,Strength
+2803,Standing Bent-Over One-Arm Dumbbell Triceps Extension,291,Strength
+2804,Seated Bent-Over One-Arm Dumbbell Triceps Extension,163,Strength
+2805,Dumbbell Tricep Extension -Pronated Grip,71,Strength
+2806,V-sit with overhead triceps extension,306,Strength
+2807,PJR Pull-Over,205,Strength
+2808,Paul Carter Dumbbell Kick-Back,474,Strength
+2809,Single-arm dumbbell skullcrusher,362,Strength
+2810,Dumbbells-together incline bench press,301,Strength
+2811,Incline dumbbell overhead triceps extension,392,Strength
+2812,Dumbbell Crush Press,246,Strength
+2813,Holman Hovering Renegade Triceps Press,307,Strength
+2814,Holman Heavy Triceps Press to Overhead Press,124,Strength
+2815,Total Fitness Close-Grip Dumbbell Press,449,Strength
+2816,Dumbbell row to triceps kick-back,111,Strength
+2817,Rolling triceps press,231,Strength
+2818,MetaBurn Skullcrusher to Ab Crunch,279,Strength
+2819,FYR2 Single-Dumbbell Triceps Extension,352,Strength
+2820,30 Arms Overhead Dumbbell Triceps Extension,255,Strength
+2821,30 Arms Dumbbell Skullcrusher,297,Strength
+2822,30 Arms Dumbbell Kick-Back,92,Strength
+2823,30 Arms BFR Dumbbell Kick-Back,456,Strength
+2824,Dumbbell saw triceps skullcrusher,316,Strength
+2825,Chain Handle Extension,297,Powerlifting
+2826,Sled Overhead Triceps Extension,293,Strength
+2827,Body Triceps Press Using Flat Bench,308,Strength
+2828,Suspended Triceps Press,250,Strength
+2829,Seated triceps push-down,389,Strength
+2830,Machine triceps extension-,193,Strength
+2831,Holman Overhead Weighted Triceps Press,245,Strength
+2832,30 Arms Weighted Triceps Dip,81,Strength
+2833,Cable V-bar push-down,432,Strength
+2834,Reverse Grip Triceps Pushdown,82,Strength
+2835,Kneeling cable triceps extension,127,Strength
+2836,Single-arm cable triceps extension,331,Strength
+2837,Dip Machine,71,Strength
+2838,Triceps Pushdown,419,Strength
+2839,Low cable overhead triceps extension,444,Strength
+2840,Lying cable triceps extension,373,Strength
+2841,Low Cable Triceps Extension,417,Strength
+2842,Cable overhead triceps extension,269,Strength
+2843,Single-arm low cable triceps extension,273,Strength
+2844,Incline cable straight-bar triceps extension,123,Strength
+2845,Paul Carter Overhead Rope Triceps Extension,118,Strength
+2846,TBS Rope Cable Push-Down,179,Strength
+2847,Single-arm cable triceps kick-back,83,Strength
+2848,Incline cable rope triceps extension,125,Strength
+2849,Reverse-grip cable straight-bar push-down,140,Strength
+2850,Kneeling Cable Triceps Extension - Gethin Variation,362,Strength
+2851,Cable Overhead Triceps Extension - Gethin Variation,246,Strength
+2852,Reverse-Grip Cable Triceps Pushdown - Gethin Variation,279,Strength
+2853,Cable Triceps Extension - Gethin Variation,226,Strength
+2854,Single-arm incline triceps extension,251,Strength
+2855,Triceps Overhead Extension with Rope - Gethin Variation,354,Strength
+2856,Cable rope push-down,490,Strength
+2857,Cable straight-bar push-down,287,Strength
+2858,Straight-arm bar pull-down,227,Strength
+2859,AM Rope Triceps Pushdown,350,Strength
+2860,AM Bar Triceps Push-Down,444,Strength
+2861,Rope overhead triceps extension,333,Strength
+2862,UP Rope Push-down,216,Strength
+2863,UP Triceps Extension Straight-Bar Push-Down,467,Strength
+2864,LD Cable One-Arm Upright Row,296,Strength
+2865,30 Arms Underhand Cable Straight-Bar Push-Down,445,Strength
+2866,30 Arms Single-Arm Reverse-Grip Cable Push-Down,86,Strength
+2867,30 Arms Cable V-Bar Push-Down,414,Strength
+2868,30 Arms Cable Straight-Bar Push-Down,143,Strength
+2869,30 Arms Cable Rope Push-Down,93,Strength
+2870,30 Arms Cable Rope Overhead Triceps Extension,144,Strength
+2871,BFR underhand straight-bar push-down,214,Strength
+2872,BFR overhand straight-bar push-down,144,Strength
+2873,BFR cable rope push-down,356,Strength
+2874,Triceps Pressdown,413,Strength
+2875,Machine Triceps Extension,147,Strength
+2876,Smith machine end-grip shoulder press,332,Strength
+2877,Assist machine triceps push-down,188,Strength
+2878,Smith machine close-grip bench press-,232,Strength
+2879,Machine Triceps Extension - Gethin Variation,494,Strength
+2880,Overhead Machine Triceps Extension - Gethin Variation,455,Strength
+2881,30 Arms Machine Triceps Dip,121,Strength
+2882,Triceps dip,108,Strength
+2883,Weighted bench dip,191,Strength
+2884,Push-Ups - Close Triceps Position,322,Strength
+2885,Parallel Bar Dip,134,Strength
+2886,Ring dip,483,Strength
+2887,Feet-elevated bench dip,169,Strength
+2888,Bodyweight triceps press,456,Strength
+2889,Standing Towel Triceps Extension,98,Strength
+2890,Tricep Side Stretch,385,Stretching
+2891,Triceps Stretch,159,Stretching
+2892,Overhead Triceps,364,Stretching
+2893,Russian Bar Dip,443,Strength
+2894,Straight-arm plank with kick-back,66,Strength
+2895,TBS Dip,185,Strength
+2896,Bench Dips - Gethin Variation,74,Strength
+2897,Banded dip,196,Strength
+2898,Bench Dip - Gethin Variation,302,Strength
+2899,HM Chair Dip,183,Strength
+2900,Bench dip,197,Strength
+2901,Holman Step Triceps Dip,353,Strength
+2902,Holman Chair Triceps Dip,217,Strength
+2903,Bodyweight Triceps Rope Press,118,Strength
+2904,Holman Heavy Triceps Overhead Press,254,Strength
+2905,Holman Couch Triceps Dip,159,Strength
+2906,FYR2 Triceps Push-Up,461,Strength
+2907,30 Arms Triceps Dip,189,Strength
+2908,30 Arms Close-Grip Push-Up,376,Strength
+2909,30 Arms BFR Close-Grip Push-Up,453,Strength
+2910,Supine Chest Throw,301,Plyometrics
+2911,Decline EZ-bar skullcrusher,297,Strength
+2912,EZ-Bar Skullcrusher,329,Strength
+2913,EZ-bar skullcrusher-,427,Strength
+2914,Lying Close-Grip Barbell Triceps Press To Chin,196,Strength
+2915,EZ-Bar Skullcrusher - Gethin Variation,56,Strength
+2916,TBS Skullcrusher,144,Strength
+2917,30 Arms EZ-Bar Skullcrusher,117,Strength
