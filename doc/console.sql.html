@@ -1,0 +1,390 @@
+<html>
+<head>
+<title>console.sql</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #2aacb8;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+console.sql</font>
+</center></td></tr></table>
+<pre><span class="s0">CREATE DATABASE </span><span class="s1">fitness_database</span><span class="s2">;</span>
+<span class="s0">USE </span><span class="s1">fitness_database</span><span class="s2">;</span>
+<span class="s3">##################################################################################</span>
+<span class="s3"># Part 1 Q2, Q3:</span>
+<span class="s0">CREATE TABLE user </span><span class="s2">(</span>
+    <span class="s1">id </span><span class="s0">INT PRIMARY KEY</span><span class="s2">,</span>
+    <span class="s1">user_name </span><span class="s0">VARCHAR</span><span class="s2">(</span><span class="s4">255</span><span class="s2">),</span>
+    <span class="s1">age </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s0">password VARCHAR</span><span class="s2">(</span><span class="s4">255</span><span class="s2">),</span>
+    <span class="s1">email </span><span class="s0">VARCHAR</span><span class="s2">(</span><span class="s4">255</span><span class="s2">),</span>
+    <span class="s1">goal_id </span><span class="s0">INT</span>
+<span class="s2">);</span>
+
+<span class="s0">SELECT COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">AS row_count FROM user</span><span class="s2">;</span>
+
+<span class="s0">CREATE TABLE </span><span class="s1">exercise </span><span class="s2">(</span>
+    <span class="s1">id </span><span class="s0">INT PRIMARY KEY</span><span class="s2">,</span>
+    <span class="s1">exercise_name </span><span class="s0">VARCHAR</span><span class="s2">(</span><span class="s4">255</span><span class="s2">),</span>
+    <span class="s1">calories </span><span class="s0">REAL</span><span class="s2">,</span>
+    <span class="s0">type VARCHAR</span><span class="s2">(</span><span class="s4">255</span><span class="s2">)</span>
+<span class="s2">);</span>
+
+<span class="s0">SELECT COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">AS row_count FROM </span><span class="s1">exercise</span><span class="s2">;</span>
+
+<span class="s0">CREATE TABLE </span><span class="s1">workout_log </span><span class="s2">(</span>
+    <span class="s1">id </span><span class="s0">INT PRIMARY KEY</span><span class="s2">,</span>
+    <span class="s1">user_id </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s0">date TIMESTAMP</span><span class="s2">,</span>
+    <span class="s1">calories_burnt </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s0">FOREIGN KEY </span><span class="s2">(</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">REFERENCES user</span><span class="s2">(</span><span class="s1">id</span><span class="s2">)</span>
+<span class="s2">);</span>
+
+<span class="s0">SELECT COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">AS row_count FROM </span><span class="s1">workout_log</span><span class="s2">;</span>
+
+<span class="s0">CREATE TABLE </span><span class="s1">affiliations </span><span class="s2">( </span><span class="s3"># relation table between workout_log &amp; exercise</span>
+    <span class="s1">workout_log_id </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s1">exercise_id </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s0">PRIMARY KEY </span><span class="s2">(</span><span class="s1">workout_log_id</span><span class="s2">, </span><span class="s1">exercise_id</span><span class="s2">),</span>
+    <span class="s0">FOREIGN KEY </span><span class="s2">(</span><span class="s1">workout_log_id</span><span class="s2">) </span><span class="s0">REFERENCES </span><span class="s1">workout_log</span><span class="s2">(</span><span class="s1">id</span><span class="s2">),</span>
+    <span class="s0">FOREIGN KEY </span><span class="s2">(</span><span class="s1">exercise_id</span><span class="s2">) </span><span class="s0">REFERENCES </span><span class="s1">exercise</span><span class="s2">(</span><span class="s1">id</span><span class="s2">)</span>
+<span class="s2">);</span>
+
+<span class="s0">SELECT COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">AS row_count FROM </span><span class="s1">affiliations</span><span class="s2">;</span>
+
+<span class="s0">CREATE TABLE </span><span class="s1">fitness_goal </span><span class="s2">(</span>
+    <span class="s1">id </span><span class="s0">INT PRIMARY KEY</span><span class="s2">,</span>
+    <span class="s1">user_id </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s1">goal_type </span><span class="s0">VARCHAR</span><span class="s2">(</span><span class="s4">255</span><span class="s2">),</span>
+    <span class="s0">FOREIGN KEY </span><span class="s2">(</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">REFERENCES user</span><span class="s2">(</span><span class="s1">id</span><span class="s2">)</span>
+<span class="s2">);</span>
+
+<span class="s0">SELECT COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">AS row_count FROM </span><span class="s1">fitness_goal</span><span class="s2">;</span>
+
+<span class="s0">CREATE TABLE </span><span class="s1">food </span><span class="s2">(</span>
+    <span class="s1">id </span><span class="s0">INT PRIMARY KEY</span><span class="s2">,</span>
+    <span class="s0">name VARCHAR</span><span class="s2">(</span><span class="s4">255</span><span class="s2">),</span>
+    <span class="s1">calories </span><span class="s0">REAL</span>
+<span class="s2">);</span>
+
+<span class="s0">SELECT COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">AS row_count FROM </span><span class="s1">food</span><span class="s2">;</span>
+
+<span class="s0">CREATE TABLE </span><span class="s1">takein </span><span class="s2">( </span><span class="s3"># relation table between workout_log &amp; food</span>
+    <span class="s1">food_id </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s1">workout_log_id </span><span class="s0">INT</span><span class="s2">,</span>
+    <span class="s0">PRIMARY KEY </span><span class="s2">(</span><span class="s1">food_id</span><span class="s2">, </span><span class="s1">workout_log_id</span><span class="s2">),</span>
+    <span class="s0">FOREIGN KEY </span><span class="s2">(</span><span class="s1">food_id</span><span class="s2">) </span><span class="s0">REFERENCES </span><span class="s1">food</span><span class="s2">(</span><span class="s1">id</span><span class="s2">),</span>
+    <span class="s0">FOREIGN KEY </span><span class="s2">(</span><span class="s1">workout_log_id</span><span class="s2">) </span><span class="s0">REFERENCES </span><span class="s1">workout_log</span><span class="s2">(</span><span class="s1">id</span><span class="s2">)</span>
+<span class="s2">);</span>
+
+<span class="s0">SELECT COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">AS row_count FROM </span><span class="s1">takein</span><span class="s2">;</span>
+
+<span class="s3">##################################################################################!!!!!!!!</span>
+<span class="s3"># Part 1 Q4:</span>
+<span class="s3"># Total Calories Burned by Each User with Aggregation and Join</span>
+<span class="s0">EXPLAIN ANALYZE</span>
+<span class="s0">SELECT </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">, </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">) </span><span class="s0">AS </span><span class="s1">total_calories_burnt</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">WHERE </span><span class="s1">u</span><span class="s2">.</span><span class="s1">age &lt;= </span><span class="s4">50</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">ORDER BY </span><span class="s1">total_calories_burnt </span><span class="s0">DESC</span><span class="s2">;</span>
+
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_user_age </span><span class="s0">ON user</span><span class="s2">(</span><span class="s1">age</span><span class="s2">);</span>
+<span class="s0">EXPLAIN ANALYZE</span>
+<span class="s0">SELECT </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">, </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">) </span><span class="s0">AS </span><span class="s1">total_calories_burnt</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">WHERE </span><span class="s1">u</span><span class="s2">.</span><span class="s1">age &lt;= </span><span class="s4">50</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">ORDER BY </span><span class="s1">total_calories_burnt </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">drop index </span><span class="s1">idx_user_age </span><span class="s0">on user</span><span class="s2">;</span>
+<span class="s0">CREATE INDEX </span><span class="s1">idx_user_name </span><span class="s0">ON user</span><span class="s2">(</span><span class="s1">user_name</span><span class="s2">);</span>
+<span class="s0">EXPLAIN ANALYZE</span>
+<span class="s0">SELECT </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">, </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">) </span><span class="s0">AS </span><span class="s1">total_calories_burnt</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">WHERE </span><span class="s1">u</span><span class="s2">.</span><span class="s1">age &lt;= </span><span class="s4">50</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">ORDER BY </span><span class="s1">total_calories_burnt </span><span class="s0">DESC</span><span class="s2">;</span>
+
+
+<span class="s0">drop index </span><span class="s1">idx_user_name </span><span class="s0">on user</span><span class="s2">;</span>
+<span class="s0">CREATE INDEX </span><span class="s1">idx_user_name_age </span><span class="s0">ON user</span><span class="s2">(</span><span class="s1">user_name</span><span class="s2">, </span><span class="s1">age</span><span class="s2">);</span>
+<span class="s0">EXPLAIN ANALYZE</span>
+<span class="s0">SELECT </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">, </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">) </span><span class="s0">AS </span><span class="s1">total_calories_burnt</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">WHERE </span><span class="s1">u</span><span class="s2">.</span><span class="s1">age &lt;= </span><span class="s4">50</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">ORDER BY </span><span class="s1">total_calories_burnt </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">drop index </span><span class="s1">idx_user_name_age </span><span class="s0">on user</span><span class="s2">;</span>
+
+
+
+<span class="s3">##################################################################################!!!!!!!!</span>
+<span class="s3"># Search for the average calories consumed and participant count for different type of exercise.</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT </span><span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">, </span><span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories_per_exercise</span><span class="s2">,</span>
+       <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">participant_count</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">WHERE </span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories &gt;= </span><span class="s4">450</span>
+<span class="s0">GROUP BY </span><span class="s1">e</span><span class="s2">.</span><span class="s1">type</span>
+<span class="s0">HAVING COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s1">&gt; </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">avg_calories_per_exercise </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_exercise_type_calories </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">(</span><span class="s0">type</span><span class="s2">, </span><span class="s1">calories</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">,</span>
+    <span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories_per_exercise</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">participant_count</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">WHERE </span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories &gt;= </span><span class="s4">450</span>
+<span class="s0">GROUP BY </span><span class="s1">e</span><span class="s2">.</span><span class="s1">type</span>
+<span class="s0">HAVING COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s1">&gt; </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">avg_calories_per_exercise </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_exercise_type_calories </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">;</span>
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_exercise_type </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">(</span><span class="s0">type</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">,</span>
+    <span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories_per_exercise</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">participant_count</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">WHERE </span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories &gt;= </span><span class="s4">450</span>
+<span class="s0">GROUP BY </span><span class="s1">e</span><span class="s2">.</span><span class="s1">type</span>
+<span class="s0">HAVING COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s1">&gt; </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">avg_calories_per_exercise </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_exercise_type </span><span class="s0">on </span><span class="s1">exercise</span><span class="s2">;</span>
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_exercise_calories </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">(</span><span class="s1">calories</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">,</span>
+    <span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories_per_exercise</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">participant_count</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">WHERE </span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories &gt;= </span><span class="s4">450</span>
+<span class="s0">GROUP BY </span><span class="s1">e</span><span class="s2">.</span><span class="s1">type</span>
+<span class="s0">HAVING COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s1">&gt; </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">avg_calories_per_exercise </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_exercise_calories </span><span class="s0">on </span><span class="s1">exercise</span><span class="s2">;</span>
+
+<span class="s3">##################################################################################!!!!!!!!</span>
+<span class="s3"># Search for the users who have more took in calories than consumed.</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">, </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_food_calories</span><span class="s2">,</span>
+    <span class="s1">SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_exercise_calories</span><span class="s2">,</span>
+    <span class="s2">(</span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">- SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)) </span><span class="s0">as </span><span class="s1">calorie_difference</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">JOIN </span><span class="s1">takein t </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = t</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">JOIN </span><span class="s1">food f </span><span class="s0">ON </span><span class="s1">t</span><span class="s2">.</span><span class="s1">food_id = f</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">exercise e </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">exercise_id = e</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id</span><span class="s2">, </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">HAVING </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">&gt; SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)</span>
+<span class="s0">ORDER BY </span><span class="s1">calorie_difference </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_exercise_calories </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">(</span><span class="s1">calories</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">, </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_food_calories</span><span class="s2">,</span>
+    <span class="s1">SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_exercise_calories</span><span class="s2">,</span>
+    <span class="s2">(</span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">- SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)) </span><span class="s0">as </span><span class="s1">calorie_difference</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">JOIN </span><span class="s1">takein t </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = t</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">JOIN </span><span class="s1">food f </span><span class="s0">ON </span><span class="s1">t</span><span class="s2">.</span><span class="s1">food_id = f</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">exercise e </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">exercise_id = e</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id</span><span class="s2">, </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">HAVING </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">&gt; SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)</span>
+<span class="s0">ORDER BY </span><span class="s1">calorie_difference </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_exercise_calories </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">;</span>
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_food_calories </span><span class="s0">ON </span><span class="s1">food</span><span class="s2">(</span><span class="s1">calories</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">,</span>
+    <span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_food_calories</span><span class="s2">,</span>
+    <span class="s1">SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_exercise_calories</span><span class="s2">,</span>
+    <span class="s2">(</span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">- SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)) </span><span class="s0">as </span><span class="s1">calorie_difference</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">JOIN </span><span class="s1">takein t </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = t</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">JOIN </span><span class="s1">food f </span><span class="s0">ON </span><span class="s1">t</span><span class="s2">.</span><span class="s1">food_id = f</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">exercise e </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">exercise_id = e</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id</span><span class="s2">, </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">HAVING </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">&gt; SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)</span>
+<span class="s0">ORDER BY </span><span class="s1">calorie_difference </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_food_calories </span><span class="s0">ON </span><span class="s1">food</span><span class="s2">;</span>
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_user_user_name </span><span class="s0">ON user</span><span class="s2">(</span><span class="s1">user_name</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span><span class="s2">,</span>
+    <span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_food_calories</span><span class="s2">,</span>
+    <span class="s1">SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s0">as </span><span class="s1">total_exercise_calories</span><span class="s2">,</span>
+    <span class="s2">(</span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">- SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)) </span><span class="s0">as </span><span class="s1">calorie_difference</span>
+<span class="s0">FROM user </span><span class="s1">u</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id = wl</span><span class="s2">.</span><span class="s1">user_id</span>
+<span class="s0">JOIN </span><span class="s1">takein t </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = t</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">JOIN </span><span class="s1">food f </span><span class="s0">ON </span><span class="s1">t</span><span class="s2">.</span><span class="s1">food_id = f</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">workout_log_id</span>
+<span class="s0">LEFT JOIN </span><span class="s1">exercise e </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">exercise_id = e</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY </span><span class="s1">u</span><span class="s2">.</span><span class="s1">id</span><span class="s2">, </span><span class="s1">u</span><span class="s2">.</span><span class="s1">user_name</span>
+<span class="s0">HAVING </span><span class="s1">SUM</span><span class="s2">(</span><span class="s1">f</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">) </span><span class="s1">&gt; SUM</span><span class="s2">(</span><span class="s1">e</span><span class="s2">.</span><span class="s1">calories</span><span class="s2">)</span>
+<span class="s0">ORDER BY </span><span class="s1">calorie_difference </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_user_user_name </span><span class="s0">ON user</span><span class="s2">;</span>
+
+<span class="s3">##################################################################################!!!!!!!!</span>
+<span class="s3"># Looking for the most-welcomed time period of a day for different exercise type.</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type </span><span class="s0">as </span><span class="s1">exercise_type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END as </span><span class="s1">time_period</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">as </span><span class="s1">session_count</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">user_count</span><span class="s2">,</span>
+    <span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END</span>
+<span class="s0">HAVING </span><span class="s1">user_count &gt;= </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">exercise_type</span><span class="s2">, </span><span class="s1">session_count </span><span class="s0">DESC</span><span class="s2">;</span>
+
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_exercise_type </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">(</span><span class="s0">type</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type </span><span class="s0">as </span><span class="s1">exercise_type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END as </span><span class="s1">time_period</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">as </span><span class="s1">session_count</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">user_count</span><span class="s2">,</span>
+    <span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END</span>
+<span class="s0">HAVING </span><span class="s1">user_count &gt;= </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">exercise_type</span><span class="s2">, </span><span class="s1">session_count </span><span class="s0">DESC</span><span class="s2">;</span>
+
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_exercise_type </span><span class="s0">ON </span><span class="s1">exercise</span><span class="s2">;</span>
+
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_workout_date </span><span class="s0">ON </span><span class="s1">workout_log</span><span class="s2">(</span><span class="s0">date</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type </span><span class="s0">as </span><span class="s1">exercise_type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END as </span><span class="s1">time_period</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">as </span><span class="s1">session_count</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">user_count</span><span class="s2">,</span>
+    <span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END</span>
+<span class="s0">HAVING </span><span class="s1">user_count &gt;= </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">exercise_type</span><span class="s2">, </span><span class="s1">session_count </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_workout_date </span><span class="s0">ON </span><span class="s1">workout_log</span><span class="s2">;</span>
+
+
+<span class="s0">CREATE INDEX </span><span class="s1">idx_workout_composite </span><span class="s0">ON </span><span class="s1">workout_log</span><span class="s2">(</span><span class="s0">date</span><span class="s2">, </span><span class="s1">calories_burnt</span><span class="s2">);</span>
+<span class="s0">explain analyze</span>
+<span class="s0">SELECT</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type </span><span class="s0">as </span><span class="s1">exercise_type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END as </span><span class="s1">time_period</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s1">*</span><span class="s2">) </span><span class="s0">as </span><span class="s1">session_count</span><span class="s2">,</span>
+    <span class="s0">COUNT</span><span class="s2">(</span><span class="s0">DISTINCT </span><span class="s1">wl</span><span class="s2">.</span><span class="s1">user_id</span><span class="s2">) </span><span class="s0">as </span><span class="s1">user_count</span><span class="s2">,</span>
+    <span class="s1">ROUND</span><span class="s2">(</span><span class="s1">AVG</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">calories_burnt</span><span class="s2">), </span><span class="s4">2</span><span class="s2">) </span><span class="s0">as </span><span class="s1">avg_calories</span>
+<span class="s0">FROM </span><span class="s1">exercise e</span>
+<span class="s0">JOIN </span><span class="s1">affiliations a </span><span class="s0">ON </span><span class="s1">e</span><span class="s2">.</span><span class="s1">id = a</span><span class="s2">.</span><span class="s1">exercise_id</span>
+<span class="s0">JOIN </span><span class="s1">workout_log wl </span><span class="s0">ON </span><span class="s1">a</span><span class="s2">.</span><span class="s1">workout_log_id = wl</span><span class="s2">.</span><span class="s1">id</span>
+<span class="s0">GROUP BY</span>
+    <span class="s1">e</span><span class="s2">.</span><span class="s1">type</span><span class="s2">,</span>
+    <span class="s0">CASE</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">6 </span><span class="s0">AND </span><span class="s4">11 </span><span class="s0">THEN </span><span class="s5">'Morning'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">12 </span><span class="s0">AND </span><span class="s4">17 </span><span class="s0">THEN </span><span class="s5">'Afternoon'</span>
+        <span class="s0">WHEN HOUR</span><span class="s2">(</span><span class="s1">wl</span><span class="s2">.</span><span class="s1">date</span><span class="s2">) </span><span class="s0">BETWEEN </span><span class="s4">18 </span><span class="s0">AND </span><span class="s4">23 </span><span class="s0">THEN </span><span class="s5">'Evening'</span>
+        <span class="s0">ELSE </span><span class="s5">'Night'</span>
+    <span class="s0">END</span>
+<span class="s0">HAVING </span><span class="s1">user_count &gt;= </span><span class="s4">5</span>
+<span class="s0">ORDER BY </span><span class="s1">exercise_type</span><span class="s2">, </span><span class="s1">session_count </span><span class="s0">DESC</span><span class="s2">;</span>
+
+<span class="s0">DROP INDEX </span><span class="s1">idx_workout_composite </span><span class="s0">ON </span><span class="s1">workout_log</span><span class="s2">;</span>
+
+</pre>
+</body>
+</html>
