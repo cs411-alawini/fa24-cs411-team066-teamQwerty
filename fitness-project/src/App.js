@@ -21,15 +21,15 @@ function App() {
     canvas.height = window.innerHeight;
 
     const particlesArray = [];
-    const numberOfParticles = 1500;
+    const numberOfParticles = 30;
 
     // 颜色数组，包含多种颜色
     const colors = [
-      'rgba(173, 216, 230, 0.8)', // 浅蓝色
-      'rgba(135, 206, 235, 0.8)', // 天蓝色
-      'rgba(30, 244, 224, 0.8)', // 浅蓝绿色
-      'rgba(30, 210, 244, 0.8)', // 浅橙色
-      'rgba(30, 210, 244, 0.04)'  // 浅绿色
+      'rgba(173, 216, 230, 0.8)',
+      'rgba(135, 206, 235, 0.8)',
+      'rgba(30, 244, 224, 0.8)',
+      'rgba(30, 210, 244, 0.8)',
+      'rgba(30, 210, 244, 0.04)',
     ];
 
     class Particle {
