@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "username": "TestUsear",
+        "name": "Test",
+        "email": "test@exampale.com",
+        "password": "scrypt:32768:8:1$ITkWzfHSgGCVKMqz$93ff0a58843f53e06ebd1349637d34e4cda5ef05cb8cfa44523797bb7880c72b4d150b093c688f3e448933eb314f40b90869f12e2e802b484f80a8c3983457d1"
+    },
+    {
+        "id": 2,
+        "username": "testuser",
+        "name": "Test User",
+        "email": "testuser@example.com",
+        "password": "scrypt:32768:8:1$cPdrqy61APhrLLIj$ca7e00bc4b083b21483b56d755b52dd8cd08d2b7e4022ea50e39b917190a8f86c207dae3aa6e0a5195814c8007cc61f2707c6ccb7a711bf4b89a12aedcef9b96"
+    },
+    {
+        "id": 3,
+        "username": "CL",
+        "name": "c",
+        "email": "rayrayray2099@outlook.com",
+        "password": "scrypt:32768:8:1$CsMlixiTy1ZPHSpj$6245f0dbc74d279b4ae4c21c3a9ef71d67726b8001b4dc19119fdd494f8bc32603427df57b50285f7b151def318c462e245fdf13b64ea66b57617506b38fbf4f"
+    },
+    {
+        "id": 4,
+        "username": "c",
+        "name": "c",
+        "email": "test@email.com",
+        "password": "scrypt:32768:8:1$TfdhZvED8KkTrjeC$60d71a1445a95606a9949edfc039a020a2a65cda4cf3808679585bf9d581fd55f21f9274123eb505857fc753b8442bed4618ea506435958de95f46966e6aef87"
+    },
+    {
+        "id": 5,
+        "username": "e",
+        "name": "c",
+        "email": "chenhan8@illinois.edu",
+        "password": "scrypt:32768:8:1$6grXrh9aEG2ab9Br$c91c633a899891621b918975430fca3a8a6e5a25c456d6b3cb0836abfc716c9007e876768f89ddd619d4872fcf8e93485af60e12077c322ce614a6635b2613ca"
+    }
+]
