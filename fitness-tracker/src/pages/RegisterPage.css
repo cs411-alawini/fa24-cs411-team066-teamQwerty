@@ -1,0 +1,14 @@
+.register-options {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .option-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+  }
+  
+  .option-link:hover {
+    text-decoration: underline;
+  }
