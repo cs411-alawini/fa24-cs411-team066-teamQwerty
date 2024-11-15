@@ -1,25 +1,5 @@
-/* src/App.css */
-
-body, html, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 .App {
   text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-#sandCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; /* 确保背景层位于其他内容之下 */
 }
 
 .App-logo {
