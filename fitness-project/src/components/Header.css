@@ -8,7 +8,7 @@
   padding: 1rem;
   background-color: #f1f1f1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative; /* 设置为相对定位，以便 login-link 的绝对定位生效 */
+  position: relative; /* Allows absolute positioning of the login/logout button */
 }
 
 .header-title {
@@ -19,7 +19,7 @@
 
 .header-nav {
   display: flex;
-  gap: 2rem; /* Links之间的间距 */
+  gap: 2rem; /* Spacing between links */
   margin-top: 0.5rem;
 }
 
@@ -27,24 +27,55 @@
   text-decoration: none;
   font-size: 1rem;
   color: #333;
-  transition: color 0.3s;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
 }
 
 .header-link:hover {
   color: #007bff;
+  transform: scale(1.1);
 }
 
-/* Login 链接的样式 */
-.login-link {
+/* Login/Logout button styles */
+.login-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  text-decoration: none;
   font-size: 1rem;
   color: #333;
-  transition: color 0.3s;
+  border: 1px solid lightblue;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
-.login-link:hover {
-  color: #007bff;
+.logout-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid darkred;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Common hover effect for login and logout buttons */
+.login-button:hover {
+  background-color: #007bff; /* Default hover color: blue */
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Specific hover effect for logout button */
+.logout-button:hover {
+  background-color: #ff4d4d; /* Red background for Logout button */
+  border-color: #ff4d4d;
 }

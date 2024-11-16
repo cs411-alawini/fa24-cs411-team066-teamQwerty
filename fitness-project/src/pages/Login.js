@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+// src/pages/Login.js
+import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { LoginStatusContext } from '../contexts/LoginStatusContext';
 import './Login.css';
 
 function Login() {
@@ -7,6 +9,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const { enableCredentials } = useContext(LoginStatusContext);
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -27,6 +30,7 @@ function Login() {
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
+          enableCredentials();
           navigate('/home'); // Navigate to home page on successful login
         } else {
           setError(data.message || 'Login failed. Please check your credentials.');

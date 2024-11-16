@@ -97,7 +97,7 @@ const Register = () => {
       </form>
       <div className="auth-links">
         <button onClick={() => navigate('/login')} className="register-link">
-          Already have an account? Log in
+          Already have an account?
         </button>
       </div>
     </div>
