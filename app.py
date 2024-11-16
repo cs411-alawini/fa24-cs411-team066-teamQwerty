@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 # Configurations
-app.config['SECRET_KEY'] = 'your-secret-key'  # Replace with a secure secret key
+app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
 # File for storing user data
 DATA_FILE = 'users.json'
