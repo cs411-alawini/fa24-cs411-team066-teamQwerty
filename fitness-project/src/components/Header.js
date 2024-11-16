@@ -1,18 +1,35 @@
 // src/components/Header.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { LoginStatusContext } from '../contexts/LoginStatusContext';
 import './Header.css';
 
 function Header() {
+  const { isLoggedIn, disableCredentials } = useContext(LoginStatusContext);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    disableCredentials();
+    navigate('/login');
+  };
+
+  const handleLogin = () => {
+    navigate('/login');
+  };
+
   return (
     <header className="header">
       <h1 className="header-title">Fitness Tracker</h1>
       <nav className="header-nav">
-        <Link to="/home" className="header-link">Home</Link>
-        <Link to="/dashboard" className="header-link">Dashboard</Link>
-        <Link to="/profile" className="header-link">Profile</Link>
+        <button className="header-link" onClick={() => navigate('/home')}>Home</button>
+        <button className="header-link" onClick={() => navigate('/dashboard')}>Dashboard</button>
+        <button className="header-link" onClick={() => navigate('/profile')}>Profile</button>
       </nav>
-      <Link to="/login" className="login-link">Login</Link> {/* Login 链接在右侧 */}
+      {isLoggedIn ? (
+        <button onClick={handleLogout} className="login-button logout-button">Logout</button>
+      ) : (
+        <button onClick={handleLogin} className="login-button">Login</button>
+      )}
     </header>
   );
 }
