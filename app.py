@@ -14,7 +14,7 @@ CORS(app, supports_credentials=True)
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:199988@localhost/fitness_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@localhost/database_name'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
