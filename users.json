@@ -33,5 +33,12 @@
         "name": "c",
         "email": "chenhan8@illinois.edu",
         "password": "scrypt:32768:8:1$6grXrh9aEG2ab9Br$c91c633a899891621b918975430fca3a8a6e5a25c456d6b3cb0836abfc716c9007e876768f89ddd619d4872fcf8e93485af60e12077c322ce614a6635b2613ca"
+    },
+    {
+        "id": 6,
+        "username": "a",
+        "name": "a",
+        "email": "a@a",
+        "password": "scrypt:32768:8:1$1BFKGKbb7AUkyXCC$f525d4627205ff23807e8dec58453b109d606478ab97542fd805c1a221c01b6b956669489081fbda7fcfee2af24ca08426130bd6e29af0fff9522ebfefbc9fd8"
     }
 ]
