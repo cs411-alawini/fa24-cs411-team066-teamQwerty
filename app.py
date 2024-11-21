@@ -1,7 +1,9 @@
+from datetime import datetime
+
 from flask import Flask, request, jsonify, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_cors import CORS
-import json
+from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
@@ -12,59 +14,116 @@ CORS(app, supports_credentials=True)
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
-# File for storing user data
-DATA_FILE = 'users.json'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@localhost/database_name'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Initialize the data file if it doesn't exist
-if not os.path.exists(DATA_FILE):
-    with open(DATA_FILE, 'w') as file:
-        json.dump([], file)
+db = SQLAlchemy(app)
 
 
-# Helper Functions
-def read_users():
-    """Read users from the JSON file."""
-    with open(DATA_FILE, 'r') as file:
-        return json.load(file)
+class User(db.Model):
+    __tablename__ = 'user'
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_name = db.Column(db.String(255))
+    age = db.Column(db.Integer)
+    password = db.Column(db.String(255))
+    email = db.Column(db.String(255))
+    goal_id = db.Column(db.Integer)
+
+    # Relationships
+    workout_logs = db.relationship('WorkoutLog', backref='user', lazy=True)
+    fitness_goals = db.relationship('FitnessGoal', backref='user', lazy=True)
 
 
-def write_users(users):
-    """Write users to the JSON file."""
-    with open(DATA_FILE, 'w') as file:
-        json.dump(users, file, indent=4)
+class Exercise(db.Model):
+    __tablename__ = 'exercise'
+
+    id = db.Column(db.Integer, primary_key=True)
+    exercise_name = db.Column(db.String(255))
+    calories = db.Column(db.Float)
+    type = db.Column(db.String(255))
+
+    # Relationships
+    workout_logs = db.relationship(
+        'WorkoutLog',
+        secondary='affiliations',
+        backref=db.backref('exercises', lazy='dynamic')
+    )
 
 
-# Register Route
+class WorkoutLog(db.Model):
+    __tablename__ = 'workout_log'
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    date = db.Column(db.DateTime, default=datetime.utcnow)
+    calories_burnt = db.Column(db.Integer)
+
+    # Relationships
+    foods = db.relationship(
+        'Food',
+        secondary='takein',
+        backref=db.backref('workout_logs', lazy='dynamic')
+    )
+
+
+class Affiliations(db.Model):
+    __tablename__ = 'affiliations'
+
+    workout_log_id = db.Column(db.Integer, db.ForeignKey('workout_log.id'), primary_key=True)
+    exercise_id = db.Column(db.Integer, db.ForeignKey('exercise.id'), primary_key=True)
+
+
+class FitnessGoal(db.Model):
+    __tablename__ = 'fitness_goal'
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    goal_type = db.Column(db.String(255))
+
+
+class Food(db.Model):
+    __tablename__ = 'food'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255))
+    calories = db.Column(db.Float)
+
+
+class Takein(db.Model):
+    __tablename__ = 'takein'
+
+    food_id = db.Column(db.Integer, db.ForeignKey('food.id'), primary_key=True)
+    workout_log_id = db.Column(db.Integer, db.ForeignKey('workout_log.id'), primary_key=True)
+
+
 @app.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
-    username = data.get('username')
-    name = data.get('name')
+    user_name = data.get('username')  # Changed to match user_name in the table
     email = data.get('email')
     password = data.get('password')
 
     # Validate input
-    if not username or not name or not email or not password:
-        return jsonify({'success': False, 'message': 'All fields are required'}), 400
-
-    users = read_users()
+    if not user_name or not email or not password:
+        return jsonify({'success': False, 'message': 'Username, email, and password are required'}), 400
 
     # Check if the email or username already exists
-    if any(user['email'] == email or user['username'] == username for user in users):
+    if User.query.filter((User.email == email) | (User.user_name == user_name)).first():
         return jsonify({'success': False, 'message': 'Username or email already exists'}), 409
 
     # Hash the password and create the user
     hashed_password = generate_password_hash(password, method='scrypt')
-    new_user = {
-        'id': len(users) + 1,
-        'username': username,
-        'name': name,
-        'email': email,
-        'password': hashed_password
-    }
+    new_user = User(
+        user_name=user_name,
+        email=email,
+        password=hashed_password,
+        age=None,       # Set to None or handle accordingly
+        goal_id=None    # Set to None or handle accordingly
+    )
 
-    users.append(new_user)
-    write_users(users)
+    db.session.add(new_user)
+    db.session.commit()
 
     return jsonify({'success': True, 'message': 'User registered successfully'}), 201
 
@@ -73,22 +132,20 @@ def register():
 @app.route('/login', methods=['POST'])
 def login():
     data = request.get_json()
-    username = data.get('username')
+    user_name = data.get('username')  # Changed to match user_name in the table
     password = data.get('password')
 
     # Validate input
-    if not username or not password:
+    if not user_name or not password:
         return jsonify({'success': False, 'message': 'Username and password are required'}), 400
 
-    users = read_users()
-
     # Find the user
-    user = next((u for u in users if u['username'] == username), None)
-    if user and check_password_hash(user['password'], password):
+    user = User.query.filter_by(user_name=user_name).first()
+    if user and check_password_hash(user.password, password):
         # Store user info in session
-        session['user_id'] = user['id']
-        session['username'] = user['username']
-        return jsonify({'success': True, 'message': 'Login successful', 'username': user['username']}), 200
+        session['user_id'] = user.id
+        session['username'] = user.user_name
+        return jsonify({'success': True, 'message': 'Login successful', 'username': user.user_name}), 200
 
     return jsonify({'success': False, 'message': 'Invalid username or password'}), 401
 
@@ -104,4 +161,4 @@ def logout():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port = 5000)
+    app.run(debug=True, port=5000)
