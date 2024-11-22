@@ -2,24 +2,59 @@
 
 ## 1. Install Node.js dependencies.
 
-Go to fitness-project folder and run:
+Go to the `fitness-project` folder and run:
 
 ```bash
 npm install
 ```
 
-## 2. Start API server.
+## 2. Set up MySQL.
 
-Navigate back to folder fa24-cs411-team066-teamQwerty and run:
+1. Install MySQL on your system if not already installed.
+   - For Windows: [MySQL Installer](https://dev.mysql.com/downloads/installer/)
+   - For Mac: `brew install mysql`
+   - For Linux: `sudo apt-get install mysql-server`
+
+2. Start the MySQL server (Linux only):
+   ```bash
+   sudo service mysql start
+   ```
+
+3. Connect to the MySQL server:
+   ```bash
+   mysql -u root -p
+   ```
+
+4. Create a new database:
+   ```bash
+   CREATE DATABASE database_name;
+   ```
+
+5. Update `app.py` to include your MySQL credentials:
+   ```python
+   app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://<username>:<password>@localhost/<database_name>'
+   ```
+
+6. Initialize the database schema:
+   ```bash
+   python3
+   from app import db
+   db.create_all()
+   exit()
+   ```
+
+## 3. Start API server.
+
+Navigate to the `fa24-cs411-team066-teamQwerty` folder and run:
 
 ```bash
 pip install -r requirements.txt
 python3 app.py
 ```
 
-## 3. Run the WebPage.
+## 4. Run the WebPage.
 
-Navigate to fitness-project folder and run:
+Navigate to the `fitness-project` folder and run:
 
 ```bash
 npm start
