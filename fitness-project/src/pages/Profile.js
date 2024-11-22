@@ -5,19 +5,17 @@ import './Panel.css';
 function Profile() {
   // Replace with actual user data in a real app
   const user = {
-    name: 'John Doe',
+    Username: 'John Doe',
     age: 25,
-    height: '180 cm',
-    weight: '75 kg'
+    email: '180 cm',
   };
 
   return (
     <div className='panel'>
       <h2>User Profile</h2>
-      <p><strong>Name:</strong> {user.name}</p>
+      <p><strong>Username:</strong> {user.Username}</p>
+      <p><strong>Email Address:</strong> {user.email}</p>
       <p><strong>Age:</strong> {user.age}</p>
-      <p><strong>Height:</strong> {user.height}</p>
-      <p><strong>Weight:</strong> {user.weight}</p>
     </div>
   );
 }

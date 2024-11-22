@@ -14,7 +14,7 @@ CORS(app, supports_credentials=True)
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@localhost/database_name'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:nianzeg2@localhost/fitness'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -103,6 +103,7 @@ def register():
     user_name = data.get('username')  # Changed to match user_name in the table
     email = data.get('email')
     password = data.get('password')
+    age = data.get('age')
 
     # Validate input
     if not user_name or not email or not password:
@@ -118,7 +119,7 @@ def register():
         user_name=user_name,
         email=email,
         password=hashed_password,
-        age=None,       # Set to None or handle accordingly
+        age=age,       # Set to None or handle accordingly
         goal_id=None    # Set to None or handle accordingly
     )
 
