@@ -6,7 +6,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
-  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Register = () => {
       email,
       password,
       username,
-      name,
+      age,
     };
 
     fetch('http://127.0.0.1:5000/register', {
@@ -47,17 +47,6 @@ const Register = () => {
     <div className="auth-container">
       <h2>Register</h2>
       <form onSubmit={handleRegister}>
-        <div className="form-group">
-          <label htmlFor="nameInput">Full Name</label>
-          <input
-            id="nameInput"
-            type="text"
-            placeholder="Enter your full name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
         <div className="form-group">
           <label htmlFor="usernameInput">Username</label>
           <input
@@ -89,6 +78,18 @@ const Register = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="ageInput">Age</label>
+          <input
+            id="ageInput"
+            type="number"
+            placeholder="Enter your age"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+            required
+            min="1"
           />
         </div>
         {error && <p className="error-message">{error}</p>}
