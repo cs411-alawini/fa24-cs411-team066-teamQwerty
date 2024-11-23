@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 
 # Enable CORS for React frontend
-CORS(app, supports_credentials=True)
+CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
 
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
@@ -160,6 +160,24 @@ def logout():
         return jsonify({'success': True, 'message': 'Logout successful'}), 200
     return jsonify({'success': False, 'message': 'No active session'}), 400
 
+@app.route('/profile', methods=['GET'])
+def profile():
+    user_id = session.get('user_id')
+    if not user_id:
+        return jsonify({'success': False, 'message': 'User not logged in'}), 401
+
+    user = User.query.get(user_id)
+    if not user:
+        return jsonify({'success': False, 'message': 'User not found'}), 404
+
+    return jsonify({
+        'success': True,
+        'data': {
+            'username': user.user_name,
+            'email': user.email,
+            'age': user.age
+        }
+    }), 200
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='localhost', debug=True, port=5000)
