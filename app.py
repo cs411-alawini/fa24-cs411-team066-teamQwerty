@@ -5,16 +5,20 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 import os
+import logging
+
 
 app = Flask(__name__)
 
 # Enable CORS for React frontend
-CORS(app, supports_credentials=True)
+CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
+logging.basicConfig(level=logging.DEBUG)
+
 
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:nianzeg2@localhost/fitness'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:199988@localhost/fitness_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -97,6 +101,23 @@ class Takein(db.Model):
     workout_log_id = db.Column(db.Integer, db.ForeignKey('workout_log.id'), primary_key=True)
 
 
+@app.route('/getuser', methods=['GET'])
+def get_user():
+    if 'user_id' in session:
+        user = User.query.get(session['user_id'])
+        if user:
+            user_data = {
+                'username': user.user_name,
+                'email': user.email,
+                'age': user.age
+            }
+            return jsonify({'success': True, 'user': user_data}), 200
+        else:
+            return jsonify({'success': False, 'message': 'User not found'}), 404
+    else:
+        return jsonify({'success': False, 'message': 'Not authenticated'}), 401
+
+
 @app.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
@@ -162,4 +183,4 @@ def logout():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='localhost', port=5000, debug=True)
