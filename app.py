@@ -11,7 +11,7 @@ import logging
 app = Flask(__name__)
 
 # Enable CORS for React frontend
-CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
+CORS(app, supports_credentials=True)
 logging.basicConfig(level=logging.DEBUG)
 
 
@@ -101,6 +101,136 @@ class Takein(db.Model):
     workout_log_id = db.Column(db.Integer, db.ForeignKey('workout_log.id'), primary_key=True)
 
 
+# Add these new routes to your Flask application
+
+@app.route('/search/exercises', methods=['GET'])
+def search_exercises():
+    keyword = request.args.get('keyword', '')
+
+    query = Exercise.query
+
+    if keyword:
+        # Case-insensitive search on exercise name and type
+        search = f"%{keyword}%"
+        query = query.filter(
+            db.or_(
+                Exercise.exercise_name.ilike(search),
+                Exercise.type.ilike(search)
+            )
+        )
+
+    exercises = query.all()
+
+    return jsonify({
+        'success': True,
+        'exercises': [{
+            'id': exercise.id,
+            'name': exercise.exercise_name,
+            'calories': exercise.calories,
+            'type': exercise.type
+        } for exercise in exercises]
+    }), 200
+
+
+@app.route('/search/foods', methods=['GET'])
+def search_foods():
+    keyword = request.args.get('keyword', '')
+
+    query = Food.query
+
+    if keyword:
+        # Case-insensitive search on food name
+        search = f"%{keyword}%"
+        query = query.filter(Food.name.ilike(search))
+
+    foods = query.all()
+
+    return jsonify({
+        'success': True,
+        'foods': [{
+            'id': food.id,
+            'name': food.name,
+            'calories': food.calories
+        } for food in foods]
+    }), 200
+
+
+@app.route('/fitness-goal', methods=['POST'])
+def update_fitness_goal():
+    # Check if user is logged in
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'message': 'Not authenticated'}), 401
+
+    data = request.get_json()
+    user_id = session['user_id']
+    goal_type = data.get('goal_type')
+
+    if not goal_type:
+        return jsonify({'success': False, 'message': 'Goal type is required'}), 400
+
+    try:
+        # Check if user already has a fitness goal
+        existing_goal = FitnessGoal.query.filter_by(user_id=user_id).first()
+
+        if existing_goal:
+            # Update existing goal
+            existing_goal.goal_type = goal_type
+            db.session.commit()
+            message = 'Fitness goal updated successfully'
+        else:
+            # Create new goal
+            new_goal = FitnessGoal(
+                user_id=user_id,
+                goal_type=goal_type
+            )
+            db.session.add(new_goal)
+            db.session.commit()
+
+            # Update user's goal_id
+            user = User.query.get(user_id)
+            user.goal_id = new_goal.id
+            db.session.commit()
+
+            message = 'Fitness goal created successfully'
+
+        return jsonify({
+            'success': True,
+            'message': message,
+            'goal': {
+                'id': existing_goal.id if existing_goal else new_goal.id,
+                'goal_type': goal_type
+            }
+        }), 200
+
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'success': False, 'message': str(e)}), 500
+
+
+# Optional: Add a GET endpoint to retrieve current fitness goal
+@app.route('/fitness-goal', methods=['GET'])
+def get_fitness_goal():
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'message': 'Not authenticated'}), 401
+
+    user_id = session['user_id']
+    goal = FitnessGoal.query.filter_by(user_id=user_id).first()
+
+    if goal:
+        return jsonify({
+            'success': True,
+            'goal': {
+                'id': goal.id,
+                'goal_type': goal.goal_type
+            }
+        }), 200
+    else:
+        return jsonify({
+            'success': True,
+            'goal': None
+        }), 200
+
+
 @app.route('/getuser', methods=['GET'])
 def get_user():
     if 'user_id' in session:
@@ -184,3 +314,6 @@ def logout():
 
 if __name__ == '__main__':
     app.run(host='localhost', port=5000, debug=True)
+
+
+
