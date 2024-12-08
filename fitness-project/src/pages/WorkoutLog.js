@@ -10,6 +10,7 @@ function WorkoutLog() {
   const [searchResultsRight, setSearchResultsRight] = useState([]); // State for right search results
 
   const [selectedItems, setSelectedItems] = useState([]); // State for selected items (food or exercise)
+  const [message, setMessage] = useState(''); // State for status messages
 
   // Function to handle the search action
   const handleSearch = async (query, setResults, endpoint) => {
@@ -50,6 +51,46 @@ function WorkoutLog() {
   // Clear all selected items
   const handleClear = () => {
     setSelectedItems([]);
+    setMessage('');
+  };
+
+  // Save workout log to the database
+  const handleSaveLog = async () => {
+    if (!date) {
+      setMessage('Please select a date.');
+      return;
+    }
+
+    try {
+      const totalCalories = selectedItems.reduce((total, item) => {
+        const calories = item.type ? -item.calories : item.calories;
+        return total + calories;
+      }, 0);
+
+      const response = await fetch('http://localhost:5000/workout-log', {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          date,
+          calories_burnt: totalCalories,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setMessage('Workout log saved successfully!');
+        setSelectedItems([]); // Clear the selected items after saving
+        setDate(''); // Clear the date after saving
+      } else {
+        setMessage(`Error: ${data.message}`);
+      }
+    } catch (error) {
+      console.error('Error saving workout log:', error);
+      setMessage('Error saving workout log.');
+    }
   };
 
   // Calculate total calories
@@ -184,17 +225,37 @@ function WorkoutLog() {
                 color: 'white',
                 border: 'none',
                 borderRadius: '4px',
-                marginTop: '1rem',
+                marginRight: '1rem',
                 cursor: 'pointer',
               }}
             >
               Clear All
+            </button>
+            <button
+              onClick={handleSaveLog}
+              style={{
+                padding: '0.8rem',
+                backgroundColor: '#28a745',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+              }}
+            >
+              Save Log
             </button>
           </>
         ) : (
           <p>No items selected.</p>
         )}
       </div>
+
+      {/* Status Message */}
+      {message && (
+        <div className="panel" style={{ flex: '1 0 100%', marginTop: '1rem' }}>
+          <p>{message}</p>
+        </div>
+      )}
     </div>
   );
 }
