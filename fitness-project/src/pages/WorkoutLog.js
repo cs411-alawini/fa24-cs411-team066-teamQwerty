@@ -44,6 +44,9 @@ function WorkoutLog() {
     });
   };
 
+  // Calculate total calories of selected foods
+  const totalCalories = selectedFoods.reduce((total, food) => total + food.calories, 0);
+
   return (
     <div>
       <h2>Workout Log</h2>
@@ -93,7 +96,7 @@ function WorkoutLog() {
           searchQuery && <p>No results found for "{searchQuery}"</p>
         )}
       </div>
-      {/* Display Selected Foods */}
+      {/* Display Selected Foods and Total Calories */}
       {selectedFoods.length > 0 && (
         <div style={{ marginTop: '1rem' }}>
           <h3>Selected Foods</h3>
@@ -104,6 +107,7 @@ function WorkoutLog() {
               </li>
             ))}
           </ul>
+          <p style={{ marginTop: '1rem', fontWeight: 'bold' }}>Total Calories: {totalCalories}</p>
         </div>
       )}
     </div>
