@@ -3,19 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import './Panel.css';
 
 function WorkoutLog() {
-  const [searchQueryLeft, setSearchQueryLeft] = useState(''); // State for the left search bar
-  const [searchResultsLeft, setSearchResultsLeft] = useState([]); // State for left search results
+  const [searchQueryLeft, setSearchQueryLeft] = useState('');
+  const [searchResultsLeft, setSearchResultsLeft] = useState([]);
 
-  const [searchQueryRight, setSearchQueryRight] = useState(''); // State for the right search bar
-  const [searchResultsRight, setSearchResultsRight] = useState([]); // State for right search results
+  const [searchQueryRight, setSearchQueryRight] = useState('');
+  const [searchResultsRight, setSearchResultsRight] = useState([]);
 
-  const [selectedFoods, setSelectedFoods] = useState([]); // State for selected foods
-  const [selectedExercises, setSelectedExercises] = useState([]); // State for selected exercises
-  const [message, setMessage] = useState(''); // State for status messages
+  const [selectedFoods, setSelectedFoods] = useState([]);
+  const [selectedExercises, setSelectedExercises] = useState([]);
+  const [message, setMessage] = useState('');
 
   const navigate = useNavigate();
 
-  // Function to handle the search action
   const handleSearch = async (query, setResults, endpoint) => {
     try {
       const response = await fetch(`http://localhost:5000${endpoint}?keyword=${encodeURIComponent(query)}`, {
@@ -40,7 +39,6 @@ function WorkoutLog() {
     }
   };
 
-  // Handle selection of food items
   const handleSelectFood = (food) => {
     setSelectedFoods((prevSelected) => {
       if (prevSelected.some((item) => item.id === food.id)) {
@@ -51,7 +49,6 @@ function WorkoutLog() {
     });
   };
 
-  // Handle selection of exercise items
   const handleSelectExercise = (exercise) => {
     setSelectedExercises((prevSelected) => {
       if (prevSelected.some((item) => item.id === exercise.id)) {
@@ -62,14 +59,12 @@ function WorkoutLog() {
     });
   };
 
-  // Clear all selected items
   const handleClear = () => {
     setSelectedFoods([]);
     setSelectedExercises([]);
     setMessage('');
   };
 
-  // Save workout log to the database
   const handleSaveLog = async () => {
     try {
       const totalCalories =
@@ -90,8 +85,8 @@ function WorkoutLog() {
       const data = await response.json();
       if (data.success) {
         setMessage('Workout log saved successfully!');
-        setSelectedFoods([]); // Clear the selected foods after saving
-        setSelectedExercises([]); // Clear the selected exercises after saving
+        setSelectedFoods([]);
+        setSelectedExercises([]);
       } else {
         setMessage(`Error: ${data.message}`);
       }
@@ -101,103 +96,99 @@ function WorkoutLog() {
     }
   };
 
-  // Calculate total calories
   const totalCalories =
     selectedFoods.reduce((total, item) => total + item.calories, 0) -
     selectedExercises.reduce((total, item) => total + item.calories, 0);
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem', padding: '2rem' }}>
-      {/* Left Panel - Food Search */}
-      <button style={{ padding: '0.5rem 1rem', marginTop: '1rem' }} 
-        onClick={() => navigate('/LogHistory')}>Go to Log History </button>
-      <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
-        <h1>Food Search</h1>
-        <div style={{ marginBottom: '1rem' }}>
-          <input
-            type="text"
-            value={searchQueryLeft}
-            onChange={(e) => setSearchQueryLeft(e.target.value)}
-            placeholder="Search for food..."
-            style={{
-              padding: '0.8rem',
-              width: '80%',
-              border: '1px solid #ddd',
-              borderRadius: '4px',
-            }}
-          />
-          <button onClick={() => handleSearch(searchQueryLeft, setSearchResultsLeft, '/search/foods')} style={{ marginLeft: '0.5rem' }}>
-            Search
-          </button>
+    <div style={{ padding: '2rem' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem' }}>
+        <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
+          <h1>Food Search</h1>
+          <div style={{ marginBottom: '1rem' }}>
+            <input
+              type="text"
+              value={searchQueryLeft}
+              onChange={(e) => setSearchQueryLeft(e.target.value)}
+              placeholder="Search for food..."
+              style={{
+                padding: '0.8rem',
+                width: '80%',
+                border: '1px solid #ddd',
+                borderRadius: '4px',
+              }}
+            />
+            <button onClick={() => handleSearch(searchQueryLeft, setSearchResultsLeft, '/search/foods')} style={{ marginLeft: '0.5rem' }}>
+              Search
+            </button>
+          </div>
+          <div style={{ maxHeight: '200px', overflowY: 'auto', textAlign: 'left' }}>
+            {searchResultsLeft.length > 0 ? (
+              <ul style={{ listStyleType: 'none', padding: 0 }}>
+                {searchResultsLeft.map((food) => (
+                  <li key={food.id} style={{ marginBottom: '0.5rem' }}>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={selectedFoods.some((item) => item.id === food.id)}
+                        onChange={() => handleSelectFood(food)}
+                        style={{ marginRight: '0.5rem' }}
+                      />
+                      <strong>{food.name}</strong>: {food.calories} calories
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              searchQueryLeft && <p>No results found for "{searchQueryLeft}"</p>
+            )}
+          </div>
         </div>
-        <div style={{ maxHeight: '200px', overflowY: 'auto', textAlign: 'left' }}>
-          {searchResultsLeft.length > 0 ? (
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              {searchResultsLeft.map((food) => (
-                <li key={food.id} style={{ marginBottom: '0.5rem' }}>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={selectedFoods.some((item) => item.id === food.id)}
-                      onChange={() => handleSelectFood(food)}
-                      style={{ marginRight: '0.5rem' }}
-                    />
-                    <strong>{food.name}</strong>: {food.calories} calories
-                  </label>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            searchQueryLeft && <p>No results found for "{searchQueryLeft}"</p>
-          )}
+
+        <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
+          <h1>Exercise Search</h1>
+          <div style={{ marginBottom: '1rem' }}>
+            <input
+              type="text"
+              value={searchQueryRight}
+              onChange={(e) => setSearchQueryRight(e.target.value)}
+              placeholder="Search for exercise..."
+              style={{
+                padding: '0.8rem',
+                width: '80%',
+                border: '1px solid #ddd',
+                borderRadius: '4px',
+              }}
+            />
+            <button onClick={() => handleSearch(searchQueryRight, setSearchResultsRight, '/search/exercises')} style={{ marginLeft: '0.5rem' }}>
+              Search
+            </button>
+          </div>
+          <div style={{ maxHeight: '200px', overflowY: 'auto', textAlign: 'left' }}>
+            {searchResultsRight.length > 0 ? (
+              <ul style={{ listStyleType: 'none', padding: 0 }}>
+                {searchResultsRight.map((exercise) => (
+                  <li key={exercise.id} style={{ marginBottom: '0.5rem' }}>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={selectedExercises.some((item) => item.id === exercise.id)}
+                        onChange={() => handleSelectExercise(exercise)}
+                        style={{ marginRight: '0.5rem' }}
+                      />
+                      <strong>{exercise.name}</strong> ({exercise.type}): {exercise.calories} calories
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              searchQueryRight && <p>No results found for "{searchQueryRight}"</p>
+            )}
+          </div>
         </div>
       </div>
 
-      {/* Right Panel - Exercise Search */}
-      <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
-        <h1>Exercise Search</h1>
-        <div style={{ marginBottom: '1rem' }}>
-          <input
-            type="text"
-            value={searchQueryRight}
-            onChange={(e) => setSearchQueryRight(e.target.value)}
-            placeholder="Search for exercise..."
-            style={{
-              padding: '0.8rem',
-              width: '80%',
-              border: '1px solid #ddd',
-              borderRadius: '4px',
-            }}
-          />
-          <button onClick={() => handleSearch(searchQueryRight, setSearchResultsRight, '/search/exercises')} style={{ marginLeft: '0.5rem' }}>
-            Search
-          </button>
-        </div>
-        <div style={{ maxHeight: '200px', overflowY: 'auto', textAlign: 'left' }}>
-          {searchResultsRight.length > 0 ? (
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              {searchResultsRight.map((exercise) => (
-                <li key={exercise.id} style={{ marginBottom: '0.5rem' }}>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={selectedExercises.some((item) => item.id === exercise.id)}
-                      onChange={() => handleSelectExercise(exercise)}
-                      style={{ marginRight: '0.5rem' }}
-                    />
-                    <strong>{exercise.name}</strong> ({exercise.type}): {exercise.calories} calories
-                  </label>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            searchQueryRight && <p>No results found for "{searchQueryRight}"</p>
-          )}
-        </div>
-      </div>
-
-      {/* Selected Items Section */}
-      <div className="panel" style={{ flex: '1 0 100%' }}>
+      <div className="panel" style={{ marginTop: '2rem' }}>
         <h1>Selected Items</h1>
         {selectedFoods.length > 0 || selectedExercises.length > 0 ? (
           <>
@@ -251,12 +242,27 @@ function WorkoutLog() {
         )}
       </div>
 
-      {/* Status Message */}
-      {message && (
-        <div className="panel" style={{ flex: '1 0 100%', marginTop: '1rem' }}>
-          <p>{message}</p>
-        </div>
-      )}
+      <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'center' }}>
+        <button
+          onClick={() => navigate('/LogHistory')}
+          style={{
+            padding: '0.8rem 1.5rem',
+            backgroundColor: '#007bff',
+            color: 'white',
+            fontSize: '1rem',
+            fontWeight: 'bold',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'background-color 0.3s ease',
+          }}
+          onMouseEnter={(e) => (e.target.style.backgroundColor = '#0056b3')}
+          onMouseLeave={(e) => (e.target.style.backgroundColor = '#007bff')}
+        >
+          Go to Log History
+        </button>
+      </div>
     </div>
   );
 }
