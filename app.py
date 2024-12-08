@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.DEBUG)
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:863235@localhost/fitness_demo'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:nianzeg2@localhost/fitness'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
