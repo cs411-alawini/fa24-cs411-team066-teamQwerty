@@ -8,8 +8,14 @@ function WorkoutLog() {
   // Function to handle the search action
   const handleSearch = async () => {
     try {
-      // Fetch data from the backend
-      const response = await fetch(`/search/foods?keyword=${encodeURIComponent(searchQuery)}`);
+      // Fetch data from the backend at localhost:5000
+      const response = await fetch(`http://localhost:5000/search/foods?keyword=${encodeURIComponent(searchQuery)}`, {
+        method: 'GET',
+        credentials: 'include', // Ensures cookies are sent if necessary
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
       if (!response.ok) {
         throw new Error('Failed to fetch search results.');
       }
