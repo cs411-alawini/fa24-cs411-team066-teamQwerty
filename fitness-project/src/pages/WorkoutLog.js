@@ -46,8 +46,11 @@ function WorkoutLog() {
     });
   };
 
-  // Calculate total calories of selected items
-  const totalCalories = selectedItems.reduce((total, item) => total + item.calories, 0);
+  // Calculate total calories
+  const totalCalories = selectedItems.reduce((total, item) => {
+    const calories = item.type ? -item.calories : item.calories; // Subtract exercise calories
+    return total + calories;
+  }, 0);
 
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem', padding: '2rem' }}>
