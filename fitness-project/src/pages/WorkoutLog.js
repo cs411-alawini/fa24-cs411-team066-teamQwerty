@@ -25,7 +25,7 @@ function WorkoutLog() {
       }
       const data = await response.json();
       if (data.success) {
-        setResults(data.foods || data.exercises); // Handle response from either endpoint
+        setResults(data.foods || data.exercises);
       } else {
         setResults([]);
       }
@@ -39,10 +39,8 @@ function WorkoutLog() {
   const handleSelectItem = (item) => {
     setSelectedItems((prevSelected) => {
       if (prevSelected.some((selected) => selected.id === item.id)) {
-        // If already selected, remove it
         return prevSelected.filter((selected) => selected.id !== item.id);
       } else {
-        // Otherwise, add it
         return [...prevSelected, item];
       }
     });
@@ -52,35 +50,30 @@ function WorkoutLog() {
   const totalCalories = selectedItems.reduce((total, item) => total + item.calories, 0);
 
   return (
-    <div className="panel" style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-      {/* Left Search Section (Food Search) */}
-      <div style={{ flex: 1 }}>
-        <h2>Workout Log - Food Search</h2>
-        <div style={{ margin: '1rem 0' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem', padding: '2rem' }}>
+      {/* Left Panel - Food Search */}
+      <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
+        <h1>Food Search</h1>
+        <div style={{ marginBottom: '1rem' }}>
           <input
             type="text"
             value={searchQueryLeft}
             onChange={(e) => setSearchQueryLeft(e.target.value)}
             placeholder="Search for food..."
-            style={{ padding: '0.5rem', width: '60%' }}
-          />
-          <button
-            onClick={() => handleSearch(searchQueryLeft, setSearchResultsLeft, '/search/foods')}
             style={{
-              padding: '0.5rem 1rem',
-              marginLeft: '0.5rem',
-              backgroundColor: '#007bff',
-              color: 'white',
-              border: 'none',
-              cursor: 'pointer',
+              padding: '0.8rem',
+              width: '80%',
+              border: '1px solid #ddd',
+              borderRadius: '4px',
             }}
-          >
+          />
+          <button onClick={() => handleSearch(searchQueryLeft, setSearchResultsLeft, '/search/foods')} style={{ marginLeft: '0.5rem' }}>
             Search
           </button>
         </div>
-        <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #ccc', padding: '0.5rem', borderRadius: '5px' }}>
+        <div style={{ maxHeight: '200px', overflowY: 'auto', textAlign: 'left' }}>
           {searchResultsLeft.length > 0 ? (
-            <ul style={{ textAlign: 'left', listStyleType: 'none', padding: 0, margin: 0 }}>
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
               {searchResultsLeft.map((food) => (
                 <li key={food.id} style={{ marginBottom: '0.5rem' }}>
                   <label>
@@ -101,34 +94,29 @@ function WorkoutLog() {
         </div>
       </div>
 
-      {/* Right Search Section (Exercise Search) */}
-      <div style={{ flex: 1 }}>
-        <h2>Workout Log - Exercise Search</h2>
-        <div style={{ margin: '1rem 0' }}>
+      {/* Right Panel - Exercise Search */}
+      <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
+        <h1>Exercise Search</h1>
+        <div style={{ marginBottom: '1rem' }}>
           <input
             type="text"
             value={searchQueryRight}
             onChange={(e) => setSearchQueryRight(e.target.value)}
             placeholder="Search for exercise..."
-            style={{ padding: '0.5rem', width: '60%' }}
-          />
-          <button
-            onClick={() => handleSearch(searchQueryRight, setSearchResultsRight, '/search/exercises')}
             style={{
-              padding: '0.5rem 1rem',
-              marginLeft: '0.5rem',
-              backgroundColor: '#007bff',
-              color: 'white',
-              border: 'none',
-              cursor: 'pointer',
+              padding: '0.8rem',
+              width: '80%',
+              border: '1px solid #ddd',
+              borderRadius: '4px',
             }}
-          >
+          />
+          <button onClick={() => handleSearch(searchQueryRight, setSearchResultsRight, '/search/exercises')} style={{ marginLeft: '0.5rem' }}>
             Search
           </button>
         </div>
-        <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #ccc', padding: '0.5rem', borderRadius: '5px' }}>
+        <div style={{ maxHeight: '200px', overflowY: 'auto', textAlign: 'left' }}>
           {searchResultsRight.length > 0 ? (
-            <ul style={{ textAlign: 'left', listStyleType: 'none', padding: 0, margin: 0 }}>
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
               {searchResultsRight.map((exercise) => (
                 <li key={exercise.id} style={{ marginBottom: '0.5rem' }}>
                   <label>
@@ -150,19 +138,23 @@ function WorkoutLog() {
       </div>
 
       {/* Selected Items Section */}
-      {selectedItems.length > 0 && (
-        <div style={{ marginTop: '1rem', flex: '1 0 100%' }}>
-          <h3>Selected Items</h3>
-          <ul style={{ textAlign: 'left', listStyleType: 'none', padding: 0 }}>
-            {selectedItems.map((item) => (
-              <li key={item.id} style={{ marginBottom: '0.5rem' }}>
-                <strong>{item.name}</strong>: {item.calories} calories
-              </li>
-            ))}
-          </ul>
-          <p style={{ marginTop: '1rem', fontWeight: 'bold' }}>Total Calories: {totalCalories}</p>
-        </div>
-      )}
+      <div className="panel" style={{ flex: '1 0 100%' }}>
+        <h1>Selected Items</h1>
+        {selectedItems.length > 0 ? (
+          <>
+            <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'left' }}>
+              {selectedItems.map((item) => (
+                <li key={item.id}>
+                  <strong>{item.name}</strong>: {item.calories} calories
+                </li>
+              ))}
+            </ul>
+            <p>Total Calories: <strong>{totalCalories}</strong></p>
+          </>
+        ) : (
+          <p>No items selected.</p>
+        )}
+      </div>
     </div>
   );
 }
