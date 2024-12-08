@@ -9,16 +9,17 @@ import logging
 
 
 app = Flask(__name__)
+CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
 
 # Enable CORS for React frontend
-CORS(app, supports_credentials=True)
+# CORS(app, supports_credentials=True)
 logging.basicConfig(level=logging.DEBUG)
 
 
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:863235@localhost/fitness_demo'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:nianzeg2@localhost/fitness'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
