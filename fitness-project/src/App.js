@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useEffect } from 'react';
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import { LoginStatusProvider } from './contexts/LoginStatusContext';
@@ -9,6 +8,7 @@ import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import WorkoutLog from './pages/WorkoutLog'; 
 import './App.css';
 
 function App() {
@@ -24,7 +24,6 @@ function App() {
     const particlesArray = [];
     const numberOfParticles = 30;
 
-    // Array of colors for particles
     const colors = [
       'rgba(173, 216, 230, 0.8)',
       'rgba(135, 206, 235, 0.8)',
@@ -91,6 +90,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/workout-log" element={<WorkoutLog />} /> 
           </Routes>
         </div>
         <Footer />
