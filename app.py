@@ -156,6 +156,43 @@ def search_foods():
         } for food in foods]
     }), 200
 
+@app.route('/workout-log', methods=['POST'])
+def add_workout_log():
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'message': 'Not authenticated'}), 401
+
+    try:
+        data = request.get_json()
+        calories_burnt = data.get('calories_burnt')
+        
+        # 验证输入
+        if calories_burnt is None:
+            return jsonify({'success': False, 'message': 'Calories burnt is required'}), 400
+            
+        # 创建新的workout记录
+        new_workout = WorkoutLog(
+            user_id=session['user_id'],
+            calories_burnt=calories_burnt,
+            date=datetime.utcnow()  
+        )
+        
+        db.session.add(new_workout)
+        db.session.commit()
+        
+        return jsonify({
+            'success': True,
+            'message': 'Workout log added successfully',
+            'workout': {
+                'id': new_workout.id,
+                'date': new_workout.date,
+                'calories_burnt': new_workout.calories_burnt
+            }
+        }), 201
+        
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'success': False, 'message': str(e)}), 500
+
 
 @app.route('/fitness-goal', methods=['POST'])
 def update_fitness_goal():
