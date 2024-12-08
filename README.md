@@ -17,7 +17,7 @@ npm install
 
 2. Start the MySQL server (Linux only):
    ```bash
-   sudo service mysql start
+   brew service mysql start
    ```
 
 3. Connect to the MySQL server:
@@ -35,12 +35,9 @@ npm install
    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://<username>:<password>@localhost/<database_name>'
    ```
 
-6. Initialize the database schema:
+6. Run the following command to initiate the database:
    ```bash
-   python3
-   from app import db
-   db.create_all()
-   exit()
+   python3 setup.py
    ```
 
 ## 3. Start API server.
