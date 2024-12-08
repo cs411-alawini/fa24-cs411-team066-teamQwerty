@@ -9,7 +9,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
-  const { enableCredentials } = useContext(LoginStatusContext);
+  const { enableCredentials, disableCredentials } = useContext(LoginStatusContext);
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -43,7 +43,14 @@ function Login() {
   };
 
   const handleGuest = () => {
-    navigate('/home'); // Navigate to Home page as a guest
+    // Ensure previous session is cleared
+    fetch('http://localhost:5000/logout', { method: 'POST', credentials: 'include' })
+      .then(() => {
+        navigate('/home'); // Navigate to the home page as a guest
+      })
+      .catch(() => {
+        console.error('Failed to clear session for guest user.');
+      });
   };
 
   return (

@@ -35,8 +35,8 @@ function Goal() {
     }
   };
 
-  // Save the selected goal to the backend
-  const handleSetGoal = async () => {
+  // Save the selected goal and navigate to the next page
+  const handleConfirm = async () => {
     if (!selectedGoal) {
       alert('Please select a goal before proceeding.');
       return;
@@ -60,6 +60,7 @@ function Goal() {
       if (data.success) {
         setSavedGoal(selectedGoal); // Update the saved goal on the page
         setMessage(data.message);
+        navigate('/workout-log'); // Navigate to the next page
       } else {
         setMessage(data.message || 'Failed to update fitness goal.');
       }
@@ -67,15 +68,6 @@ function Goal() {
       console.error('Error updating fitness goal:', error);
       setMessage('Error updating fitness goal.');
     }
-  };
-
-  // Navigate to the next page
-  const handleConfirm = () => {
-    if (!selectedGoal) {
-      alert('Please select a goal before proceeding.');
-      return;
-    }
-    navigate('/workout-log'); // Navigate to the next page
   };
 
   // Fetch the saved goal on component mount
@@ -105,38 +97,22 @@ function Goal() {
           marginBottom: '1rem',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <select
-            value={selectedGoal}
-            onChange={(e) => setSelectedGoal(e.target.value)}
-            style={{
-              padding: '0.5rem',
-              fontSize: '1rem',
-              border: '1px solid #ddd',
-              borderRadius: '5px',
-              marginRight: '0.5rem',
-            }}
-          >
-            <option value="" disabled>
-              Select a goal
-            </option>
-            <option value="Build Muscle">Build Muscle</option>
-            <option value="Lose Weight">Lose Weight</option>
-          </select>
-          <button
-            style={{
-              padding: '0.5rem 1rem',
-              backgroundColor: '#007bff',
-              color: 'white',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer',
-            }}
-            onClick={handleSetGoal}
-          >
-            Set
-          </button>
-        </div>
+        <select
+          value={selectedGoal}
+          onChange={(e) => setSelectedGoal(e.target.value)}
+          style={{
+            padding: '0.5rem',
+            fontSize: '1rem',
+            border: '1px solid #ddd',
+            borderRadius: '5px',
+          }}
+        >
+          <option value="" disabled>
+            Select a goal
+          </option>
+          <option value="Build Muscle">Build Muscle</option>
+          <option value="Lose Weight">Lose Weight</option>
+        </select>
       </div>
 
       <button

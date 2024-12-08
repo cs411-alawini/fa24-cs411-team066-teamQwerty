@@ -12,21 +12,21 @@ function Profile() {
   useEffect(() => {
     fetch('http://localhost:5000/getuser', {
       method: 'GET',
-      credentials: 'include', 
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
     })
       .then(async (response) => {
         const data = await response.json();
-        if (response.ok) {
+        if (response.ok && data.user) {
           setUser(data.user);
         } else {
-          throw new Error(data.message || 'Failed to fetch user data');
+          setUser(null); // Explicitly set user to null for guest sessions or errors
         }
       })
-      .catch((err) => {
-        setError(err.message);
+      .catch(() => {
+        setUser(null); // Handle errors gracefully by treating as guest
       })
       .finally(() => {
         setLoading(false);
