@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Panel.css';
 
 function WorkoutLog() {
+  const [date, setDate] = useState(''); // State for selected date
   const [searchQueryLeft, setSearchQueryLeft] = useState(''); // State for the left search bar
   const [searchResultsLeft, setSearchResultsLeft] = useState([]); // State for left search results
 
@@ -54,6 +55,23 @@ function WorkoutLog() {
 
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem', padding: '2rem' }}>
+      {/* Date Selection */}
+      <div className="panel" style={{ flex: '1 0 100%' }}>
+        <h1>Select Date</h1>
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          style={{
+            padding: '0.8rem',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            width: '100%',
+          }}
+        />
+        {date && <p style={{ marginTop: '1rem' }}>Selected Date: <strong>{date}</strong></p>}
+      </div>
+
       {/* Left Panel - Food Search */}
       <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
         <h1>Food Search</h1>
