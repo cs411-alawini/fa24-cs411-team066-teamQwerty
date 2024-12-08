@@ -194,6 +194,36 @@ def add_workout_log():
         return jsonify({'success': False, 'message': str(e)}), 500
 
 
+@app.route('/workout-logs', methods=['GET'])
+def get_workout_logs():
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'message': 'Not authenticated'}), 401
+
+    try:
+        workout_logs = WorkoutLog.query.filter_by(
+            user_id=session['user_id']
+        ).order_by(
+            WorkoutLog.date.desc()
+        ).all()
+
+        # 转换为JSON格式
+        logs = []
+        for log in workout_logs:
+            logs.append({
+                'id': log.id,
+                'date': log.date.strftime('%Y-%m-%d %H:%M:%S'),
+                'calories_burnt': log.calories_burnt
+            })
+
+        return jsonify({
+            'success': True,
+            'workout_logs': logs
+        }), 200
+
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)}), 500
+
+
 @app.route('/fitness-goal', methods=['POST'])
 def update_fitness_goal():
     # Check if user is logged in

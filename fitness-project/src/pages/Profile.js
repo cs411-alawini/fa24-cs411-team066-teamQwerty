@@ -1,11 +1,13 @@
 // src/pages/Profile.js
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Panel.css';
 
 function Profile() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate(); // Initialize navigate function
 
   useEffect(() => {
     fetch('http://localhost:5000/getuser', {
@@ -49,6 +51,23 @@ function Profile() {
       <p><strong>Username:</strong> {user.username}</p>
       <p><strong>Email Address:</strong> {user.email}</p>
       <p><strong>Age:</strong> {user.age}</p>
+      
+      {/* Button to navigate to log-history */}
+      <button
+        onClick={() => navigate('/log-history')}
+        style={{
+          marginTop: '1rem',
+          padding: '0.8rem 1.5rem',
+          backgroundColor: '#007bff',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          fontSize: '1rem',
+        }}
+      >
+        Go to Log History
+      </button>
     </div>
   );
 }

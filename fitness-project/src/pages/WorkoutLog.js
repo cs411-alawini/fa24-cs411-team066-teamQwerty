@@ -109,8 +109,6 @@ function WorkoutLog() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem', padding: '2rem' }}>
       {/* Left Panel - Food Search */}
-      <button style={{ padding: '0.5rem 1rem', marginTop: '1rem' }} 
-        onClick={() => navigate('/LogHistory')}>Go to Log History </button>
       <div className="panel" style={{ flex: 1, minWidth: '300px' }}>
         <h1>Food Search</h1>
         <div style={{ marginBottom: '1rem' }}>

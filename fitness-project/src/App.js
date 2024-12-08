@@ -94,6 +94,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/workout-log" element={<WorkoutLog />} /> 
             <Route path="/goal" element={<Goal />} />
+            <Route path="/log-history" element={<LogHistory />} />
           </Routes>
         </div>
         <Footer />
