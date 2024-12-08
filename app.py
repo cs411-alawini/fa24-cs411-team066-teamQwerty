@@ -223,6 +223,33 @@ def get_workout_logs():
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
 
+@app.route('/workout-log/<int:log_id>', methods=['DELETE'])
+def delete_workout_log(log_id):
+    if 'user_id' not in session:
+        return jsonify({'success': False, 'message': 'Not authenticated'}), 401
+
+    try:
+        # 查找对应的workout log记录
+        workout_log = WorkoutLog.query.get(log_id)
+
+        # 检查记录是否存在
+        if not workout_log:
+            return jsonify({'success': False, 'message': 'Workout log not found'}), 404
+
+        if workout_log.user_id != session['user_id']:
+            return jsonify({'success': False, 'message': 'Unauthorized to delete this workout log'}), 403
+
+        db.session.delete(workout_log)
+        db.session.commit()
+
+        return jsonify({
+            'success': True, 
+            'message': 'Workout log deleted successfully'
+        }), 200
+
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'success': False, 'message': str(e)}), 500
 
 @app.route('/fitness-goal', methods=['POST'])
 def update_fitness_goal():
