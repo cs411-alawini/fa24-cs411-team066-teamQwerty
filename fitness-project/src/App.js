@@ -9,6 +9,8 @@ import Profile from './pages/Profile';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import WorkoutLog from './pages/WorkoutLog'; 
+import Goal from './pages/Goal';
+import LogHistory from './pages/LogHistory';
 import './App.css';
 
 function App() {
@@ -91,6 +93,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/workout-log" element={<WorkoutLog />} /> 
+            <Route path="/goal" element={<Goal />} />
           </Routes>
         </div>
         <Footer />

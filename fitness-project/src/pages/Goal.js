@@ -2,21 +2,21 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './Panel.css';
 
-function Home() {
+function Goal() {
   const navigate = useNavigate(); // Initialize the navigate function
 
   return (
     <div className='panel'>
-      <h1>Welcome to Fitness Tracker</h1>
-      <p>Track your fitness journey and get personalized workout recommendations.</p>
+      <h1>Set your goal before everything</h1>
+      <p>Goal here:</p>
       <button 
         style={{ padding: '0.5rem 1rem', marginTop: '1rem' }} 
-        onClick={() => navigate('/goal')}
+        onClick={() => navigate('/workout-log')}
       >
-        Get Started
+        Confirm
       </button>
     </div>
   );
 }
 
-export default Home;
+export default Goal;
