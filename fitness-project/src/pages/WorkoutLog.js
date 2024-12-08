@@ -47,6 +47,11 @@ function WorkoutLog() {
     });
   };
 
+  // Clear all selected items
+  const handleClear = () => {
+    setSelectedItems([]);
+  };
+
   // Calculate total calories
   const totalCalories = selectedItems.reduce((total, item) => {
     const calories = item.type ? -item.calories : item.calories; // Subtract exercise calories
@@ -171,6 +176,20 @@ function WorkoutLog() {
               ))}
             </ul>
             <p>Total Calories: <strong>{totalCalories}</strong></p>
+            <button
+              onClick={handleClear}
+              style={{
+                padding: '0.8rem',
+                backgroundColor: '#dc3545',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                marginTop: '1rem',
+                cursor: 'pointer',
+              }}
+            >
+              Clear All
+            </button>
           </>
         ) : (
           <p>No items selected.</p>
