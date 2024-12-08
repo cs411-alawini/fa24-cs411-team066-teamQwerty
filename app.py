@@ -401,12 +401,9 @@ def login():
 # Logout Route
 @app.route('/logout', methods=['POST'])
 def logout():
-    if 'user_id' in session:
-        session.pop('user_id', None)
-        session.pop('username', None)
-        return jsonify({'success': True, 'message': 'Logout successful'}), 200
-    return jsonify({'success': False, 'message': 'No active session'}), 400
-
+    # Clear all session data
+    session.clear()
+    return jsonify({'success': True, 'message': 'Logged out successfully'}), 200
 
 if __name__ == '__main__':
     app.run(host='localhost', port=5000, debug=True)
