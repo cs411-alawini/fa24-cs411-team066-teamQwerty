@@ -22,7 +22,8 @@ function Header() {
       <h1 className="header-title">Fitness Tracker</h1>
       <nav className="header-nav">
         <button className="header-link" onClick={() => navigate('/home')}>Home</button>
-        <button className="header-link" onClick={() => navigate('/dashboard')}>Dashboard</button>
+        <button className="header-link" onClick={() => navigate('/goal')}>Goal</button>
+        <button className="header-link" onClick={() => navigate('/workout-log')}>Workout Log</button> 
         <button className="header-link" onClick={() => navigate('/profile')}>Profile</button>
       </nav>
       {isLoggedIn ? (
