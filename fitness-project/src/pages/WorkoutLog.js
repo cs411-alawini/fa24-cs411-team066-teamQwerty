@@ -8,7 +8,8 @@ function WorkoutLog() {
   const [searchQueryRight, setSearchQueryRight] = useState(''); // State for the right search bar
   const [searchResultsRight, setSearchResultsRight] = useState([]); // State for right search results
 
-  const [selectedItems, setSelectedItems] = useState([]); // State for selected items (food or exercise)
+  const [selectedFoods, setSelectedFoods] = useState([]); // State for selected foods
+  const [selectedExercises, setSelectedExercises] = useState([]); // State for selected exercises
   const [message, setMessage] = useState(''); // State for status messages
 
   // Function to handle the search action
@@ -36,30 +37,41 @@ function WorkoutLog() {
     }
   };
 
-  // Handle selection of items
-  const handleSelectItem = (item) => {
-    setSelectedItems((prevSelected) => {
-      if (prevSelected.some((selected) => selected.id === item.id)) {
-        return prevSelected.filter((selected) => selected.id !== item.id);
+  // Handle selection of food items
+  const handleSelectFood = (food) => {
+    setSelectedFoods((prevSelected) => {
+      if (prevSelected.some((item) => item.id === food.id)) {
+        return prevSelected.filter((item) => item.id !== food.id);
       } else {
-        return [...prevSelected, item];
+        return [...prevSelected, food];
+      }
+    });
+  };
+
+  // Handle selection of exercise items
+  const handleSelectExercise = (exercise) => {
+    setSelectedExercises((prevSelected) => {
+      if (prevSelected.some((item) => item.id === exercise.id)) {
+        return prevSelected.filter((item) => item.id !== exercise.id);
+      } else {
+        return [...prevSelected, exercise];
       }
     });
   };
 
   // Clear all selected items
   const handleClear = () => {
-    setSelectedItems([]);
+    setSelectedFoods([]);
+    setSelectedExercises([]);
     setMessage('');
   };
 
   // Save workout log to the database
   const handleSaveLog = async () => {
     try {
-      const totalCalories = selectedItems.reduce((total, item) => {
-        const calories = item.type ? -item.calories : item.calories;
-        return total + calories;
-      }, 0);
+      const totalCalories =
+        selectedFoods.reduce((total, item) => total + item.calories, 0) -
+        selectedExercises.reduce((total, item) => total + item.calories, 0);
 
       const response = await fetch('http://localhost:5000/workout-log', {
         method: 'POST',
@@ -75,7 +87,8 @@ function WorkoutLog() {
       const data = await response.json();
       if (data.success) {
         setMessage('Workout log saved successfully!');
-        setSelectedItems([]); // Clear the selected items after saving
+        setSelectedFoods([]); // Clear the selected foods after saving
+        setSelectedExercises([]); // Clear the selected exercises after saving
       } else {
         setMessage(`Error: ${data.message}`);
       }
@@ -86,10 +99,9 @@ function WorkoutLog() {
   };
 
   // Calculate total calories
-  const totalCalories = selectedItems.reduce((total, item) => {
-    const calories = item.type ? -item.calories : item.calories; // Subtract exercise calories
-    return total + calories;
-  }, 0);
+  const totalCalories =
+    selectedFoods.reduce((total, item) => total + item.calories, 0) -
+    selectedExercises.reduce((total, item) => total + item.calories, 0);
 
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem', padding: '2rem' }}>
@@ -121,8 +133,8 @@ function WorkoutLog() {
                   <label>
                     <input
                       type="checkbox"
-                      checked={selectedItems.some((item) => item.id === food.id)}
-                      onChange={() => handleSelectItem(food)}
+                      checked={selectedFoods.some((item) => item.id === food.id)}
+                      onChange={() => handleSelectFood(food)}
                       style={{ marginRight: '0.5rem' }}
                     />
                     <strong>{food.name}</strong>: {food.calories} calories
@@ -164,8 +176,8 @@ function WorkoutLog() {
                   <label>
                     <input
                       type="checkbox"
-                      checked={selectedItems.some((item) => item.id === exercise.id)}
-                      onChange={() => handleSelectItem(exercise)}
+                      checked={selectedExercises.some((item) => item.id === exercise.id)}
+                      onChange={() => handleSelectExercise(exercise)}
                       style={{ marginRight: '0.5rem' }}
                     />
                     <strong>{exercise.name}</strong> ({exercise.type}): {exercise.calories} calories
@@ -182,12 +194,21 @@ function WorkoutLog() {
       {/* Selected Items Section */}
       <div className="panel" style={{ flex: '1 0 100%' }}>
         <h1>Selected Items</h1>
-        {selectedItems.length > 0 ? (
+        {selectedFoods.length > 0 || selectedExercises.length > 0 ? (
           <>
+            <h3>Selected Foods</h3>
             <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'left' }}>
-              {selectedItems.map((item) => (
-                <li key={item.id}>
-                  <strong>{item.name}</strong>: {item.calories} calories
+              {selectedFoods.map((food) => (
+                <li key={food.id}>
+                  <strong>{food.name}</strong>: {food.calories} calories
+                </li>
+              ))}
+            </ul>
+            <h3>Selected Exercises</h3>
+            <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'left' }}>
+              {selectedExercises.map((exercise) => (
+                <li key={exercise.id}>
+                  <strong>{exercise.name}</strong>: -{exercise.calories} calories
                 </li>
               ))}
             </ul>
