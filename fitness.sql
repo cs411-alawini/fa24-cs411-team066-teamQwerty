@@ -60,81 +60,6 @@ BEGIN
     END IF;
 END//
 
--- Stored Procedure for logging a complete workout with exercises
-CREATE PROCEDURE log_workout(
-    IN p_user_id INT,
-    IN p_date DATETIME,
-    IN p_calories_burnt INT,
-    IN p_exercise_ids VARCHAR(255)
-)
-BEGIN
-    DECLARE workout_id INT;
-    DECLARE exit_handler BOOLEAN DEFAULT FALSE;
-    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET exit_handler = TRUE;
-    
-    -- Validate user exists
-    IF NOT EXISTS (SELECT 1 FROM user WHERE id = p_user_id) THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'User does not exist';
-    END IF;
-    
-    START TRANSACTION;
-    
-    -- Insert workout log
-    INSERT INTO workout_log (user_id, date, calories_burnt)
-    VALUES (p_user_id, p_date, p_calories_burnt);
-    
-    SET workout_id = LAST_INSERT_ID();
-    
-    -- Insert exercise affiliations
-    INSERT INTO affiliations (workout_log_id, exercise_id)
-    SELECT workout_id, SUBSTRING_INDEX(SUBSTRING_INDEX(p_exercise_ids, ',', n.n), ',', -1) as exercise_id
-    FROM (
-        SELECT a.N + b.N * 10 + 1 n
-        FROM (SELECT 0 AS N UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4 UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) a
-        ,(SELECT 0 AS N UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4 UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) b
-        ORDER BY n
-    ) n
-    WHERE n.n <= 1 + (LENGTH(p_exercise_ids) - LENGTH(REPLACE(p_exercise_ids, ',', '')))
-    AND SUBSTRING_INDEX(SUBSTRING_INDEX(p_exercise_ids, ',', n.n), ',', -1) != '';
-    
-    -- Check for errors
-    IF exit_handler THEN
-        ROLLBACK;
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Error occurred while logging workout';
-    ELSE
-        COMMIT;
-    END IF;
-END//
-
--- Stored Procedure for calculating user statistics
-CREATE PROCEDURE calculate_user_stats(
-    IN p_user_id INT,
-    IN p_start_date DATE,
-    IN p_end_date DATE
-)
-BEGIN
-    -- Validate user exists
-    IF NOT EXISTS (SELECT 1 FROM user WHERE id = p_user_id) THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'User does not exist';
-    END IF;
-
-    -- Calculate total workouts, calories burnt, and food intake
-    SELECT 
-        u.user_name,
-        COUNT(DISTINCT wl.id) as total_workouts,
-        SUM(wl.calories_burnt) as total_calories_burnt,
-        SUM(f.calories) as total_calories_consumed,
-        (SELECT goal_type FROM fitness_goal WHERE user_id = p_user_id) as current_goal
-    FROM user u
-    LEFT JOIN workout_log wl ON u.id = wl.user_id AND wl.date BETWEEN p_start_date AND p_end_date
-    LEFT JOIN takein t ON wl.id = t.workout_log_id
-    LEFT JOIN food f ON t.food_id = f.id
-    WHERE u.id = p_user_id
-    GROUP BY u.id, u.user_name;
-END//
 
 -- Stored Procedure for updating user fitness goals
 CREATE PROCEDURE update_user_goal(
@@ -156,7 +81,42 @@ BEGIN
 
     START TRANSACTION;
     
-    -- Update or insert goal
+    -- Update goal
+    UPDATE fitness_goal
+    SET goal_type = p_goal_type
+    WHERE user_id = p_user_id;
+    
+    -- Update user's goal_id reference
+    UPDATE user 
+    SET goal_id = LAST_INSERT_ID()
+    WHERE id = p_user_id;
+    
+    COMMIT;
+END//
+
+
+
+-- Stored Procedure for updating user fitness goals
+CREATE PROCEDURE insert_user_goal(
+    IN p_user_id INT,
+    IN p_goal_type VARCHAR(255)
+)
+BEGIN    
+    -- First check if user exists
+    IF NOT EXISTS (SELECT 1 FROM user WHERE id = p_user_id) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'User does not exist';
+    END IF;
+
+    -- Validate goal type with explicit list
+    IF p_goal_type NOT IN ('Lose weight', 'Build muscle', 'Maintain fitness', 'Improve endurance') THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Invalid goal type';
+    END IF;
+
+    START TRANSACTION;
+    
+    -- Insert goal
     INSERT INTO fitness_goal (user_id, goal_type)
     VALUES (p_user_id, p_goal_type)
     ON DUPLICATE KEY UPDATE goal_type = p_goal_type;

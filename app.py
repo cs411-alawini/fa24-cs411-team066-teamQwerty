@@ -6,6 +6,8 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 import os
 import logging
+from sqlalchemy import text
+
 
 
 app = Flask(__name__)
@@ -19,7 +21,7 @@ logging.basicConfig(level=logging.DEBUG)
 # Configurations
 app.config['SECRET_KEY'] = '9spKotDJjs'  # Replace with a secure secret key
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:nianzeg2@localhost/fitness'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:863235@localhost/fitness_demo'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -251,53 +253,45 @@ def delete_workout_log(log_id):
         db.session.rollback()
         return jsonify({'success': False, 'message': str(e)}), 500
 
+
 @app.route('/fitness-goal', methods=['POST'])
 def update_fitness_goal():
-    # Check if user is logged in
     if 'user_id' not in session:
         return jsonify({'success': False, 'message': 'Not authenticated'}), 401
 
     data = request.get_json()
-    user_id = session['user_id']
     goal_type = data.get('goal_type')
 
     if not goal_type:
         return jsonify({'success': False, 'message': 'Goal type is required'}), 400
+
+    user_id = session['user_id']
 
     try:
         # Check if user already has a fitness goal
         existing_goal = FitnessGoal.query.filter_by(user_id=user_id).first()
 
         if existing_goal:
-            # Update existing goal
-            existing_goal.goal_type = goal_type
-            db.session.commit()
-            message = 'Fitness goal updated successfully'
-        else:
-            # Create new goal
-            new_goal = FitnessGoal(
-                user_id=user_id,
-                goal_type=goal_type
+            db.session.execute(
+                text('CALL update_user_goal(:p_user_id, :p_goal_type)'),
+                {
+                    'p_user_id': user_id,
+                    'p_goal_type': goal_type
+                }
             )
-            db.session.add(new_goal)
             db.session.commit()
 
-            # Update user's goal_id
-            user = User.query.get(user_id)
-            user.goal_id = new_goal.id
+        else:
+            db.session.execute(
+                text('CALL insert_user_goal(:p_user_id, :p_goal_type)'),
+                {
+                    'p_user_id': user_id,
+                    'p_goal_type': goal_type
+                }
+            )
             db.session.commit()
 
-            message = 'Fitness goal created successfully'
-
-        return jsonify({
-            'success': True,
-            'message': message,
-            'goal': {
-                'id': existing_goal.id if existing_goal else new_goal.id,
-                'goal_type': goal_type
-            }
-        }), 200
-
+        return jsonify({'success': True, 'message': 'User goal updated successfully'}), 200
     except Exception as e:
         db.session.rollback()
         return jsonify({'success': False, 'message': str(e)}), 500
