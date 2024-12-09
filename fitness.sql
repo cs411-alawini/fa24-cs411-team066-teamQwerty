@@ -35,17 +35,8 @@ CREATE TRIGGER before_workout_insert
 BEFORE INSERT ON workout_log
 FOR EACH ROW
 BEGIN
-    -- Validate calories_burnt is positive
-    IF NEW.calories_burnt < 0 THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Calories burnt must be positive';
-    END IF;
-    
-    -- Validate date is not in future
-    IF NEW.date > NOW() THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Workout date cannot be in the future';
-    END IF;
+
+
 END//
 
 -- Trigger to update user statistics after workout
